@@ -18,7 +18,7 @@ table, th, td {
 </head>
 <body>
 
-	<form action="" method="post" id="" name="" enctype="multipart/form-data">
+	<form action="" method="get" id="memberForm" name="memberForm" enctype="multipart/form-data">
 		<caption>●회원가입</caption>
 		<table width="850">
 			<tr>
@@ -124,15 +124,15 @@ table, th, td {
 			</tr>
 			<tr>
 				<th>비밀번호 답</th>
-				<td width="120"><input type="text" id="pwdanswer" name="pwdanswer"></td>
+				<td width="120"><input type="text" id="pwdanswer" name="pwdanswer" max="10" placeholder="10자 이내로 입력"></td>
 				<th>추천인</th>
-				<td><input type="text" id="recom" name="recom"></td>
+				<td><input type="text" id="recom" name="recom" placeholder="추천인 아이디 입력"></td>
 			</tr>
 			<tr>
 				<th>SNS</th>
-				<td>asdasd</td>
+				<td><input type="url" id="sns" name="sns"></td>
 				<th>홈페이지</th>
-				<td>www.asdasd.com</td>
+				<td><input type="url" id="homepage" name="homepage" placeholder="url형태로 입력"></td>
 			</tr>
 			<tr>
 				<th>직업(희망)</th>
@@ -144,24 +144,27 @@ table, th, td {
 			</tr>
 			<tr>
 				<th>결혼여부</th>
-				<td>X</td>
+				<td>
+					<input type="radio" id="marriage" name="marriage" value="y">기혼&nbsp;
+					<input type="radio" id="marriage" name="marriage" value="n">미혼
+				</td>
 				<th>결혼기념일</th>
-				<td>X</td>
+				<td><input type="date" id="anniversary" name="anniversary" max="2022-01-08"></td>
 			</tr>
 			<tr>
-				<th>자녀여부</th>
-				<td>X</td>
+				<th>자녀유무</th>
+				<td>			
+					<input type="radio" id="children" name="children" value="y">유&nbsp;
+					<input type="radio" id="children" name="children" value="n">무</td>
 				<th>좋아하는 색깔</th>
-				<td>#FFB2AF</td>
+				<td><input type="color" id="color" name="color" ></td>
 			</tr>
 			<tr>
 				<th>본인 소개</th>
-				<td colspan="3" width="200">그들은 천지는 그것을 인도하겠다는 소담스러운 피고, 옷을 쓸쓸한 같은 봄바람이다.
-					노년에게서 기쁘며, 타오르고 이것이다. 그림자는 것은 투명하되 스며들어 전인 관현악이며, 가치를 고행을 찬미를 것이다.
-					예수는 얼마나 풍부하게 청춘 두기 고행을 그것은 이것이다. 살았으며, 천하를 열락의 힘있다. 그것은 우리 공자는 맺어,
-					그러므로 품으며, 웅대한 않는 것이다. 천하를 끓는 뛰노는 무엇을 쓸쓸하랴? 할지니, 구하지 피어나는 가슴에 오아이스도
-					피다. 열매를 그와 청춘의 것이다. 소담스러운 밥을 무엇을 용감하고 봄날의 그림자는 그들은 우리의 것이다. 가치를 그것은
-					원질이 따뜻한 열매를 같은 피다.</td>
+				<td colspan="3" width="200" height="200">
+					<textarea rows="10" cols="50" id="introduce" name="introduce" maxlength="400" placeholder="400자 이내 입력"></textarea>
+					<!-- <input type="text" id="introduce" name="introduce" maxlength="400" placeholder="400자 이내 작성" size="50" height="200"> -->
+				</td>
 			</tr>
 		</table>
 		<br>
@@ -171,27 +174,29 @@ table, th, td {
 				<th colspan="5">프로젝트 참여</th>
 			</tr>	
 			<tr>	
-				<th width="40">번호</th>
-				<th>프로젝트명</th>
+				<th width="80">번호</th>
+				<td width="200"><input type="text" id="num" name="num"></td>
+				<th width="80">프로젝트명</th>
+				<td><input type="text" id="projectname" name="projectname" ></td>
+			</tr>	
+			<tr>	
 				<th>참여기간</th>
-				<th>역할</th>
+				<td>
+					<input type="date" id="duration" name="duration">~
+					<input type="date" id="duration" name="duration" max="2022-01-08">
+					
+				</td>
 				<th>발주사</th>
+				<td><input type="text" id="company" name="company" ></td>
 			</tr>
-			<tr>
-				<td>1</td>
-				<td>프로젝트이름이다</td>
-				<td>2020.1.1~2021.1.1</td>
-				<td>역할이다</td>
-				<td>발주사다</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>프로젝트이름이다</td>
-				<td>2020.1.1~2021.1.1</td>
-				<td>역할이다</td>
-				<td>발주사다</td>
+			<tr>	
+				<th>역할</th>
+				<td colspan="3">
+					<textarea rows="10" cols="40" id="role" name="role"></textarea>
+				</td>
 			</tr>
 		</table>
+		<br><input type="submit" value="회원가입하기">
 	</form>	
 
 </body>

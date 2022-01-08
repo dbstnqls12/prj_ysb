@@ -3,13 +3,181 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>Subin html projects</title>
+<!-- <!-- css 내용 -->
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 15px;
+}
+-->
+</style>
 </head>
 <body>
-memberEdit.html
-기존 회원 수정을 위한 폼
 
-이름 : input value=""
+	<form action="" method="get" id="memberEdit" name="memberEdit" enctype="multipart/form-data">
+		<caption>●회원가입</caption>
+		<table width="850">
+			<tr>
+				<th>이름</th>
+				<td colspan="3"><input type="text" id="name" name="name" placeholder="이름" size="50" value="윤수빈"></td>
+			</tr>
+			<tr>
+				<th>아이디</th>
+				<td colspan="3"><input type="text" id="id" name="id" maxlength="15" size="50" placeholder="아이디 6~20자 영문, 숫자" value="asdasd"></td>
+			</tr>
+			<tr>
+				<th>비밀번호</th>
+				<td colspan="3"><input type="text" id="pwd" name="pwd" size="50" placeholder="비밀번호 8~12자 영문, 숫자, 특수문자"></td>
+			</tr>
+			<tr>
+				<th>비밀번호 확인</th>
+				<td colspan="3"><input type="text" id="pwd" name="pwd" size="50" placeholder="비밀번호 다시 입력"></td>
+			</tr>
+			<tr>
+				<th>주소</th>
+				<td colspan="3"><input type="text" id="address" name="address" size="50" value="서울특별시 어쩌구 저쩌구"></td>
+			</tr>
+			<tr>
+				<th>생년월일</th>
+				<td colspan="3"><input type="date" id="birth" name="birth" max="2022-01-08" value="1998-11-23"></td>
+			</tr>
+			<tr>
+				<th>성별</th>
+				<td><input type="radio" id="gender" name="gender" value="M">남성&nbsp;
+					<input type="radio" id="gender" name="gender" value="F" checked="checked">여성</td>
+				<th>국적</th>
+				<td><select>
+						<option selected="selected">대한민국</option>
+						<option>미국</option>
+						<option>중국</option>
+						<option>일본</option>
+						<option>태국</option>
+						<option>영국</option>
+						<option>네덜란드</option>
+						<option>그 외..</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th>모바일</th>
+				<td><input type="text" id="mobile" name="mobile" maxlength="11" placeholder="숫자만 입력" value="010-1231-1231"></td>
+				<th>전화번호</th>
+				<td><input type="text" id="tel" name="tel" maxlength="11" placeholder="숫자만 입력" value="02-123-1231"></td>
+			</tr>
+			<tr>
+				<th>이메일</th>
+				<td><input type="email" id="email" name="email" placeholder="@을 포함한 형태로 입력" value="asdasd@asd.com"></td>
+				<th>팩스번호</th>
+				<td><input type="text" id="fax" name="fax" maxlength="11" placeholder="숫자만 입력" value="111-111-111"></td>
+			</tr>
+			<tr>
+				<th>모바일 마케팅 수신 동의</th>
+				<td><input type="radio" id="mmk" name="mmk" value="y" checked="checked">동의 &nbsp; <input type="radio" id="mmk" name="mmk" value="n">비동의</td>
+				<th>이메일 마케팅 수신 동의</th>
+				<td><input type="radio" id="emk" name="emk" value="y" checked="checked">동의 &nbsp; <input type="radio" id="emk" name="emk" value="n">비동의</td>
+			</tr>
+			<tr>
+				<th>개인정보유효기간</th>
+				<td colspan="3"><input type="radio" id="mk" name="mk" value="y" checked="checked">1년 &nbsp;&nbsp; 
+					<input type="radio" id="mk" name="mk" value="n">3년 &nbsp;&nbsp; 
+					<input type="radio" id="mk" name="mk" value="n">5년 &nbsp;&nbsp;
+					<input type="radio" id="mk" name="mk" value="n">10년 &nbsp;&nbsp;</td>
+			</tr>
+		</table>
+		<br>
+		<caption>●추가정보</caption>
+		<table width="700">
+			<tr>
+				<th>사진</th>
+				<td colspan="3"><input type="file" accept=".jpg,.png,.gif" value="./2.png"></td>
+			</tr>
+			<tr>
+				<th width="125">비밀번호 문제</th>
+				<td colspan="3">
+					<select>
+						<option selected="selected">가장 좋아하는 장소는?</option>
+						<option>본인의 취미는?</option>
+						<option>본인의 장점은?</option>
+						<option>본인의 발사이즈는?</option>
+						<option>본인의 성격은?</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>비밀번호 답</th>
+				<td width="120"><input type="text" id="pwdanswer" name="pwdanswer" max="10" value="집"></td>
+				<th>추천인</th>
+				<td><input type="text" id="recom" name="recom" value="내친구"></td>
+			</tr>
+			<tr>
+				<th>SNS</th>
+				<td><input type="url" id="sns" name="sns" value="X"></td>
+				<th>홈페이지</th>
+				<td><input type="url" id="homepage" name="homepage"
+					value="https://www.naver.com/"></td>
+			</tr>
+			<tr>
+				<th>직업(희망)</th>
+				<td><input type="text" id="job" name="job" value="무직"></td>
+				<th>취미</th>
+				<td><input type="text" id="hobby" name="hobby" value="독서"></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<th>결혼여부</th>
+				<td><input type="radio" id="marriage" name="marriage" value="y">기혼&nbsp;
+					<input type="radio" id="marriage" name="marriage" value="n" checked="checked">미혼</td>
+				<th>결혼기념일</th>
+				<td><input type="date" id="anniversary" name="anniversary" max="2022-01-08"></td>
+			</tr>
+			<tr>
+				<th>자녀유무</th>
+				<td><input type="radio" id="children" name="children" value="y">유&nbsp;
+					<input type="radio" id="children" name="children" value="n" checked="checked">무</td>
+				<th>좋아하는 색깔</th>
+				<td><input type="color" id="color" name="color" value="#FFB2AF"></td>
+			</tr>
+			<tr>
+				<th>본인 소개</th>
+				<td colspan="3" width="200" height="200">
+					<textarea rows="10"cols="50" id="introduce" name="introduce" maxlength="400">
+						그들은 천지는 그것을 인도하겠다는 소담스러운 피고, 옷을 쓸쓸한 같은 봄바람이다. 노년에게서 기쁘며, 타오르고 이것이다. 그림자는 것은 투명하되 스며들어 전인 관현악이며, 가치를 고행을 찬미를 것이다. 예수는 얼마나 풍부하게 청춘 두기 고행을 그것은 이것이다. 살았으며, 천하를 열락의 힘있다. 그것은 우리 공자는 맺어, 그러므로 품으며, 웅대한 않는 것이다. 
+					</textarea></td>
+			</tr>
+		</table>
+		<br>
+		<caption>●프로젝트 참여</caption>
+		<table width="700">
+			<tr>
+				<th colspan="5">프로젝트 참여</th>
+			</tr>
+			<tr>
+				<th width="80">번호</th>
+				<td width="200">
+					<input type="text" id="num" name="num" value="1"></td>
+				<th width="80">프로젝트명</th>
+				<td><input type="text" id="projectname" name="projectname" value="프로젝트이름이다"></td>
+			</tr>
+			<tr>
+				<th>참여기간</th>
+				<td><input type="date" id="duration" name="duration" value="2020-01-01">
+				~ <input type="date" id="duration" name="duration" max="2022-01-08" value="2021-01-01"></td>
+				<th>발주사</th>
+				<td><input type="text" id="company" name="company" value="발주사다"></td>
+			</tr>
+			<tr>
+				<th>역할</th>
+				<td colspan="3">
+					<textarea rows="10" cols="40" id="role" name="role">역할이다</textarea></td>
+			</tr>
+		</table>
+		<br> <input type="submit" value="회원정보 수정하기">
+	</form>
 
 </body>
 </html>
