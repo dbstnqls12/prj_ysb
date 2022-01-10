@@ -126,7 +126,7 @@ th, td {
 				<th>비밀번호 답</th>
 				<td width="120"><input type="text" id="pwdanswer" name="pwdanswer" max="10" value="집"></td>
 				<th>추천인</th>
-				<td><input type="text" id="recom" name="recom" value="내친구"></td>
+				<td><input type="text" id="recom" name="recom" value="내친구" disabled></td>
 			</tr>
 			<tr>
 				<th>SNS</th>
@@ -137,10 +137,10 @@ th, td {
 						<option value="twitter">twitter</option>
 						<option value="nosns" selected="selected">X</option>
 					</select>
-					<input type="text" id="snsid" name="snsid" value="없음"></td></td>
+					<input type="text" id="snsid" name="snsid" value="없음"></td>
 				<th>홈페이지</th>
 				<td><input type="url" id="homepage" name="homepage"
-					value="https://www.naver.com/"></td>
+					value="https://www.naver.com"></td>
 			</tr>
 			<tr>
 				<th>직업(희망)</th>
@@ -167,9 +167,7 @@ th, td {
 			<tr>
 				<th>본인 소개</th>
 				<td colspan="3" width="200" height="200">
-					<textarea rows="10" cols="40" id="introduce" name="introduce" maxlength="300">
-						우리 그들은 우리 아니다. 되는 풍부하게 가장 사라지지 그들에게 있으며, 심장은 운다. 같이 곧 인도하겠다는 있는 부패뿐이다. 자신과 곧 그들의 눈이 튼튼하며, 청춘이 소금이라 부패뿐이다. 
-					</textarea>
+					<textarea rows="10" cols="40" id="introduce" name="introduce" maxlength="300">안녕하세요구르트</textarea>
 				</td>
 			</tr>
 		</table>
@@ -192,7 +190,6 @@ th, td {
 				<td><input type="text" id="company" name="company" value="발주사다"></td>
 			</tr>
 		</table>
-		<br> <input type="submit" value="회원정보 수정하기">
 	</form>
 	<br><a href="./memberList.html">목록</a>
 
