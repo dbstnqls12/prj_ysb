@@ -49,11 +49,15 @@ table, th, td {
 			<tr>
 				<th>정가</th>
 				<td><input type="text" id="price" name="price" ></td>
-				<th>판매가및 할인율</th>
+				<th>판매가 및 할인율</th>
 				<td>
 					<input type="text" id="sellingprice" name="sellingprice" placeholder="할인가가 적용된 가격 입력">
-					<select>
-						<
+					<select id="discount" name="discount" >
+						<optgroup label="할인율">
+							<option value="three">3%</option>
+							<option value="five">5%</option>
+							<option value="ten">10%</option>
+						</optgroup>
 					</select>
 				</td>
 			</tr>
