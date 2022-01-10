@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bookForm</title>
+ <!-- css 내용 -->
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+ th, td {
+	padding: 15px;
+}  
+</style>
+</head>
+<body>
+	<form action="" id="bookForm" name="bookForm" enctype="multipart/form-data">
+		<caption>■책 정보</caption><p>
+		<table width="800">
+			<tr>
+				<th>책명</th>
+				<td><input type="text" id="name" name="name" size="40" placeholder="소제목도 입력"></td>
+				<th>판 수</th>
+				<td>
+					<select id="edition" name="edtion">
+						<option value="first">초판</option>
+						<option value="second">2판</option>
+						<option value="third">3판</option>
+						<option value="fourth">4판</option>
+						<option value="fifth">5판이상</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>책 사진</th>
+				<td><input type="file" id="name" name="name" accept=".png,.jpg,.gif"><p>*gif,png,jpg파일 가능</td>
+				<th>출판사</th>
+				<td><input type="text" id="publisher" name="publisher" ></td>
+			</tr>
+			<tr>	
+				<th>저자</th>
+				<td><input type="text" id="author" name="author" size="40"></td>
+				<th>등록일</th>
+				<td><input type="date" id="date" name="date" max="2022-01-10"></td>
+			</tr>
+			<tr>
+				<th>정가</th>
+				<td><input type="text" id="price" name="price" ></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

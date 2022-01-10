@@ -4,7 +4,7 @@
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Subin html projects</title>
-<!-- <!-- css 내용 -->
+ <!-- css 내용 -->
 <style type="text/css">
 table, th, td {
 	border: 1px solid black;
@@ -13,14 +13,14 @@ table, th, td {
 
  th, td {
 	padding: 15px;
-}  -->
+}  
 </style>
 </head>
 <body>
 
 	<form action="" method="get" id="memberForm" name="memberForm" enctype="multipart/form-data">
 		<caption>●회원가입</caption>
-		<table width="850">
+		<table width="900">
 			<tr>
 				<th>이름</th>
 				<td colspan="3"><input type="text" id="name" name="name" placeholder="이름" size="50"></td>
@@ -55,14 +55,14 @@ table, th, td {
 				</td>
 				<th>국적</th>
 				<td>
-					<select>
-						<option selected="selected">대한민국</option>
-						<option>미국</option>
-						<option>중국</option>
-						<option>일본</option>
-						<option>태국</option>
-						<option>영국</option>
-						<option>네덜란드</option>
+					<select id="nationality" name="nationality">
+						<option selected="selected" value="kor">대한민국</option>
+						<option value="america">미국</option>
+						<option value="china">중국</option>
+						<option value="japan">일본</option>
+						<option value="thai">태국</option>
+						<option value="england">영국</option>
+						<option value="nether">네덜란드</option>
 						<option>그 외..</option>
 					</select>
 				</td>
@@ -71,15 +71,29 @@ table, th, td {
 			
 			<tr>
 				<th>모바일</th>
-				<td><input type="text" id="mobile" name="mobile" maxlength="11" placeholder="숫자만 입력"></td>
+				<td>
+					<select id="mcompany" name="mcompany">
+						<option value="skt">SKT</option>
+						<option value="kt">KT</option>
+						<option value="lgu">LGU</option>
+					</select><br>
+					<input type="text" id="mobile" name="mobile" maxlength="3" value="010" size="3"> -
+					<input type="text" id="mobile" name="mobile" maxlength="4" size="3"> -
+					<input type="text" id="mobile" name="mobile" maxlength="4" size="3"></td>
 				<th>전화번호</th>
-				<td><input type="text" id="tel" name="tel" maxlength="11" placeholder="숫자만 입력"></td>
+				<td>
+					<input type="text" id="tel" name="tel" maxlength="3"  size="3"> -
+					<input type="text" id="tel" name="tel" maxlength="4" size="3"> -
+					<input type="text" id="tel" name="tel" maxlength="4" size="3"></td>
 			</tr>
 			<tr>
 				<th>이메일</th>
-				<td><input type="email" id="email" name="email" placeholder="@을 포함한 형태로 입력"></td>
+					<td><input type="email" id="email" name="email" placeholder="@을 포함한 형태로 입력"></td>
 				<th>팩스번호</th>
-				<td><input type="text" id="fax" name="fax" maxlength="11" placeholder="숫자만 입력"></td>
+				<td>
+					<input type="text" id="fax" name="fax" maxlength="4"  size="3"> -
+					<input type="text" id="fax" name="fax" maxlength="4" size="3"> -
+					<input type="text" id="fax" name="fax" maxlength="4" size="3"></td>
 			</tr>
 			<tr>
 				<th>모바일 마케팅 수신 동의</th>
@@ -113,7 +127,7 @@ table, th, td {
 			<tr>
 				<th width="125">비밀번호 문제</th>
 				<td colspan="3">
-					<select>
+					<select id="pwdquestion" name="pwdquestion">
 						<option>가장 좋아하는 장소는?</option>
 						<option>본인의 취미는?</option>
 						<option>본인의 장점은?</option>
@@ -130,7 +144,14 @@ table, th, td {
 			</tr>
 			<tr>
 				<th>SNS</th>
-				<td><input type="url" id="sns" name="sns"></td>
+				<td>
+					<select id="sns" name="sns">
+						<option value="facebook">facebook</option>
+						<option value="insta">instagram</option>
+						<option value="twitter">twitter</option>
+						<option value="nosns">X</option>
+					</select>
+					<input type="text" id="snsid" name="snsid" placeholder="아이디 입력"></td>
 				<th>홈페이지</th>
 				<td><input type="url" id="homepage" name="homepage" placeholder="url형태로 입력"></td>
 			</tr>
@@ -162,41 +183,32 @@ table, th, td {
 			<tr>
 				<th>본인 소개</th>
 				<td colspan="3" width="200" height="200">
-					<input type="text" id="introduce" name="introduce" maxlength="30" placeholder="30자 이내 작성" size="50" >
+					<textarea rows="10" cols="40" id="introduce" name="introduce" maxlength="300" placeholder="300자 이내로 작성"></textarea>
 				</td>
 			</tr>
 		</table>
 		<br>
 		<caption>●프로젝트 참여</caption>
-		<table width="700">
-			<tr>
-				<th colspan="5">프로젝트 참여</th>
-			</tr>	
+		<table width="900">
 			<tr>	
-				<th width="80">번호</th>
-				<td width="200"><input type="text" id="num" name="num"></td>
-				<th width="80">프로젝트명</th>
-				<td><input type="text" id="projectname" name="projectname" ></td>
-			</tr>	
-			<tr>	
+				<th>번호</th>
+				<th>프로젝트명</th>
 				<th>참여기간</th>
-				<td>
-					<input type="date" id="duration" name="duration">~
-					<input type="date" id="duration" name="duration" max="2022-01-08">
-					
-				</td>
-				<th>발주사</th>
-				<td><input type="text" id="company" name="company" ></td>
-			</tr>
-			<tr>	
 				<th>역할</th>
-				<td colspan="3">
-					<textarea rows="10" cols="40" id="role" name="role"></textarea>
-				</td>
+				<th>발주사</th>
+				
+			</tr>	
+			<tr>	
+				<td><input type="text" id="num" name="num" size="5"></td>
+				<td><input type="text" id="projectname" name="projectname" ></td>
+				<td><input type="month" id="duration" name="duration">~
+					<input type="month" id="duration" name="duration" max="2022-01"></td>			
+				<td><input type="text" id="role" name="role" ></td>
+				<td><input type="text" id="company" name="company" ></td>
 			</tr>
 		</table>
 		<br><input type="submit" value="회원가입하기">
 	</form>	
-
+	<br><a href="./memberList.html">목록</a>
 </body>
 </html>
