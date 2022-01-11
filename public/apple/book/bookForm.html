@@ -19,11 +19,11 @@ table, th, td {
 <body>
 	<form action="" id="bookForm" name="bookForm" enctype="multipart/form-data">
 		<caption>■책 정보</caption>
-		<table width="850">
+		<table width="900">
 			<tr>
-				<th>책명</th>
+				<th  width="150">책명</th>
 				<td><input type="text" id="name" name="name"  placeholder="제목 입력"></td>
-				<th>판 수</th>
+				<th width="150">판 수</th>
 				<td>
 					<select id="edition" name="edtion">
 						<option value="first">초판</option>
@@ -47,9 +47,27 @@ table, th, td {
 				<td><input type="date" id="date" name="date" max="2022-01-10"></td>
 			</tr>
 			<tr>
+				<th>쪽수, 무게</th>
+				<td>
+					<input type="text" id="page" name="page" value="숫자만 입력" size="10">쪽 || 
+					<input type="text" id="weight" name="weight" value="숫자만 입력" size="10">g 
+				</td>
+				<th>크기</th>
+				<td>	
+					<input type="text" id="size" name="size" value="가로*세로*높이의 형태">mm
+				</td>
+			</tr>
+			<tr>
+				<th>ISBN13</th>
+				<td><input type="text" id="isbn13" name="isbn13"></td>
+				<th>ISBN10</th>
+				<td><input type="text" id="isbn10" name="isbn10"></td>
+				
+			</tr>
+			<tr>
 				<th>정가</th>
 				<td><input type="text" id="price" name="price" placeholder="숫자만 입력"></td>
-				<th width="150">판매가 및 할인율</th>
+				<th>판매가 및 할인율</th>
 				<td>
 					<input type="text" id="sellingprice" name="sellingprice" placeholder="숫자만 입력">
 					<select id="discount" name="discount" >
@@ -81,6 +99,7 @@ table, th, td {
 				<th width="150">구매 시 참고사항</th>
 				<td colspan="3"><input type="text" id="memo" name="memo" value="참고사항 입력" size="50"></td>
 			</tr>
+
 		</table>
 	</form>
 </body>
