@@ -22,7 +22,7 @@ table, th, td {
 		<table width="850">
 			<tr>
 				<th>책명</th>
-				<td><input type="text" id="name" name="name" size="40" placeholder="제목 입력"></td>
+				<td><input type="text" id="name" name="name"  placeholder="제목 입력"></td>
 				<th>판 수</th>
 				<td>
 					<select id="edition" name="edtion">
@@ -42,16 +42,16 @@ table, th, td {
 			</tr>
 			<tr>	
 				<th>저자명</th>
-				<td><input type="text" id="author" name="author" size="40"></td>
+				<td><input type="text" id="author" name="author" ></td>
 				<th>등록일</th>
 				<td><input type="date" id="date" name="date" max="2022-01-10"></td>
 			</tr>
 			<tr>
 				<th>정가</th>
-				<td><input type="text" id="price" name="price" ></td>
-				<th>판매가 및 할인율</th>
+				<td><input type="text" id="price" name="price" placeholder="숫자만 입력"></td>
+				<th width="150">판매가 및 할인율</th>
 				<td>
-					<input type="text" id="sellingprice" name="sellingprice" placeholder="할인가가 적용된 가격 입력">
+					<input type="text" id="sellingprice" name="sellingprice" placeholder="숫자만 입력">
 					<select id="discount" name="discount" >
 						<optgroup label="할인율">
 							<option value="three">3%</option>
@@ -61,6 +61,23 @@ table, th, td {
 					</select>
 				</td>
 			</tr>
+			<tr>
+				<th>결제 혜택</th>
+				<td>
+					<select id="benefit" name="benefit">
+						<option>예스24 현대카드 20,000원 캐시백</option>
+						<option>예스24 현대카드 20,000원 캐시백</option>
+						<option>예스24 현대카드 20,000원 캐시백</option>
+						<option>예스24 현대카드 20,000원 캐시백</option>
+						<option>예스24 현대카드 20,000원 캐시백</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th width="150">구매 시 참고사항</th>
+				<td colspan="3"><input type="text" id="memo" name="memo" value="참고사항 입력" size="50"></td>
+			</tr>
+		
 		</table>
 	</form>
 </body>
