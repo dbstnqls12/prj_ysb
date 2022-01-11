@@ -65,19 +65,22 @@ table, th, td {
 				<th>결제 혜택</th>
 				<td>
 					<select id="benefit" name="benefit">
-						<option>예스24 현대카드 20,000원 캐시백</option>
-						<option>예스24 현대카드 20,000원 캐시백</option>
-						<option>예스24 현대카드 20,000원 캐시백</option>
-						<option>예스24 현대카드 20,000원 캐시백</option>
-						<option>예스24 현대카드 20,000원 캐시백</option>
+						<option value="hyundai">예스24 현대카드 20,000원 캐시백</option>
+						<option value="kakaopay">카카오페이 3천원 즉시할인</option>
+						<option value="smilepay">스마일페이 10% 즉시할인</option>
+						<option value="mobilepop">모바일팝 모바일 5% 즉시할인</option>
+						<option value="naverpay">네이버페이 1% 적립</option>
 					</select>
+				<th>스프링 분철 서비스</th>
+				<td>
+					<input type="radio" id="spring" name="spring" value="y">가능
+					<input type="radio" id="spring" name="spring" value="n">불가능
 				</td>
 			</tr>
 			<tr>
 				<th width="150">구매 시 참고사항</th>
 				<td colspan="3"><input type="text" id="memo" name="memo" value="참고사항 입력" size="50"></td>
 			</tr>
-		
 		</table>
 	</form>
 </body>
