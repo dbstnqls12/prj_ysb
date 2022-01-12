@@ -6,14 +6,18 @@
 <title>Subin html projects</title>
  <!-- css 내용 -->
 <style type="text/css">
-table, th, td {
-	border: 1px solid black;
-	border-collapse: collapse;
-}
-
- th, td {
-	padding: 15px;
-}  
+	table, tr, th, td {
+		border: solid;
+		border-width: 1px;
+		table-layout: auto;
+		border-collapse: collapse;
+		width: 900px;
+		padding: 15px;
+	}
+	
+	th {
+		
+	}  
 </style>
 </head>
 <body>
@@ -21,7 +25,7 @@ table, th, td {
 		<h2>●회원가입</h2>
 		<hr>
 		<h3>회원 기본정보</h3>
-		<table width="900">
+		<table>
 			<tr>
 				<th>이름</th>
 				<td colspan="3"><input type="text" id="name" name="name" placeholder="이름" size="50"></td>
@@ -67,9 +71,7 @@ table, th, td {
 						<option>그 외..</option>
 					</select>
 				</td>
-	
-			</tr>
-			
+			</tr>		
 			<tr>
 				<th>모바일</th>
 				<td>
@@ -120,7 +122,7 @@ table, th, td {
 		</table>
 		<br>
 		<h3>추가정보</h3>
-		<table width="900">
+		<table>
 			<tr>
 				<th>사진</th>
 				<td colspan="3"><input type="file" accept=".jpg,.png,.gif"></td>
@@ -190,7 +192,7 @@ table, th, td {
 		</table>
 		<br>
 		<h3>프로젝트 참여</h3>
-		<table width="900">
+		<table>
 			<tr>	
 				<th>번호</th>
 				<th>프로젝트명</th>
