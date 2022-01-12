@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bookForm</title>
+ <!-- css 내용 -->
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+ th, td {
+	padding: 15px;
+}  
+</style>
+</head>
+<body>
+	<form action="" id="bookForm" name="bookForm" enctype="multipart/form-data">
+		<caption>■책 정보</caption>
+		<table width="900">
+			<tr>
+				<th  width="150">책명</th>
+				<td><input type="text" id="name" name="name"  placeholder="제목 입력"></td>
+				<th width="150">판 수</th>
+				<td>
+					<select id="edition" name="edtion">
+						<option value="first">초판</option>
+						<option value="second">2판</option>
+						<option value="third">3판</option>
+						<option value="fourth">4판</option>
+						<option value="fifth">5판이상</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>책 사진</th>
+				<td><input type="file" id="name" name="name" accept=".png,.jpg,.gif" ></td>
+				<th>출판사</th>
+				<td><input type="text" id="publisher" name="publisher" ></td>
+			</tr>
+			<tr>	
+				<th>저자명</th>
+				<td><input type="text" id="author" name="author" ></td>
+				<th>등록일</th>
+				<td><input type="date" id="date" name="date" max="2022-01-10"></td>
+			</tr>
+			<tr>
+				<th>쪽수, 무게</th>
+				<td>
+					<input type="text" id="page" name="page" value="숫자만 입력" size="10">쪽 || 
+					<input type="text" id="weight" name="weight" value="숫자만 입력" size="10">g 
+				</td>
+				<th>크기</th>
+				<td>	
+					<input type="text" id="size" name="size" value="가로*세로*높이의 형태">mm
+				</td>
+			</tr>
+			<tr>
+				<th>ISBN13</th>
+				<td><input type="text" id="isbn13" name="isbn13"></td>
+				<th>ISBN10</th>
+				<td><input type="text" id="isbn10" name="isbn10"></td>
+				
+			</tr>
+			<tr>
+				<th>정가</th>
+				<td><input type="text" id="price" name="price" placeholder="숫자만 입력"></td>
+				<th>판매가 및 할인율</th>
+				<td>
+					<input type="text" id="sellingprice" name="sellingprice" placeholder="숫자만 입력">
+					<select id="discount" name="discount" >
+						<optgroup label="할인율">
+							<option value="three">3%</option>
+							<option value="five">5%</option>
+							<option value="ten">10%</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>결제 혜택</th>
+				<td>
+					<select id="benefit" name="benefit">
+						<option value="hyundai">예스24 현대카드 20,000원 캐시백</option>
+						<option value="kakaopay">카카오페이 3천원 즉시할인</option>
+						<option value="smilepay">스마일페이 10% 즉시할인</option>
+						<option value="mobilepop">모바일팝 모바일 5% 즉시할인</option>
+						<option value="naverpay">네이버페이 1% 적립</option>
+					</select>
+				<th>스프링 분철 서비스</th>
+				<td>
+					<input type="radio" id="spring" name="spring" value="y">가능
+					<input type="radio" id="spring" name="spring" value="n">불가능
+				</td>
+			</tr>
+			<tr>
+				<th width="150">구매 시 참고사항</th>
+				<td colspan="3"><input type="text" id="memo" name="memo" value="참고사항 입력" size="50"></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>
