@@ -14,40 +14,48 @@
 		width: 900px;
 		padding: 15px;
 		border-color: #D7AC87;
-		
 	}
 	hr{
-		border-color: #D7AC87;	
+		display: inline-block;
+		border: double;
+		border-color: #D7AC87;
+		width: 900px;	
 	}
-	h2{
+	h1{
 		padding-top: 10px;
 		color: orange;
 	}
-	h3{
-		padding-left: 5px;
+	h2{
+		padding-left: 8px;
 		color: #D27328;
+		font-style: italic;
+		text-decoration: underline;
 	}
 	th {
-		width: 800px;
 		color: #A06641; 
+		background-color: #FDF5E6; 
 	}  
 	tr, td{
 		color: #C39873; 
+		
 	} 
+	textarea{
+		text-align: center;
+	}
 </style>
 </head>
 <body>
-	<h2><img src="./h2.png" width="20"> 회원정보</h2>
+	<h1><img src="./h2.png" width="20"> 회원정보</h1>
 	<hr>
-	<h3><img src="./h3.png" width="20"> 회원기본정보</h3>
-	<table width="800">
+	<h2><img src="./h3.png" width="20"> 회원기본정보</h2>
+	<table>
 		<tr>
 			<th>이름</th>
 			<td colspan="3">윤수빈</td>
 		</tr>
 		<tr>
 			<th>생년월일</th>
-			<td colspan="3" width="100">1111-11-11</td>
+			<td colspan="3">1111-11-11</td>
 		</tr>
 		<tr>
 			<th>아이디</th>
@@ -90,18 +98,19 @@
 				5년(&nbsp;&nbsp;) 10년(O)</td>
 		</tr>
 	</table>
+	
 	<br>
-	<h3><img src="./h3.png" width="20"> 추가정보</h3>	
-	<table width="800">
+	<h2><img src="./h3.png" width="20"> 추가정보</h2>	
+	<table>
 		<tr>
-			<th rowspan="2" width="120">사진</th>
-			<td rowspan="2" width="120"><img src="./2.jpg" width="100"></td>
-			<th width="120">비밀번호 문제</th>
-			<td width="200">가장 기억에 남는 장소는?</td>
+			<th rowspan="3">사진</th>
+			<td rowspan="3"><img src="./2.jpg" width="150"></td>
+			<th>비밀번호 문제</th>
+			<td>가장 기억에 남는 장소는?</td>
 		</tr>
 		<tr>	
 			<th >비밀번호 답</th>
-			<td width="120">집</td>
+			<td>집</td>
 		</tr>
 		<tr>
 			<th>추천인</th>
@@ -135,16 +144,16 @@
 		</tr>
 		<tr>
 			<th>본인 소개</th>
-			<td colspan="3" width="200" height="200">
+			<td colspan="3">
 				<textarea rows="10" cols="40" id="introduce" name="introduce" maxlength="300">안녕하세요구르트</textarea>
 			</td>
 		</tr>
 	</table>
 	<br>
-	<h3><img src="./h3.png" width="20"> 프로젝트 참여</h3>
-	<table width="800">
+	<h2><img src="./h3.png" width="20"> 프로젝트 참여</h2>
+	<table>
 		<tr>	
-			<th width="40">번호</th>
+			<th width="30">번호</th>
 			<th>프로젝트명</th>
 			<th>참여기간</th>
 			<th>역할</th>

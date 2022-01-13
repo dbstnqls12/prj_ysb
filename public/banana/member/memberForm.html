@@ -17,19 +17,26 @@
 		
 	}
 	hr{
-		border-color: #D7AC87;	
+		display: inline-block;
+		border: double;
+		border-color: #D7AC87;
+		width: 900px;	
 	}
-	h2{
+	h1{
 		padding-top: 10px;
 		color: orange;
+		
 	}
-	h3{
-		padding-left: 5px;
+	h2{
+		padding-left: 8px;
 		color: #D27328;
+		font-style: italic;
+		text-decoration: underline;
 	}
 	th {
 		width: 800px;
 		color: #A06641; 
+		background-color: #FDF5E6; 
 	}  
 	tr, td{
 		color: gray; 
@@ -38,9 +45,9 @@
 </head>
 <body>
 	<form action="" method="get" id="memberForm" name="memberForm" enctype="multipart/form-data">
-		<h2><img src="./h2.png" width="20"> 회원가입</h2>
+		<h1><img src="./h2.png" width="20"> 회원가입</h1>
 		<hr>
-		<h3><img src="./h3.png" width="20"> 회원 기본정보</h3>
+		<h2><img src="./h3.png" width="20"> 회원 기본정보</h2>
 		<table>
 			<tr>
 				<th>이름</th>
@@ -129,15 +136,15 @@
 			<tr>
 				<th>개인정보유효기간</th>
 				<td colspan="3">
-					<input type="radio" id="mk" name="mk" value="y">1년 &nbsp;&nbsp;
-					<input type="radio" id="mk" name="mk" value="n">3년 &nbsp;&nbsp;
-					<input type="radio" id="mk" name="mk" value="n">5년 &nbsp;&nbsp;
-					<input type="radio" id="mk" name="mk" value="n">10년 &nbsp;&nbsp;
+					<input type="radio" id="personal info" name="personalinfo" value="one">1년 &nbsp;&nbsp;
+					<input type="radio" id="personal info" name="personalinfo" value="three">3년 &nbsp;&nbsp;
+					<input type="radio" id="personal info" name="personalinfo" value="five">5년 &nbsp;&nbsp;
+					<input type="radio" id="personal info" name="personalinfo" value="ten">10년 &nbsp;&nbsp;
 				</td>
 			</tr>
 		</table>
 		<br>
-		<h3><img src="./h3.png" width="20"> 추가정보</h3>
+		<h2><img src="./h3.png" width="20"> 추가정보</h2>
 		<table>
 			<tr>
 				<th>사진</th>
@@ -146,12 +153,12 @@
 			<tr>
 				<th>비밀번호 문제</th>
 				<td colspan="3">
-					<select id="pwdquestion" name="pwdquestion">
-						<option>가장 좋아하는 장소는?</option>
-						<option>본인의 취미는?</option>
-						<option>본인의 장점은?</option>
-						<option>본인의 발사이즈는?</option>
-						<option>본인의 성격은?</option>
+					<select id="pwdquestion" name="pwdquestion" >
+						<option value="myplace">가장 좋아하는 장소는?</option>
+						<option value="myhobby">본인의 취미는?</option>
+						<option value="myadvantage">본인의 장점은?</option>
+						<option value="myfoot">본인의 발사이즈는?</option>
+						<option value="mypersonality">본인의 성격은?</option>
 					</select>
 				</td>
 			</tr>
@@ -207,7 +214,7 @@
 			</tr>
 		</table>
 		<br>
-		<h3><img src="./h3.png" width="20"> 프로젝트 참여</h3>
+		<h2><img src="./h3.png" width="20"> 프로젝트 참여</h2>
 		<table>
 			<tr>	
 				<th width="50px;">번호</th>

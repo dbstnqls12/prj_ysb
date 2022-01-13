@@ -17,47 +17,64 @@
 		
 	}
 	hr{
-		border-color: #D7AC87;	
+		display: inline-block;
+		border: double;
+		border-color: #D7AC87;
+		width: 900px;	
 	}
-	h2{
+	h1{
 		padding-top: 10px;
 		color: orange;
 	}
-	h3{
-		padding-left: 5px;
+	h2{
+		padding-left: 8px;
 		color: #D27328;
+		font-style: italic;
+		text-decoration: underline;
 	}
 	th {
 		width: 800px;
-		color: #A06641; 
+		color: #A06641;
+		 
 	}  
 	tr, td{
 		color: gray; 
+	}
+	textarea{
+		text-align: center;
 	}
 </style>
 </head>
 <body>
 
 	<form action="" method="get" id="memberEdit" name="memberEdit" enctype="multipart/form-data">
-		<h2><img src="./h2.png" width="20"> 회원정보수정</h2>
+		<h1><img src="./h2.png" width="20"> 회원정보수정</h1>
 		<hr>
-		<h3><img src="./h3.png" width="20"> 회원기본정보</h3>
-		<table width="900">
+		<h2><img src="./h3.png" width="20"> 회원기본정보</h2>
+		<table>
 			<tr>
 				<th>이름</th>
-				<td colspan="3"><input type="text" id="name" name="name" placeholder="이름" size="50" value="윤수빈" disabled></td>
+				<td colspan="3">
+					<input type="text" id="name" name="name" placeholder="이름" size="50" value="윤수빈" disabled>
+				</td>
 			</tr>
 			<tr>
 				<th>아이디</th>
-				<td colspan="3"><input type="text" id="id" name="id" maxlength="15" size="50" placeholder="아이디 6~20자 영문, 숫자" value="asdasd" disabled></td>
+				<td colspan="3">
+					<input type="text" id="id" name="id" maxlength="15" size="50" placeholder="아이디 6~20자 영문, 숫자" value="asdasd" disabled>
+				</td>
 			</tr>
 			<tr>
 				<th>비밀번호</th>
-				<td colspan="3"><input type="text" id="pwd" name="pwd" size="50" placeholder="비밀번호 8~12자 영문, 숫자, 특수문자"></td>
+				<td colspan="3">
+					<input type="text" id="pwd" name="pwd" size="50" placeholder="비밀번호 8~12자 영문, 숫자, 특수문자">
+				</td>
 			</tr>
 			<tr>
 				<th>비밀번호 확인</th>
-				<td colspan="3"><input type="text" id="pwd" name="pwd" size="50" placeholder="비밀번호 다시 입력"></td>
+				<td colspan="3">
+					<input type="text" id="pwd" name="pwd" size="50" placeholder="비밀번호 다시 입력">
+				</td>
 			</tr>
 			<tr>
 				<th>주소</th>
@@ -89,8 +106,8 @@
 				<td>					
 					<select id="mcompany" name="mcompany">
 						<option value="skt">SKT</option>
-						<option value="kt" selected="selected">KT</option>
-						<option value="lgu">LGU</option>
+						<option value="kt">KT</option>
+						<option value="lgu" selected="selected">LGU+</option>
 					</select><br>
 					<input type="text" id="mobile" name="mobile" maxlength="3" value="010" size="3"> -
 					<input type="text" id="mobile" name="mobile" maxlength="4" size="3" value="1231"> -
@@ -118,34 +135,34 @@
 			</tr>
 			<tr>
 				<th>개인정보유효기간</th>
-				<td colspan="3"><input type="radio" id="mk" name="mk" value="y" >1년 &nbsp;&nbsp; 
-					<input type="radio" id="mk" name="mk" value="n">3년 &nbsp;&nbsp; 
-					<input type="radio" id="mk" name="mk" value="n" checked="checked">5년 &nbsp;&nbsp;
-					<input type="radio" id="mk" name="mk" value="n">10년 &nbsp;&nbsp;</td>
+				<td colspan="3"><input type="radio" id="personalinfo" name="personalinfo" value="one" >1년 &nbsp;&nbsp; 
+					<input type="radio" id="personalinfo" name="personalinfo" value="three">3년 &nbsp;&nbsp; 
+					<input type="radio" id="personalinfo" name="personalinfo" value="five" checked="checked">5년 &nbsp;&nbsp;
+					<input type="radio" id="personalinfo" name="personalinfo" value="ten">10년 &nbsp;&nbsp;</td>
 			</tr>
 		</table>
 		<br>
-		<h3><img src="./h3.png" width="20"> 추가정보</h3>
-		<table width="900">
+		<h2><img src="./h3.png" width="20"> 추가정보</h2>
+		<table>
 			<tr>
 				<th>사진</th>
 				<td colspan="3"><input type="file" accept=".jpg,.png,.gif" value="./2.png" ></td>
 			</tr>
 			<tr>
-				<th width="125">비밀번호 문제</th>
+				<th>비밀번호 문제</th>
 				<td colspan="3">
 					<select id="pwdquestion" name="pwdquestion">
-						<option selected="selected">가장 좋아하는 장소는?</option>
-						<option>본인의 취미는?</option>
-						<option>본인의 장점은?</option>
-						<option>본인의 발사이즈는?</option>
-						<option>본인의 성격은?</option>
+						<option selected="selected" value="myplace">가장 좋아하는 장소는?</option>
+						<option value="myhobby">본인의 취미는?</option>
+						<option value="myadvantage">본인의 장점은?</option>
+						<option value="myfoot">본인의 발사이즈는?</option>
+						<option value="mypersonality">본인의 성격은?</option>
 					</select>
 				</td>
 			</tr>
 			<tr>
 				<th>비밀번호 답</th>
-				<td width="120"><input type="text" id="pwdanswer" name="pwdanswer" max="10" value="집"></td>
+				<td><input type="text" id="pwdanswer" name="pwdanswer" max="10" value="집"></td>
 				<th>추천인</th>
 				<td><input type="text" id="recom" name="recom" value="내친구" disabled></td>
 			</tr>
@@ -187,14 +204,14 @@
 			</tr>
 			<tr>
 				<th>본인 소개</th>
-				<td colspan="3" width="200" height="200">
+				<td colspan="3">
 					<textarea rows="10" cols="40" id="introduce" name="introduce" maxlength="300">안녕하세요구르트</textarea>
 				</td>
 			</tr>
 		</table>
 		<br>
-		<h3><img src="./h3.png" width="20"> 프로젝트 참여</h3>
-			<table width="900">
+		<h2><img src="./h3.png" width="20"> 프로젝트 참여</h2>
+			<table>
 			<tr>	
 				<th>번호</th>
 				<th>프로젝트명</th>
