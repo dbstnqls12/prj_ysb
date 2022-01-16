@@ -8,142 +8,155 @@
 <title>Subin html projects</title>
 <!-- css 내용 -->
 <style type="text/css">
-table, th, td {
-	border: 1px solid black;
-	border-collapse: collapse;
-}
-
- th, td {
-	padding: 15px;
-} 
+	h2{
+		padding-top: 15px; 
+	}
 </style>
+
 </head>
 <body>
-	<h2>●회원정보</h2>
-	<hr>
-	<h3>회원기본정보</h3>
-	<table width="800">
-		<tr>
-			<th>이름</th>
-			<td colspan="3">윤수빈</td>
-		</tr>
-		<tr>
-			<th>생년월일</th>
-			<td colspan="3" width="100">1111-11-11</td>
-		</tr>
-		<tr>
-			<th>아이디</th>
-			<td>asdasd</td>
-			<th>비밀번호</th>
-			<td>1111</td>
-		</tr>
-		<tr>
-			<th>성별</th>
-			<td>여</td>
-			<th>국적</th>
-			<td>한국</td>
-
-		</tr>
-		<tr>
-			<th>주소</th>
-			<td colspan="3">서울특별시 어쩌구 저쩌구</td>
-		</tr>
-		<tr>
-			<th>모바일</th>
-			<td>010-1231-1231</td>
-			<th>모바일 마케팅 수신 동의</th>
-			<td>동의</td>
-		</tr>
-		<tr>
-			<th>전화번호</th>
-			<td>02-123-1231</td>
-			<th>팩스번호</th>
-			<td>111-222-333</td>
-		</tr>
-		<tr>
-			<th>이메일</th>
-			<td>qweqwe@asd.com</td>
-			<th>이메일 마케팅 수신 동의</th>
-			<td>동의</td>
-		</tr>
-		<tr>
-			<th>개인정보유효기간</th>
-			<td colspan="3">1년(&nbsp;&nbsp;) 3년(&nbsp;&nbsp;)
-				5년(&nbsp;&nbsp;) 10년(O)</td>
-		</tr>
-	</table>
+<h2>●회원정보</h2>
+<br>
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+	  <li class="nav-item" role="presentation">
+	    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">회원기본정보</button>
+	  </li>
+	  <li class="nav-item" role="presentation">
+	    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">추가정보</button>
+	  </li>
+	  <li class="nav-item" role="presentation">
+	    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">프로젝트참여</button>
+	  </li>
+	</ul>
+	
+	<div class="tab-content" id="myTabContent">
+	  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+	  	<table class="table table-bordered" >
+			<tr>
+				<th class="table-secondary">이름</th>
+				<td colspan="3">윤수빈</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">생년월일</th>
+				<td colspan="3" width="100">1111-11-11</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">아이디</th>
+				<td>asdasd</td>
+				<th class="table-secondary">비밀번호</th>
+				<td>1111</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">성별</th>
+				<td>여</td>
+				<th class="table-secondary">국적</th>
+				<td>한국</td>
+	
+			</tr>
+			<tr>
+				<th class="table-secondary">주소</th>
+				<td colspan="3">서울특별시 어쩌구 저쩌구</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">모바일</th>
+				<td>010-1231-1231</td>
+				<th class="table-active">모바일 마케팅 수신 동의</th>
+				<td>동의</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">전화번호</th>
+				<td>02-123-1231</td>
+				<th class="table-active">팩스번호</th>
+				<td>111-222-333</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">이메일</th>
+				<td>qweqwe@asd.com</td>
+				<th class="table-active">이메일 마케팅 수신 동의</th>
+				<td>동의</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">개인정보유효기간</th>
+				<td colspan="3">1년(&nbsp;&nbsp;) 3년(&nbsp;&nbsp;)
+					5년(&nbsp;&nbsp;) 10년(O)</td>
+			</tr>
+		</table>
+	  </div>
+	  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+	  	<table class="table table-bordered">
+			<tr>
+				<th rowspan="2" width="120" class="table-secondary">사진</th>
+				<td rowspan="2" width="120"><img src="./2.jpg" width="100"></td>
+				<th width="120" class="table-secondary">비밀번호 문제</th>
+				<td width="200">가장 기억에 남는 장소는?</td>
+			</tr>
+			<tr>	
+				<th class="table-secondary">비밀번호 답</th>
+				<td width="120">집</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">추천인</th>
+				<td colspan="3">내 친구</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">SNS</th>
+				<td>asdasd</td>
+				<th class="table-secondary">홈페이지</th>
+				<td>https://www.naver.com</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">직업(희망)</th>
+				<td>asdasd</td>
+				<th class="table-secondary">취미</th>
+				<td>asdasd</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<th class="table-secondary">결혼여부</th>
+				<td>X</td>
+				<th class="table-secondary">결혼기념일</th>
+				<td>X</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">자녀유무</th>
+				<td>X</td>
+				<th class="table-secondary">좋아하는 색깔</th>
+				<td>#FFB2AF</td>
+			</tr>
+			<tr>
+				<th class="table-secondary">본인 소개</th>
+				<td colspan="3" width="200" height="200">
+					<textarea rows="10" cols="40" id="introduce" name="introduce" maxlength="300" disabled>안녕하세요구르트</textarea>
+				</td>
+			</tr>
+	  	</table>
+	  </div>
+	  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+	  	<h3>프로젝트 참여</h3>
+		<table class="table table-bordered">
+			<tr class="table-secondary">	
+				<th width="40">번호</th>
+				<th>프로젝트명</th>
+				<th>참여기간</th>
+				<th>역할</th>
+				<th>발주사</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>프로젝트이름이다</td>
+				<td>2020.1.1~2021.1.1</td>
+				<td>역할이다</td>
+				<td>발주사다</td>
+			</tr>
+		</table>
+	  </div>
+	</div>	
 	<br>
-	<h3>추가정보</h3>	
-	<table width="800">
-		<tr>
-			<th rowspan="2" width="120">사진</th>
-			<td rowspan="2" width="120"><img src="./2.jpg" width="100"></td>
-			<th width="120">비밀번호 문제</th>
-			<td width="200">가장 기억에 남는 장소는?</td>
-		</tr>
-		<tr>	
-			<th >비밀번호 답</th>
-			<td width="120">집</td>
-		</tr>
-		<tr>
-			<th>추천인</th>
-			<td colspan="3">내 친구</td>
-		</tr>
-		<tr>
-			<th>SNS</th>
-			<td>asdasd</td>
-			<th>홈페이지</th>
-			<td>https://www.naver.com</td>
-		</tr>
-		<tr>
-			<th>직업(희망)</th>
-			<td>asdasd</td>
-			<th>취미</th>
-			<td>asdasd</td>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-			<th>결혼여부</th>
-			<td>X</td>
-			<th>결혼기념일</th>
-			<td>X</td>
-		</tr>
-		<tr>
-			<th>자녀유무</th>
-			<td>X</td>
-			<th>좋아하는 색깔</th>
-			<td>#FFB2AF</td>
-		</tr>
-		<tr>
-			<th>본인 소개</th>
-			<td colspan="3" width="200" height="200">
-				<textarea rows="10" cols="40" id="introduce" name="introduce" maxlength="300">안녕하세요구르트</textarea>
-			</td>
-		</tr>
-	</table>
-	<br>
-	<h3>프로젝트 참여</h3>
-	<table width="800">
-		<tr>	
-			<th width="40">번호</th>
-			<th>프로젝트명</th>
-			<th>참여기간</th>
-			<th>역할</th>
-			<th>발주사</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>프로젝트이름이다</td>
-			<td>2020.1.1~2021.1.1</td>
-			<td>역할이다</td>
-			<td>발주사다</td>
-		</tr>
-
-	</table>
 	<a class="btn btn-outline-secondary" href="./memberList.html" role="button">목록</a>
 	<a class="btn btn-outline-primary" href="./memberEdit.html" role="button">수정</a>
 	<a class="btn btn-outline-danger" href="./memberList.html" role="button">삭제</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
