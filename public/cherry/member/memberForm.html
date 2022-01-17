@@ -108,7 +108,7 @@
 				<th class="table-active" width="20%">국적</th>
 				<td>
 					<div class="input-group input-group-sm mb-3">
-					  <label class="input-group-text" for="nationality">찾기</label>
+					  <label class="input-group-text" for="nationality">국가명</label>
 					  <select class="form-select"  id="nationality" name="nationality">
 				  		<option selected="selected" value="kor">대한민국</option>
 						<option value="america">미국</option>
@@ -127,30 +127,56 @@
 			<tr>
 				<th class="table-active" width="20%">모바일</th>
 				<td>
-				
-				<select class="form-select form-select-sm" aria-label="Default select example" id="mcompany" name="mcompany" wi>
-						<option value="skt">SKT</option>
-						<option value="kt">KT</option>
-						<option value="lgu">LGU</option>
-				</select><br>
-
-					<input type="text" id="mobile" name="mobile" maxlength="3" value="010" size="3"> -
-					<input type="text" id="mobile" name="mobile" maxlength="4" size="3"> -
-					<input type="text" id="mobile" name="mobile" maxlength="4" size="3"></td>
+					<select class="form-select form-select-sm" aria-label="Default select example" id="mcompany" name="mcompany" wi>
+							<option value="skt">SKT</option>
+							<option value="kt">KT</option>
+							<option value="lgu">LGU</option>
+					</select>
+			  		<div class="col-auto">
+			    		<input type="text" id="inputmobile" class="form-control form-control-sm" aria-describedby="passwordHelpInline">
+			  		</div>
+			  		<div class="col-auto">
+				 		<span id="mobileHelpInline" class="form-text">숫자만입력</span>
+				  	</div> 
+				</td>
 				<th class="table-active" width="20%">전화번호</th>
 				<td>
-					<input type="text" id="tel" name="tel" maxlength="3"  size="3"> -
-					<input type="text" id="tel" name="tel" maxlength="4" size="3"> -
-					<input type="text" id="tel" name="tel" maxlength="4" size="3"></td>
+					<div class="col-auto">
+			    		<input type="text" id="inputtel" class="form-control form-control-sm" aria-describedby="passwordHelpInline">
+			  		</div>
+			  		<div class="col-auto">
+				 		<span id="telHelpInline" class="form-text">숫자만입력</span>
+				  	</div>	
+						
+						
+				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">이메일</th>
+				
+				  <div class="col-sm-3">
+    <label class="visually-hidden" for="specificSizeInputName">Name</label>
+    <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
+  </div>
+  <div class="col-sm-3">
+    <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+    <div class="input-group">
+      <div class="input-group-text">@</div>
+      <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Username">
+    </div>
+  </div>
+				
+				
 					<td><input type="email" id="email" name="email" placeholder="@을 포함한 형태로 입력"></td>
 				<th class="table-active" width="20%">팩스번호</th>
 				<td>
-					<input type="text" id="fax" name="fax" maxlength="4"  size="3"> -
-					<input type="text" id="fax" name="fax" maxlength="4" size="3"> -
-					<input type="text" id="fax" name="fax" maxlength="4" size="3"></td>
+					<div class="col-auto">
+			    		<input type="text" id="inputfax" class="form-control form-control-sm" aria-describedby="passwordHelpInline">
+			  		</div>
+			  		<div class="col-auto">
+				 		<span id="faxHelpInline" class="form-text">숫자만입력</span>
+				  	</div>	
+				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">모바일 마케팅 수신 동의</th>
