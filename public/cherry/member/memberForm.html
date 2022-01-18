@@ -27,89 +27,73 @@
 			<tr>
 				<th class="table-active" width="20%">이름</th>
 				<td colspan="3">
-					<div class="row g-3 align-items-center">
-				  		<div class="col-auto">
-				    		<input type="text" id="inputname" class="form-control form-control-sm" aria-describedby="passwordHelpInline">
-				  		</div>
-<!-- 				 	 	<div class="col-auto">
-				 			<span id="passwordHelpInline" class="form-text">영문, 숫자조합 6~20자</span>
-				  		</div>  -->
-				 	</div>
+				    <input type="text" id="inputname" class="form-control form-control-sm" >
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active">아이디</th>
 					<td colspan="3">
-						<div class="row g-3 align-items-center">
-				  			<div class="col-auto">
-				    			<input type="text" id="inputid" class="form-control form-control-sm" aria-describedby="passwordHelpInline" maxlength="20" size="40">
-				  			</div>
-				 	 		<div class="col-auto">
-				 				<span id="idHelpInline" class="form-text">아이디 영문, 숫자조합 6~20자</span>
-				  			</div> 
-				 		</div>
-				 	</td>	
+				    	<input type="text" id="inputid" class="form-control form-control-sm" placeholder="아이디 영문, 숫자 조합 6~20자" maxlength="20" >
+				 <span class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#idchkModal" role="button">중복확인</span>		
+					<!-- Modal -->
+					<div class="modal fade" id="idchkModal" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">아이디 중복 확인</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        사용 가능한 아이디입니다
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+					       <!--  <button type ="button" class="btn btn-primary">삭제</button> -->
+					        <a class="btn btn-primary" data-bs-toggle="modal" role="button">확인</a>
+					      </div>
+					    </div>
+					  </div>
+					</div>	
+				 </td>		
 			</tr>
 			<tr>
 				<th class="table-active" >비밀번호</th>
 				<td colspan="3">
-						<div class="row g-3 align-items-center">
-				  			<div class="col-auto">
-				    			<input type="text" id="inputpwd" class="form-control form-control-sm" aria-describedby="passwordHelpInline" maxlength="12" size="40">
-				  			</div>
-				 	 		<div class="col-auto">
-				 				<span id="pwdHelpInline" class="form-text">비밀번호 8~12자 영문, 숫자, 특수문자</span>
-				  			</div> 
-				 		</div>
+		    		<input type="text" id="inputpwd" class="form-control form-control-sm" placeholder="비밀번호 영문, 숫자, 특수문자 조합 12~16자" maxlength="16">
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active">비밀번호 확인</th>
 				<td colspan="3">
-				 	 	<div class="row g-3 align-items-center">	
-				 	 		<div class="col-auto">
-				    			<input type="text" id="pwdchk" class="form-control form-control-sm" maxlength="12" size="40">
-				  			</div>
-				 	 		<div class="col-auto">
-				 				<span id="pwdHelpInline" class="form-text">비밀번호 다시 입력</span>
-				  			</div> 
-				  		</div>	
+				    <input type="text" id="pwdchk" class="form-control form-control-sm" placeholder="비밀번호 재입력" maxlength="16">
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active">주소</th>
 				<td colspan="3">
-				 	 	<div class="row g-3 align-items-center">	
-				 	 		<div class="col-auto">
-				    			<input type="text" id="inputaddress" class="form-control form-control-sm" size="50">
-				  			</div>
-<!-- 				 	 		<div class="col-auto">
-				 				<span id="pwdHelpInline" class="form-text">비밀번호 다시 입력</span>
-				  			</div>  -->
-				  		</div>	
+				    <input type="text" id="inputaddress" class="form-control form-control-sm" >
 				</td>
 			</tr>	
 			<tr>
 				<th class="table-active" width="20%">생년월일</th>
-				<td colspan="3"><input type="date" id="birth" name="birth" max="2022-01-08"></td>				
+					<td colspan="3">
+			    		<input type="date" id="birth" name="birth" max="2022-01-08">
+					</td>				
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">성별</th>
 				<td>
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="gender" id="gender" value="M">
-					  <label class="form-check-label" for="inlineRadio1">남성</label>
-					</div>
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="gender" id="gender" value="F">
-					  <label class="form-check-label" for="inlineRadio2">여성</label>
-					</div>
+					<input type="radio" class="btn-check" name="gender" id="gender1" value="M" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="gender1">남성</label>
+					<input type="radio" class="btn-check" name="gender" id="gender2" value="F" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="gender2">여성</label>
+					<input type="radio" class="btn-check" name="gender" id="gender3" value="O" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="gender3">기타</label>
+
 				</td>
 				<th class="table-active" width="20%">국적</th>
 				<td>
-					<div class="input-group input-group-sm mb-3">
-					  <label class="input-group-text" for="nationality">국가명</label>
-					  <select class="form-select"  id="nationality" name="nationality">
+					  <select class="form-select" id="nationality" name="nationality">
 				  		<option selected="selected" value="kor">대한민국</option>
 						<option value="america">미국</option>
 						<option value="china">중국</option>
@@ -119,51 +103,33 @@
 						<option value="nether">네덜란드</option>
 						<option value="other">그 외..</option>
 					  </select>
-					</div>
 				</td>
 			</tr>	
 			
-			<!-- 여기까지 -->
 			<tr>
 				<th class="table-active" width="20%">모바일</th>
 				<td>
-					<select class="form-select form-select-sm" aria-label="Default select example" id="mcompany" name="mcompany" wi>
+					<select class="form-select form-select-sm" aria-label="Default select example" id="mcompany" name="mcompany" >
 							<option value="skt">SKT</option>
 							<option value="kt">KT</option>
-							<option value="lgu">LGU</option>
+							<option value="lgu">LGU+</option>
 					</select>
-			  		<div class="col-auto">
-			    		<input type="text" id="inputmobile" class="form-control form-control-sm" aria-describedby="passwordHelpInline">
-			  		</div>
-			  		<div class="col-auto">
-				 		<span id="mobileHelpInline" class="form-text">숫자만입력</span>
-				  	</div> 
+			    	<input type="text" id="inputmobile" class="form-control form-control-sm" placeholder="숫자만 입력">
 				</td>
 				<th class="table-active" width="20%">전화번호</th>
 				<td>
-					<div class="col-auto">
-			    		<input type="text" id="inputtel" class="form-control form-control-sm" aria-describedby="passwordHelpInline">
-			  		</div>
-			  		<div class="col-auto">
-				 		<span id="telHelpInline" class="form-text">숫자만입력</span>
-				  	</div>	
-						
-						
+			    	<input type="text" id="inputtel" class="form-control form-control-sm" placeholder="숫자만 입력">	
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">이메일</th>
-
-					<td><input type="email" id="email" name="email" placeholder="@을 포함한 형태로 입력"></td>
+					<td>
+			    		<input type="text" id="inputemail" class="form-control form-control-sm" placeholder="@을 포함한 형태로 입력">
+					</td>
 				<th class="table-active" width="20%">팩스번호</th>
-				<td>
-					<div class="col-auto">
-			    		<input type="text" id="inputfax" class="form-control form-control-sm" aria-describedby="passwordHelpInline">
-			  		</div>
-			  		<div class="col-auto">
-				 		<span id="faxHelpInline" class="form-text">숫자만입력</span>
-				  	</div>	
-				</td>
+					<td>
+				    	<input type="text" id="inputfax" class="form-control form-control-sm" placeholder="숫자만 입력">
+					</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">모바일 마케팅 수신 동의</th>
@@ -172,8 +138,6 @@
 					  <input class="form-check-input" type="checkbox" role="switch" id="mmk">
 					  <label class="form-check-label" for="flexSwitchCheckChecked">동의</label>
 					</div>
-<!-- 					<input type="radio" id="mmk" name="mmk" value="y">동의 &nbsp;
-					<input type="radio" id="mmk" name="mmk" value="n">비동의 -->
 				</td>
 				<th class="table-active" width="20%">이메일 마케팅 수신 동의</th>
 				<td>
@@ -181,30 +145,19 @@
 					  <input class="form-check-input" type="checkbox" role="switch" id="emk">
 					  <label class="form-check-label" for="flexSwitchCheckChecked2">동의</label>
 					</div>
-	<!-- 				<input type="radio" id="emk" name="emk" value="y">동의 &nbsp;
-					<input type="radio" id="emk" name="emk" value="n">비동의 -->
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">개인정보유효기간</th>
 				<td colspan="3">
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="mk" id="mk" value="one">
-					  <label class="form-check-label" for="mkradio3">1년</label>
-					</div>
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="mk" id="mk" value="one">
-					  <label class="form-check-label" for="mkradio4">3년</label>
-					</div>
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="mk" id="mk" value="one">
-					  <label class="form-check-label" for="mkradio5">5년</label>
-					</div>
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="mk" id="mk" value="one">
-					  <label class="form-check-label" for="mkradio6">10년</label>
-					</div>
-
+					<input type="radio" class="btn-check" name="personality" id="personality1" value="one" autocomplete="off">
+					<label class="btn btn-outline-success" for="personality1">1년</label>
+					<input type="radio" class="btn-check" name="personality" id="personality2" value="three" autocomplete="off">
+					<label class="btn btn-outline-success" for="personality2">3년</label>
+					<input type="radio" class="btn-check" name="personality" id="personality3" value="five" autocomplete="off" checked>
+					<label class="btn btn-outline-success" for="personality3">5년</label>
+					<input type="radio" class="btn-check" name="personality" id="personality4" value="ten" autocomplete="off">
+					<label class="btn btn-outline-success" for="personality4">10년</label>
 				</td>
 			</tr>
 		</table>
@@ -214,52 +167,82 @@
 	  	<table class="table table-bordered border-light">
 			<tr>
 				<th class="table-active" width="20%">사진</th>
-				<td colspan="3"><input type="file" accept=".jpg,.png,.gif"></td>
+				<td colspan="3">
+  					<input class="form-control form-control-sm" id="pic" accept=".jpg,.png,.gif" type="file">
+					<!-- <input type="file" accept=".jpg,.png,.gif"> -->
+				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">비밀번호 문제</th>
 				<td colspan="3">
-					<select id="pwdquestion" name="pwdquestion">
-						<option>가장 좋아하는 장소는?</option>
-						<option>본인의 취미는?</option>
-						<option>본인의 장점은?</option>
-						<option>본인의 발사이즈는?</option>
-						<option>본인의 성격은?</option>
+					<select class="form-select form-select-sm" aria-label="Default select example" id="pwdquestion" name="pwdquestion" >
+							<option value="myplace">가장 좋아하는 장소는?</option>
+							<option value="myhobby">본인의 취미는?</option>
+							<option value="myadv">본인의 장점은?</option>
+							<option value="myfoot">본인의 발사이즈는?</option>
+							<option value="mycha">본인의 성격은?</option>
 					</select>
 				</td>
 			</tr>
 			<tr>
-				<th class="table-active" width="20%">비밀번호 답</th>
-				<td><input type="text" id="pwdanswer" name="pwdanswer" max="10" placeholder="10자 이내로 입력"></td>
+				<th class="table-active" >비밀번호 답</th>
+				<td width="30%">
+			    	<input type="text" id="pwdanswer" name="pwdanswer" class="form-control form-control-sm" maxlength="10" placeholder="10자 이내로 입력">
+				</td>
 				<th class="table-active" width="20%">추천인</th>
-				<td><input type="text" id="recom" name="recom" placeholder="추천인 아이디 입력"></td>
+				<td width="30%">
+			    	<input type="text" id="recom" name="recom" class="form-control form-control-sm" placeholder="추천인 아이디 입력">
+			  	</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">SNS</th>
-				<td>
-					<select id="sns" name="sns">
+				<td>		
+					<select class="form-select form-select-sm" aria-label="Default select example" id="sns" name="sns">
 						<option value="facebook">facebook</option>
 						<option value="insta">instagram</option>
 						<option value="twitter">twitter</option>
 						<option value="nosns">X</option>
 					</select>
-					<input type="text" id="snsid" name="snsid" placeholder="아이디 입력"></td>
+			    	<input type="text" id="snsid" name="snsid" class="form-control form-control-sm"  placeholder=" sns아이디 입력">
+				</td>
 				<th class="table-active" width="20%">홈페이지</th>
-				<td><input type="url" id="homepage" name="homepage" placeholder="url형태로 입력"></td>
+				<td>
+			    	<input type="url"  id="homepage" name="homepage" class="form-control form-control-sm" placeholder=" url형태로 입력">
+				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">직업(희망)</th>
-				<td><input type="text" id="job" name="job"></td>
+				<td>
+			    	<input type="text" id="job" name="job" class="form-control form-control-sm" size="30" placeholder="">
+				</td>
 				<th class="table-active" width="20%">취미</th>
-				<td><input type="text" id="hobby" name="hobby"></td>
+				<td>
+					<input type="checkbox" class="btn-check" id="hobby1" autocomplete="off">
+					<label class="btn btn-outline-info text-dark" for="hobby1">영화</label>
+				  	<input type="checkbox" class="btn-check" id="hobby2" autocomplete="off">
+					<label class="btn btn-outline-info text-dark" for="hobby2">음악</label>
+				  	<input type="checkbox" class="btn-check" id="hobby3" autocomplete="off">
+					<label class="btn btn-outline-info text-dark" for="hobby3">독서</label>
+				  	<input type="checkbox" class="btn-check" id="hobby4" autocomplete="off">
+					<label class="btn btn-outline-info text-dark" for="hobby4">기타</label>
+				
+				</td>
+				
+				
 			</tr>
 			<tr>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">결혼여부</th>
 				<td>
-					<input type="radio" id="marriage" name="marriage" value="y">기혼&nbsp;
-					<input type="radio" id="marriage" name="marriage" value="n">미혼
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="marriage" id="marriage1" value="y">
+					  <label class="form-check-label" for="marriage1">기혼</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="marriage" id="marriage2" value="n" checked>
+					  <label class="form-check-label" for="marriage2">미혼</label>
+					</div>
 				</td>
 				<th class="table-active" width="20%">결혼기념일</th>
 				<td><input type="date" id="anniversary" name="anniversary" max="2022-01-08"></td>
@@ -267,8 +250,14 @@
 			<tr>
 				<th class="table-active" width="20%">자녀유무</th>
 				<td>			
-					<input type="radio" id="children" name="children" value="y">유&nbsp;
-					<input type="radio" id="children" name="children" value="n">무</td>
+					<input type="radio" class="btn-check" name="children" id="children1" autocomplete="off" value="y">
+					<label class="btn btn-outline-primary" for="children1">유</label>
+					
+					<input type="radio" class="btn-check" name="children" id="children2" autocomplete="off" value="y" checked>
+					<label class="btn btn-outline-primary" for="children2">무</label>
+				
+					<!-- <input type="radio" id="children" name="children" value="y">유&nbsp;
+					<input type="radio" id="children" name="children" value="n">무 --></td>
 				<th class="table-active" width="20%">좋아하는 색깔</th>
 				<td><input type="color" id="color" name="color" ></td>
 			</tr>
@@ -283,6 +272,7 @@
 		<h3>프로젝트 참여</h3>
  		
 			<table class="table table-bordered border-light">	
+			<tr>
 				<th class="table-active" >번호</th>
 				<th class="table-active" width="20%">프로젝트명</th>
 				<th class="table-active" width="20%">참여기간</th>
