@@ -26,37 +26,37 @@
 	  	<table class="table table-bordered border-light">
 			<tr>
 				<th class="table-active" width="20%">이름</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
 				    <input type="text" id="editname" class="form-control form-control-sm" value="윤수빈" disabled>
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">아이디</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
 				   	<input type="text" id="editid" class="form-control form-control-sm" placeholder="아이디 영문, 숫자 조합 6~20자" maxlength="20" value="asdasd" disabled>
 				</td>		
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">비밀번호</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
 		    		<input type="password" id="editpwd" class="form-control form-control-sm" placeholder="비밀번호 영문, 숫자, 특수문자 조합 12~16자" maxlength="16" value="1111">
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">비밀번호 확인</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
 				    <input type="password" id="editpwdchk" class="form-control form-control-sm" placeholder="비밀번호 재입력" maxlength="16">
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">주소</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
 				    <input type="text" id="editaddress" class="form-control form-control-sm" value="서울특별시 어쩌구 저쩌구">
 				</td>
 			</tr>	
 			<tr>
 				<th class="table-active" width="20%">생년월일</th>
-					<td colspan="3">
+					<td colspan="3" width="80%">
 			    		<input type="date" id="editbirth" name="editbirth" max="2022-01-08" class="form-control form-control-sm" value="1111-11-11" disabled>
 					</td>				
 			</tr>
@@ -129,7 +129,7 @@
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">개인정보유효기간</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
 					<input type="radio" class="btn-check" name="editpersonalinfo" id="personalinfo1" value="one" autocomplete="off">
 					<label class="btn btn-outline-success" for="personalinfo1">1년</label>
 					<input type="radio" class="btn-check" name="editpersonalinfo" id="personalinfo2" value="three" autocomplete="off">
@@ -147,14 +147,14 @@
 	  	<table class="table table-bordered border-light">
 			<tr>
 				<th class="table-active" width="20%">사진</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
   					<input class="form-control form-control-sm" id="pic" accept=".jpg,.png,.gif" type="file">
 					<!-- <input type="file" accept=".jpg,.png,.gif"> -->
 				</td>
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">비밀번호 문제</th>
-				<td colspan="3">
+				<td colspan="3" width="80%">
 					<select class="form-select form-select-sm" aria-label="Default select example" id="editpwdquestion" name="editpwdquestion" >
 							<option value="myplace" selected>가장 좋아하는 장소는?</option>
 							<option value="myhobby">본인의 취미는?</option>
@@ -238,8 +238,11 @@
 			</tr>
 			<tr>
 				<th class="table-active" width="20%">본인 소개</th>
-				<td colspan="3" >
-					 <textarea class="form-control" id="editintroduce" style="height: 200px" maxlength="300">안녕하세요구르트</textarea>
+				<td colspan="3" width="80%">
+					<div class="form-floating">
+					 	<textarea class="form-control" id="editintroduce" style="height: 200px" maxlength="300">안녕하세요</textarea>
+						<label for="floatingTextarea2">자기소개 300자 이내 작성</label>
+					</div>
 				</td>
 			</tr>
 		</table>
