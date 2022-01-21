@@ -287,7 +287,25 @@
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
 	       <!--  <button type ="button" class="btn btn-primary">삭제</button> -->
-	        <a class="btn btn-primary" data-bs-toggle="modal" href="./memberList.html" role="button">확인</a>
+	        <a class="btn btn-primary" data-bs-toggle="modal" href="./memberList.html" role="button" data-bs-target="#formeditModal">확인</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- send button -->
+	<div class="modal fade" id="formeditModal" tabindex="-1" aria-hidden="true" >
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">! 회원수정 완료</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        회원수정 완료
+	      </div>
+	      <div class="modal-footer">
+	        <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button> -->
+	        <a class="btn btn-primary" data-bs-toggle="modal" role="button" href="./memberList.html">확인</a>
 	      </div>
 	    </div>
 	  </div>
