@@ -23,7 +23,6 @@
 	    border-color: #F7E600;
 	    color: #3A1D1D;
 	}
-
 	.btn-naver,
 	.btn-naver:hover,
 	.btn-naver:active,
@@ -53,7 +52,14 @@
 	    border-color: #ea4335;
 	    color: white;
 	}
-
+	#searchpwd{
+		text-align: center;
+		padding: 15px;
+	}
+	img{
+		width: 25px;
+		padding-bottom: 3px;
+	}
 </style>
 </head>
 <body>
@@ -67,32 +73,33 @@
 			<input class="form-control" type="password" id="inputpwd" placeholder="password" aria-label="input pwd">
 			<div class="form-check col-md-6">
 				<input class="form-check-input" type="checkbox" name="autologin" value="autologin" id="autologin">
-				<label class="form-check-label" for="autologin">
-				자동 로그인
-				</label>
+				<label class="form-check-label" for="autologin">자동 로그인</label>
 		</div>
 	</div>	
 	<br>
-	<div class="d-grid gap-2 col-md-6 mx-auto"><button class="btn btn-primary" type="button">로그인</button></div>	
-	<hr class="col-md-6 mx-auto">
+	<div class="d-grid gap-2 col-md-6 mx-auto">
+		<button class="btn btn-primary" type="button" onclick="location.href=''">로그인</button>	
+		<button class="btn btn-light" type="button" onclick="location.href=''">회원가입</button>
+	</div>	
+	<!-- <hr class="col-md-6 mx-auto"> -->
+	
+	
+	<div class="col-md-6 mx-auto text-secondary" id="searchpwd">
+	  <small><a href=""> 아이디/비밀번호 찾기 > </a></small>
+	</div>
+	
 	
 	<div class="d-grid gap-2 col-md-6 mx-auto">
 		<!-- <button class="btn btn-outline-secondary" type="button"><img src="../../../images/emailicon.png"> 번호로 로그인</button> -->
-		<button class="btn btn-naver" type="button">네이버 로그인</button>
-		<button class="btn btn-kakao" type="button">카카오 로그인</button>
-		<button class="btn btn-facebook" type="button"> 페이스북 로그인</button>
+		<button class="btn btn-naver" type="button"><img src="../../../images/navericon.png"><b> 네이버</b> 로그인</button>
+		<button class="btn btn-kakao" type="button"><img src="../../../images/kakaoicon.png"><b> 카카오</b> 로그인</button>
+		<button class="btn btn-facebook" type="button"><img src="../../../images/facebookicon.png"><b>페이스북</b> 로그인</button>
 	</div>
 	
 	
 
 
-	<hr class="col-md-6 mx-auto">
-	<div class="col-md-6 mx-auto text-secondary text-start">
-	  <small><a href="">회원가입</a> | <a href=""> 아이디 찾기</a> | <a href="">비밀번호 찾기</a></small>
-	</div>
-<!-- 	<div class="col-md-6 mx-auto text-secondary text-end">
-	  <small><a href="">아이디 찾기</a> | <a href="">비밀번호 찾기</a></small>
-	</div> -->
+
 	
 
 </div>
