@@ -13,8 +13,8 @@
 		display: block;
  		margin-left:auto;
 		margin-right: auto; 
-		width: 300px;
-		height: 150px;
+		width: 250px;
+		height: 120px;
 		margin-top: 30px; 
 	
 	}
@@ -90,6 +90,11 @@
 		width: 25px;
 		padding-bottom: 3px;
 	}
+	footer{
+		position : fixed;
+		bottom : 0; 
+		width: 100%;
+	}
 
 
 </style>
@@ -111,28 +116,28 @@
 	<hr>
 	
 	
-	<div class="col-6 mx-auto">
+	<div class="col-md-10 mx-auto">
 		<input class="form-control" type="text" id="inputusername" placeholder="username" aria-label="input id">	
 		<input class="form-control" type="password" id="inputpwd" placeholder="password" aria-label="input pwd">
 		
-		<div class="form-check col-6">
+		<div class="form-check col-md-10">
 			<input class="form-check-input" type="checkbox" name="autologin" value="autologin" id="autologin">
 			<span class="form-check-label" for="autologin" id="autologin" >자동 로그인</span>
 		</div>
 	</div>	
 	
-	<div class="d-grid gap-2 col-6 mx-auto">
+	<div class="d-grid gap-2 col-md-10 mx-auto">
 		<button class="btn btn-primary" type="button" onclick="location.href=''" id="loginbtn">로그인</button>	
 		<button class="btn btn-secondary" type="button" onclick="location.href=''">회원가입</button>
 	</div>
 		
-	<hr class="col-6 mx-auto">
+	<hr class="col-md-10 mx-auto">
 	
-	<div class="col-6 mx-auto text-secondary" id="searchpwd">
+	<div class="col-md-10 mx-auto text-secondary" id="searchpwd">
 	  <small><a href=""> 아이디/비밀번호 찾기 > </a></small>
 	</div>
 	
-	<div class="d-grid gap-2 col-xl-8 col-lg-6 mx-auto">
+	<div class="d-grid gap-2 col-md-10 mx-auto">
 		<!-- <button class="btn btn-outline-secondary" type="button"><img src="../../../images/emailicon.png"> 번호로 로그인</button> -->
 		<button class="btn btn-naver" type="button"><img src="../../../images/navericon.png" id="icon"><b> 네이버</b> 로그인</button>
 		<button class="btn btn-kakao" type="button"><img src="../../../images/kakaoicon.png" id="icon"><b> 카카오</b> 로그인</button>
@@ -140,12 +145,23 @@
 	</div>
 	
 	
+	<div class="fixed-bottom">
+		<label id="bottom"> </label></div>
 
 
 
-	
+
 
 </div>
+<footer class="bg-light text-center text-lg-start">
+  
+  <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.1);">
+    COPYRIGHT(C)<b>KYOBO BOOK CENTRE</b> ALL RIGHTS RESERVED.
+  </div>
+
+</footer>
+
+
 <!--  -->
  <!-- Optional JavaScript; choose one of the two! -->
 
