@@ -11,21 +11,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 <title>Hello, world!</title>
 <style type="text/css">
+	.logo{
+		float: left;
+	}
 	#logo{
-		display: inline;
+		/* display: inline; */
 		width: 130px;
 		height: 100px;
 		margin-top: 20px;
-		
 		padding: 10px;
 	}
 	#logo2{
-		display: inline;
+		/* display: inline; */
 		width: 300px;
 		margin-top: 20px;
 		padding-top: 20px;
 	}
+	.profile{
+		float: right;
+	}
+	#profile{
+		width: 100px;
+		border-radius: 30px;
+	}
 	.navbar{
+		float: clear;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		background-color: #5E6B9E;
@@ -67,9 +77,12 @@
 		<img src="../../../images/xdmin_img/kyobo2.png" id="logo">
 		<img src="../../../images/xdmin_img/list_logo2.png" id="logo2" >
 	</div>
+	<div class="profile">
+		<img src="../../../images/xdmin_img/2.jpg" id="profile">
+	</div>
 	
 	<!-- navbar s -->
-	<nav class="navbar navbar-expand-lg nav_header">
+	<div class="navbar navbar-expand-lg nav_header">
 	  <div class="container-fluid"><!-- me-auto mb-2 mb-lg-0 -->
 	    <div class="collapse navbar-collapse col-sm-" id="navbarSupportedContent">
 	      <ul class="navbar-nav ">
@@ -96,7 +109,7 @@
 	      </ul>
 	    </div>
 	  </div>
-	</nav>
+	</div>
 	<!-- navbar e -->
 
 	<h4> Code</h4>
