@@ -47,29 +47,24 @@
 		margin-right: 10px;
 		font-size: 13px;
 	}
-
 	.navbar{
 		clear: both;
-		
 		margin-bottom: 10px;
 		background-color: #5E6B9E;
-		
 	}	
 	.nav-link{
 		color: white;
 	}
-	.form-select{
-		display: inline;
-		width: 20%;
-		margin-bottom: 10px;	
+
+ 	.form-select,
+ 	.form-control{
+		margin-top: 10px;
+		margin-bottom: 5px;
 	}
-	#input_sdate,
-	#input_edate,
-	#input_search{
-		display: inline;
-		width: 20%;
-		
-	}
+	#search_icon{
+		margin-top: 10px;
+		margin-bottom: 5px;	
+	}    
 	#add{
 		float: right;
 	}
@@ -86,7 +81,7 @@
 </head>
 <body>
 <!--  -->
-<div class="container-sm">
+<div class="container">
 	<div class="logo">
 		<img src="../../../images/xdmin_img/kyobo2.png" id="logo">
 		<img src="../../../images/xdmin_img/list_logo2.png" id="logo2" >
@@ -139,28 +134,40 @@
 	<!-- navbar e -->
 
 	<h4> Code</h4>
-	<div class="border">
-		<select class="form-select form-select-sm"  >
-			<option selected>삭제여부</option>
-			<option value="1">one</option>
-			<option value="2">Two</option>
-		</select>
-		<select class="form-select form-select-sm">
-			<option selected>날짜</option>
-			<option value="1">one</option>
-			<option value="2">Two</option>
-		</select>
-		<input type="text" class="form-control form-control-sm" id="input_sdate" placeholder="시작일">
-		<input type="text" class="form-control form-control-sm" id="input_edate" placeholder="종료일">
-		<br>
-		<select class="form-select form-select-sm">
-			<option selected>검색구분</option>
-			<option value="1">one</option>
-			<option value="2">Two</option>
-		</select>
-		<input type="text" class="form-control form-control-sm" id="input_search" placeholder="검색어">
-		<button type="button" class="btn btn-warning btn-sm"><i class="fas fa-search"></i></button>
+
+	<!-- ex -->
+	<div class="container border">
+		<div class="row">
+			<div class="col col-6 col-md-3">		
+				<select class="form-select form-select-sm">
+					<option selected>삭제여부</option>
+					<option value="1">one</option>
+					<option value="2">Two</option>
+				</select>				
+			</div>
+			<div class="col col-6 col-md-3">	
+				<select class="form-select form-select-sm col-sm-6">
+					<option selected>날짜</option>
+					<option value="1">one</option>
+					<option value="2">Two</option>
+				</select>
+			</div>
+			<div class="col col-6 col-md-3"><input type="text" class="form-control form-control-sm " id="input_sdate" placeholder="시작일"></div>
+			<div class="col col-6 col-md-3"><input type="text" class="form-control form-control-sm " id="input_edate" placeholder="종료일"></div>
+			<div class="col col-6 col-md-3">	
+				<select class="form-select form-select-sm ">
+					<option selected>검색구분</option>
+					<option value="1">one</option>
+					<option value="2">Two</option>
+				</select>
+			</div>
+			<div class="col col-6 col-md-3"><input type="text" class="form-control form-control-sm " id="input_search" placeholder="검색어"></div>
+			<div class="col col-6 col-md-3"><button type="button" class="btn btn-warning btn-sm" id="search_icon"><i class="fas fa-search"></i></button></div>
+		</div>
+		
 	</div>	
+	
+	
 	<!-- table s -->	
 	<table class="table table-striped table-hover table-horizontal">
  		<thead>	
