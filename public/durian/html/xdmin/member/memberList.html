@@ -50,7 +50,10 @@
 		clear: both;
 		margin-bottom: 10px;
 		background-color: #5E6B9E;
-	}	
+	}
+/* 	.navbar-dark{
+		background-color: #5E6B9E;
+	}	 */
 	.nav-link{
 		color: white;
 	}
@@ -81,12 +84,13 @@
 <body>
 <!--  -->
 <div class="container">
-	<div class="logo">
+			
+	<div class="logo d-none d-sm-block">
 		<img src="../../../images/xdmin_img/kyobo2.png" id="logo">
 		<img src="../../../images/xdmin_img/list_logo2.png" id="logo2" >
 	</div>
 	<div class="row profile">
-		<div class="d-none d-sm-block">
+		<div class="d-none d-md-block">
 		<img src="../../../images/xdmin_img/2.jpg" class="img-thumbnail" id="profile">	
 		<p id="profile2">Subin Youn (CEO)</p>
 		<br><p id="profile3">Administrator</p>
@@ -103,43 +107,86 @@
 	</div> -->
 	
 	
-	<!-- navbar s -->
-	<div class="navbar navbar-expand-lg nav_header">
-	  <div class="container-fluid"><!-- me-auto mb-2 mb-lg-0 -->
-	    <div class="collapse navbar-collapse col-sm-" id="navbarSupportedContent">
-	      <ul class="navbar-nav ">
-	        <li class="nav-item ">
-	          <a class="nav-link active" aria-current="page" href="#">Home</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">회원관리</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">시스템관리</a>
-	        </li>
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Dropdown
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#">Action</a></li>
-	            <li><a class="dropdown-item" href="#">Another action</a></li>
-	            <li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="#">Something else here</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</div>
-	<!-- navbar e -->
+	<!-- navbar1 s -->
+		<div class="navbar navbar-expand-lg d-none d-sm-block">
+		  <div class="container-fluid">
+		    <div class="collapse navbar-collapse col-sm-" id="navbarSupportedContent">
+		      <ul class="navbar-nav ">
+		        <li class="nav-item ">
+		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">회원관리</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">시스템관리</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Dropdown
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="#">Action</a></li>
+		            <li><a class="dropdown-item" href="#">Another action</a></li>
+		            <li><hr class="dropdown-divider"></li>
+		            <li><a class="dropdown-item" href="#">Something else here</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+	<!-- navbar1 e -->
+	<!--  navbar2 s-->
+	<nav class="navbar navbar-light bg-light fixed-top">
+ 	<div class="container d-block d-sm-none">
+    <a class="navbar-brand" href="#">교보사진</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">관리</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">회원관리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">시스템관리</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+	<!--  -->
+
 
 	<h4> Code</h4>
 
 	<!-- ex -->
 	<div class="container border">
-		<div class="row">
-			<div class="col col-6 col-md-3">		
+ 		<div class="row">
+			<div class="col col-6 col-md-3">	 	
 				<select class="form-select form-select-sm">
 					<option selected>삭제여부</option>
 					<option value="1">one</option>
@@ -254,7 +301,8 @@
 	<button type="button" class="btn btn-primary btn-sm" id="add"><i class="fas fa-plus"></i></button>
 	
 	
-	
+
+	</div>
 </div>
 <footer class="bg-light text-center ">
   
