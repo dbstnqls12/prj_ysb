@@ -40,7 +40,13 @@
 		margin-bottom: 5px;
 		
 	}
-	
+	.btn{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	#add{
+		float: right;
+	}
 
 
 	
@@ -82,10 +88,7 @@
 	          </ul>
 	        </li>
 	      </ul>
-	      <form class="d-flex">
-	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-	        <button class="btn btn-outline-success" type="submit">Search</button>
-	      </form>
+
 	    </div>
 	  </div>
 	</nav>	
@@ -172,6 +175,67 @@
 				<input type="text" class="form-control form-control-sm" id="inputAddress2" placeholder="상세주소">
 			</div>
 			<div class="col-md-8 mx-auto">
+				<label class="form-label">모바일 마케팅 수신</label><br>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inputMobileConsent" id="inputMobileConsent1" value="y">
+				  <label class="form-check-label" for="inputMobileConsent1">동의</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inputMobileConsent" id="inputMobileConsent2" value="n">
+				  <label class="form-check-label" for="inputMobileConsent2">비동의</label>
+				</div>
+			</div>
+			<div class="col-md-8 mx-auto">
+				<label class="form-label">이메일 마케팅 수신</label><br>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inputEmailConsent" id="inputEmailConsent1" value="y">
+				  <label class="form-check-label" for="inputEmailConsent1">동의</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inputEmailConsent" id="inputEmailConsent2" value="n">
+				  <label class="form-check-label" for="inputEmailConsent2">비동의</label>
+				</div>
+			</div>
+			<div class="col-md-8 mx-auto">
+				<label class="form-label">푸쉬 마케팅 수신</label><br>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inputPushConsent" id="inputPushConsent1" value="y">
+				  <label class="form-check-label" for="inputPushConsent1">동의</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inputPushConsent" id="inputPushConsent2" value="n">
+				  <label class="form-check-label" for="inputPushConsent2">비동의</label>
+				</div>
+			</div>
+			<div class="col-md-8 mx-auto">
+				<label class="form-label">개인정보 유효기간</label><br>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" id="inputPersonal1" value="option1">
+				  <label class="form-check-label" for="inputPersonal1">1년</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" id="inlinePersonal2" value="option2">
+				  <label class="form-check-label" for="inlinePersonal2">3년</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" id="inlinePersonal3" value="option3">
+				  <label class="form-check-label" for="inlinePersonal3">5년</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" id="inlinePersonal4" value="option3">
+				  <label class="form-check-label" for="inlinePersonal4">10년</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" id="inlinePersonal5" value="option3">
+				  <label class="form-check-label" for="inlinePersonal5">탈퇴시</label>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			<div class="col-md-8 mx-auto">
 				<label class="form-label">최종수정자</label>
 				<input type="text" class="form-control form-control-sm" id="inputEditP" placeholder="윤수빈" disabled>
 			</div>
@@ -197,9 +261,7 @@
 	
 		</form>
 			<button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-
-	<button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i></button>
-	<button class="btn btn-primary" type="submit">Button</button>
+			<button type="button" class="btn btn-primary btn-sm" id="add"><i class="fas fa-plus"></i></button>
 	</div>
 
 
