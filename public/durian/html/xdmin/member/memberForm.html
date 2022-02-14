@@ -11,27 +11,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 <title>Hello, world!</title>
 <style type="text/css">
-	.logo{
+ 	#logo{
 		float: left;
-		margin-bottom: 10px;
-		
-	}
-	#logo{
 		width: 220px;
 		height: 80px;
-		margin-top: 20px;
-		display: block;
- 		margin-left:auto;
-		margin-right: auto; 
+	 	margin-top: 10px; 
+	 	margin-left: 10px;
+		
+	}
+ 	.profile{
+		float: right;
+		width: 250px;
+	 	margin-top: 30px; 	
+		
+	} 
+	#profile1{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		float: left;
+		
+	}
+	#profile2,
+	#profile3{
+		display: inline;
+		
 	}
 	.navbar{
 		clear: both;
-		margin-bottom: 20px;
-		background-color: #5E6B9E;
-	}
-
-	.nav-link{
-		color: white;
+ 		margin-top: 15px;
+		margin-bottom: 15px; 
 	}
 
 	#inputZipcode
@@ -39,10 +48,6 @@
 	,#inputTelecom{
 		margin-bottom: 5px;
 		
-	}
-	.btn{
-		margin-bottom: 10px;
-		margin-top: 10px;
 	}
 	#add{
 		float: right;
@@ -56,41 +61,59 @@
 <!--  -->
 		
 
-<div class="container">
+<div class="container-fluid">
 
-	<div class="logo ">
+	<!-- 헤더 s-->			
+	<div class="header d-none d-sm-block">
 		<img src="../../../images/xdmin_img/kyobo2_removebg.png" id="logo">
+	</div>		
+	<div class="row profile">
+		<div class="d-none d-sm-block">	
+			<img src="../../../images/xdmin_img/2.jpg" class="img-thumbnail" id="profile1">
+			<p class="profile2 mb-0">Youn Subin (CEO)</p>
+			<p class="profile3"><small>Administrator</small></p>
+		</div>
 	</div>
+	<!-- 헤더 e-->
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Home</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">회원관리</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">시스템관리</a>
-	        </li>
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Dropdown
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#">Action</a></li>
-	            <li><a class="dropdown-item" href="#">Another action</a></li>
-	            <li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="#">Something else here</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
+	<!-- navbar1 s -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand d-block d-sm-none" href="#">
+				  <img src="../../../images/xdmin_img/kyobo2_removebg.png" alt="" width="120" height="40">
+			</a>
+			<a class="navbar-brand d-none d-sm-block" href="#">Home</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+	
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">회원관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="#">시스템관리</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
 	</nav>	
+	<!-- navbar1 e -->
 
 	
 	<div class="container">
@@ -130,7 +153,7 @@
 			</div>
 			<div class="col-md-8 mx-auto">
 				<label class="form-label">이메일</label>
-				<input type="text" class="form-control form-control-sm" id="inputEmail">
+				<input type="text" class="form-control form-control-sm" id="inputEmail" placeholder="@를 포함한 형태로 입력">
 			</div>
 			<div class="col-md-8 mx-auto">
 				<label class="form-label">핸드폰번호</label>
@@ -174,67 +197,6 @@
 				<input type="text" class="form-control form-control-sm" id="inputAddress2" placeholder="상세주소">
 			</div>
 			<div class="col-md-8 mx-auto">
-				<label class="form-label">모바일 마케팅 수신</label><br>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inputMobileConsent" id="inputMobileConsent1" value="y">
-				  <label class="form-check-label" for="inputMobileConsent1">동의</label>
-				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inputMobileConsent" id="inputMobileConsent2" value="n">
-				  <label class="form-check-label" for="inputMobileConsent2">비동의</label>
-				</div>
-			</div>
-			<div class="col-md-8 mx-auto">
-				<label class="form-label">이메일 마케팅 수신</label><br>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inputEmailConsent" id="inputEmailConsent1" value="y">
-				  <label class="form-check-label" for="inputEmailConsent1">동의</label>
-				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inputEmailConsent" id="inputEmailConsent2" value="n">
-				  <label class="form-check-label" for="inputEmailConsent2">비동의</label>
-				</div>
-			</div>
-			<div class="col-md-8 mx-auto">
-				<label class="form-label">푸쉬 마케팅 수신</label><br>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inputPushConsent" id="inputPushConsent1" value="y">
-				  <label class="form-check-label" for="inputPushConsent1">동의</label>
-				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inputPushConsent" id="inputPushConsent2" value="n">
-				  <label class="form-check-label" for="inputPushConsent2">비동의</label>
-				</div>
-			</div>
-			<div class="col-md-8 mx-auto">
-				<label class="form-label">개인정보 유효기간</label><br>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" id="inputPersonal1" value="option1">
-				  <label class="form-check-label" for="inputPersonal1">1년</label>
-				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" id="inlinePersonal2" value="option2">
-				  <label class="form-check-label" for="inlinePersonal2">3년</label>
-				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" id="inlinePersonal3" value="option3">
-				  <label class="form-check-label" for="inlinePersonal3">5년</label>
-				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" id="inlinePersonal4" value="option3">
-				  <label class="form-check-label" for="inlinePersonal4">10년</label>
-				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" id="inlinePersonal5" value="option3">
-				  <label class="form-check-label" for="inlinePersonal5">탈퇴시</label>
-				</div>
-			</div>
-			
-			
-			
-			
-			
-			<div class="col-md-8 mx-auto">
 				<label class="form-label">최종수정자</label>
 				<input type="text" class="form-control form-control-sm" id="inputEditP" placeholder="윤수빈" disabled>
 			</div>
@@ -261,7 +223,9 @@
 		</form>
 			<button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
 			<button type="button" class="btn btn-primary btn-sm" id="add"><i class="fas fa-plus"></i></button>
+	
 	</div>
+	
 
 
 
@@ -287,7 +251,7 @@
 
 
 </div>
-<footer class="bg-light text-center ">
+<!-- <footer class="bg-light text-center ">
   
   <div class="text-center p-3 " style="background-color: rgba(245, 245, 245);">
 
@@ -295,7 +259,7 @@
 
   </div>
 
-</footer>
+</footer> -->
 <!--  -->
 <!-- Optional JavaScript; choose one of the two! -->
 
