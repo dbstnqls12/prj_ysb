@@ -14,31 +14,7 @@
 <link href="../../../css/footers.css" rel="stylesheet" type="text/css">
 <title>Hello, world!</title>
 <style type="text/css">
-/* 
- 	.profile{
-		float: right;
-		width: 250px;
-	 	margin-top: 30px; 	
-		
-	}  */
-/* 	#profile1{
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		float: left;
-		
-	} */
-/* 	#profile2,
-	#profile3{
-		display: inline;
-		
-	} */
-	.navbar{
-		clear: both;
- 		margin-top: 15px;
-		margin-bottom: 15px; 
-		
-	}
+
 
 </style>
 </head>
@@ -52,9 +28,7 @@
 		<div class="col-8 col-md-5 my-auto text-end">
 			<a class="d-block d-sm-none" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
 				<i class="bi bi-list"></i>
-				<!-- i class="fa-solid fa-bars"></i> -->
 			</a>
-	
 		</div>		
 		<div class="col-md-5 my-auto d-none d-md-block mb-0 mt-4">	
 			<div class="row">
@@ -127,7 +101,7 @@
 <!-- offcanvas e -->
 
 <!-- navbar1 s -->
-<nav class="navbar navbar-expand-md navbar-light bg-light d-none d-md-block">
+<nav class="navbar navbar-expand-md navbar-light bg-light d-none d-md-block mb-3">
 	<div class="container-fluid">
 		<a class="navbar-brand d-block d-sm-none" href="#">Navbar</a>
 		<a class="navbar-brand d-none d-sm-block" href="#">Home</a>
@@ -163,162 +137,147 @@
 <!-- navbar1 e -->
 	
 
-	<!-- 검색 -->
-	<div class="container border p-3">
- 		<div class="row">
- 			<div><h5>검색</h5></div>
-			<div class="col col-6 col-md-3 mt-2 mb-2">	 	
-				<select class="form-select form-select-sm">
-					<option selected>삭제여부</option>
-					<option value="1">N</option>
-					<option value="2">Y</option>
-				</select>				
-			</div>
-			<div class="col col-6 col-md-3 mt-2 mb-2">	
-				<select class="form-select form-select-sm col-sm-6">
-					<option selected>날짜</option>
-					<option value="1">one</option>
-					<option value="2">Two</option>
-				</select>
-			</div>
-			<div class="col col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_sdate" placeholder="시작일"></div>
-			<div class="col col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_edate" placeholder="종료일"></div>
-			<div class="col col-6 col-md-3 mt-2 mb-2">	
-				<select class="form-select form-select-sm">
-					<option selected>검색구분</option>
-					<option value="1">관리</option>
-					<option value="2">회원</option>
-				</select>
-			</div>
-			<div class="col col-6 col-md-3 mt-2 "><input type="text" class="form-control form-control-sm " id="input_search" placeholder="검색어"></div>
-			<div class="col col-6 col-md-3 mt-2 "><button type="button" class="btn btn-warning btn-sm" id="search_icon"><i class="fas fa-search"></i></button></div>
+<!-- 검색 s -->
+<div class="container border p-3">
+	<div class="row">
+		<div><h5>검색</h5></div>
+		<div class="col col-6 col-md-3 mt-2 mb-2">	 	
+			<select class="form-select form-select-sm">
+				<option selected>삭제여부</option>
+				<option value="1">N</option>
+				<option value="2">Y</option>
+			</select>				
 		</div>
-		
-	</div>	
-	
-	
- 	<!-- table s -->
- 	<div class="container">
-		<div class="table-responsive-md">
-			<table class="table table-striped table-hover caption-top">
-			<caption>Total : 12,123</caption>
-		 		<thead class="table-light">	
-					<tr>
-					<th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
-					<th>번호</th>
-					<th>이름</th>
-					<th width="10%">아이디</th>
-					<th width="10%">이메일</th>
-					<th width="10%">전화번호</th>
-					</tr>
-				</thead>	
-				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-					<td>1</td>
-					<td><a href="">윤수빈</a></td>
-					<td>asdasd</td>
-					<td>asdasd@asd.com</td>
-					<td>010-1231-1231</td>
-				</tr>
-				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-					<td>2</td>
-					<td>윤망고</td>
-					<td>qweqwe</td>
-					<td>qweqwe@qwe.com</td>
-					<td>010-1231-1234</td>
-				</tr>
-				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-					<td>3</td>
-					<td>김민지</td>
-					<td>zxczxc</td>
-					<td>zxczxc@zxc.com</td>
-					<td>010-1121-1321</td>
-				</tr>
-				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-					<td>4</td>
-					<td>이정민</td>
-					<td>werwer</td>
-					<td>werwer@wer.com</td>
-					<td>010-4424-4324</td>
-				</tr>
-				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-					<td>5</td>
-					<td>이세림</td>
-					<td>sdfsdf</td>
-					<td>sdfsdf@sdf.com</td>
-					<td>010-4424-4324</td>
-				</tr>
-			</table> 
+		<div class="col col-6 col-md-3 mt-2 mb-2">	
+			<select class="form-select form-select-sm col-sm-6">
+				<option selected>날짜</option>
+				<option value="1">one</option>
+				<option value="2">Two</option>
+			</select>
 		</div>
-			<!-- pagination s -->	
-			<nav aria-label="Page navigation">
-			  <ul class="pagination justify-content-center">
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Previous">
-			        <span aria-hidden="true">&laquo;</span>
-			      </a>
-			    </li>
-			    <li class="page-item"><a class="page-link" href="#">1</a></li>
-			    <li class="page-item"><a class="page-link" href="#">2</a></li>
-			    <li class="page-item"><a class="page-link" href="#">3</a></li>
-			    <li class="page-item"><a class="page-link" href="#">4</a></li>
-			    <li class="page-item"><a class="page-link" href="#">5</a></li>
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Next">
-			        <span aria-hidden="true">&raquo;</span>
-			      </a>
-			    </li>
-			  </ul>
-			</nav>
-			<!-- pagination e -->		
-			<div class="clearfix mb-3">
-			  <button type="button" class="btn btn-danger btn-sm float-start"><i class="fas fa-trash"></i></button>
-			  <button type="button" class="btn btn-primary btn-sm float-end"><i class="fas fa-plus"></i></button>
-			</div>
-
+		<div class="col col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_sdate" placeholder="시작일"></div>
+		<div class="col col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_edate" placeholder="종료일"></div>
+		<div class="col col-6 col-md-3 mt-2 mb-2">	
+			<select class="form-select form-select-sm">
+				<option selected>검색구분</option>
+				<option value="1">관리</option>
+				<option value="2">회원</option>
+			</select>
+		</div>
+		<div class="col col-6 col-md-3 mt-2 "><input type="text" class="form-control form-control-sm " id="input_search" placeholder="검색어"></div>
+		<div class="col col-6 col-md-3 mt-2 "><button type="button" class="btn btn-warning btn-sm" id="search_icon"><i class="fas fa-search"></i></button></div>
 	</div>
+</div>	
+<!-- 검색 e -->	
 	
-	<!-- table e -->
-
-<!-- <footer class="sticky-md-bottom bg-light">
-  
-  <div class="text-center p-3 " style="background-color: rgba(245, 245, 245);">
-
-		COPYRIGHT(C) <b>KYOBO BOOK CENTRE</b> ALL RIGHTS RESERVED.
-
-  </div>
-
-</footer> -->
-
+<!-- table s -->
 <div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <p class="col-md-4 mb-0 text-muted">
-    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid rounded mx-auto d-block" style="width: 100px; height: 40px;">
-    </a>
-    &copy; 
-    ㈜ 교보문고   서울시 종로구 종로 1<br>   
-    대표이사 : 안병현<br>
-	사업자등록번호 : 102-81-11670<br>
-	<b>대표전화 : 1544-1900 (발신자 부담전화)</b>   팩스 : 0502-987-5711 (지역번호공통)<br>
-	서울특별시 통신판매업신고번호 : 제 653호 ▶사업자정보확인 <br>
-COPYRIGHT(C) KYOBO BOOK CENTRE ALL RIGHTS RESERVED.
-    2021 Company, Inc</p>
+	<div class="table-responsive-md">
+		<table class="table table-striped table-hover caption-top">
+		<caption>Total : 12,123</caption>
+	 		<thead class="table-light">	
+				<tr>
+				<th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+				<th>번호</th>
+				<th>이름</th>
+				<th width="10%">아이디</th>
+				<th width="10%">이메일</th>
+				<th width="10%">전화번호</th>
+				</tr>
+			</thead>	
+			<tr>
+				<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td>1</td>
+				<td><a href="">윤수빈</a></td>
+				<td>asdasd</td>
+				<td>asdasd@asd.com</td>
+				<td>010-1231-1231</td>
+			</tr>
+			<tr>
+				<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td>2</td>
+				<td>윤망고</td>
+				<td>qweqwe</td>
+				<td>qweqwe@qwe.com</td>
+				<td>010-1231-1234</td>
+			</tr>
+			<tr>
+				<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td>3</td>
+				<td>김민지</td>
+				<td>zxczxc</td>
+				<td>zxczxc@zxc.com</td>
+				<td>010-1121-1321</td>
+			</tr>
+			<tr>
+				<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td>4</td>
+				<td>이정민</td>
+				<td>werwer</td>
+				<td>werwer@wer.com</td>
+				<td>010-4424-4324</td>
+			</tr>
+			<tr>
+				<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td>5</td>
+				<td>이세림</td>
+				<td>sdfsdf</td>
+				<td>sdfsdf@sdf.com</td>
+				<td>010-4424-4324</td>
+			</tr>
+		</table> 
+	</div>
 
+<!-- table e -->
 
-    <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-    </ul>
-  </footer>
+<!-- pagination s -->	
+	<nav aria-label="Page navigation">
+		<ul class="pagination justify-content-center">
+			<li class="page-item">
+				<a class="page-link" href="#" aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item"><a class="page-link" href="#">5</a></li>
+			<li class="page-item">
+				<a class="page-link" href="#" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+<!-- pagination e -->		
+
+	<div class="clearfix mb-3">
+	  <button type="button" class="btn btn-danger btn-sm float-start"><i class="fas fa-trash"></i></button>
+	  <button type="button" class="btn btn-primary btn-sm float-end"><i class="fas fa-plus"></i></button>
+	</div>
 </div>
+	
+	
+
+
+
+<!-- <div class="container">align-items-center justify-content-center -->
+<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+	<p class="col-md-5 mb-0 text-muted">
+		<a href="#" class="col-md-4 d-flex mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid" style="width: 100px; height: 40px;">
+		</a>
+		<small>㈜ 교보문고   서울시 종로구 종로 1<br>   
+			대표이사 : 안병현<br>
+			사업자등록번호 : 102-81-11670<br>
+			<b>대표전화 : 1544-1900 (발신자 부담전화)</b>   팩스 : 0502-987-5711 (지역번호공통)<br>
+			서울특별시 통신판매업신고번호 : 제 653호 ▶사업자정보확인 <br>
+			COPYRIGHT(C) KYOBO BOOK CENTRE ALL RIGHTS RESERVED.
+			2021 Company, Inc</p></small> 
+
+</footer>
+
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
