@@ -183,11 +183,26 @@
 			<label class="form-label">생년월일</label>
 			<input type="date" id="inputDob" name="inputDob" max="2022-01-08" class="form-control form-control-sm">
 		</div>
-		<div class="col-md-8 mx-auto">
-			<label class="form-label">이메일</label>
+		<div class="col-md-6">
+			<label class="col-form-label pt-0">이메일</label>
 			<input type="text" class="form-control form-control-sm" id="inputEmail" placeholder="@를 포함한 형태로 입력">
 		</div>
-		<div class="col-md-8 mx-auto">
+		<div class="col-md-6">
+			<label class="col-form-label pt-0">개인정보수집 동의 여부</label>
+			<div class="col-sm-10">
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="personalinfoConsentNy" id="personalinfoConsentNy1" value="personalinfoConsentNy1" checked>
+				<label class="form-check-label" for="personalinfoConsentNy1">동의</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="personalinfoConsentNy" id="personalinfoConsentNy2" value="personalinfoConsentNy2">
+				<label class="form-check-label" for="personalinfoConsentNy2">비동의</label>
+		</div>
+ 
+   		</div>
+
+		</div>
+		<div class="col-md-6">
 			<label class="form-label">핸드폰번호</label>
 			<select class="form-select form-select-sm" id="inputTelecom">
 				<option selected>::통신사::</option>
@@ -198,7 +213,7 @@
 			</select>
 			<input type="text" class="form-control form-control-sm" id="inputMobile" placeholder="번호만 입력">
 		</div>
-		<div class="col-md-8 mx-auto">
+		<div class="col-md-6">
 			<label class="form-label">전화번호</label>
 			<input type="text" class="form-control form-control-sm" id="inputTel" placeholder="번호만 입력">
 		</div>
