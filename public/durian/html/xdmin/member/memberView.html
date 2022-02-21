@@ -8,7 +8,10 @@
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 <link href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css"  rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+<link href="../../../css/sidebars.css" rel="stylesheet" type="text/css">
+<link href="../../../css/footers.css" rel="stylesheet" type="text/css">
 <title>Hello, world!</title>
 <style type="text/css">
 
@@ -23,15 +26,15 @@
 <!-- 헤더 s-->			
 <div class="container-fluid"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
 	<div class="row ">	
-		<div class="col-4 col-md-2">
+		<div class="col-5 col-md-2 col-lg-2 my-auto">
 			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid rounded mx-auto d-block">
 		</div>				
-		<div class="col-8 col-md-5 text-end">
-			<a class="d-block d-sm-none" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
+		<div class="col-7 col-md-5 col-lg-6 my-auto text-end">
+			<a class="d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
 				<i class="bi bi-list"></i>
 			</a>
 		</div>		
-		<div class="col-md-5 my-auto d-none d-md-block mb-0 mt-4">	
+		<div class="col-md-5 col-lg-4 my-auto d-none d-md-block mt-4">	
 			<div class="row">
 				<div class="col my-auto"><img src="../../../images/xdmin_img/2.jpg" class="image rounded-circle img-thumbnail float-end" style="width: 50px; height: 50px;"  id="profile1"></div>
 				<div class="col my-auto">
@@ -43,7 +46,6 @@
 	</div>
 </div>			
 <!-- 헤더 e-->
-
 
 <!-- offcanvas s -->
 <nav class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" data-bs-keyboard="false" data-bs-backdrop="true" data-bs-scroll="true">
@@ -137,20 +139,171 @@
 	</div>
 </nav>
 <!-- navbar1 e -->
-<div></div>
-
-
-
-
-
-
-	
-<div class="container">
-
-
+<!-- 검색 s -->
+<div class="container-fluid">
+	<div class="border p-3 mb-3">
+		<div class="row">
+			<div><h4>회원정보</h4></div>
+			<div class="col-6 col-md-3 mt-2 mb-2">	 	
+				<select class="form-select form-select-sm">
+					<option selected>삭제여부</option>
+					<option value="1">N</option>
+					<option value="2">Y</option>
+				</select>				
+			</div>
+			<div class="col-6 col-md-3 mt-2 mb-2">	
+				<select class="form-select form-select-sm col-sm-6">
+					<option selected>날짜</option>
+					<option value="1">one</option>
+					<option value="2">Two</option>
+				</select>
+			</div>
+			<div class="col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_sdate" placeholder="시작일"></div>
+			<div class="col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_edate" placeholder="종료일"></div>
+			<div class="col-6 col-md-3 mt-2 mb-2">	
+				<select class="form-select form-select-sm">
+					<option selected>검색구분</option>
+					<option value="1">관리</option>
+					<option value="2">회원</option>
+				</select>
+			</div>
+			<div class="col-6 col-md-3 mt-2 "><input type="text" class="form-control form-control-sm " id="input_search" placeholder="검색어"></div>
+			<div class="col-6 col-md-3 mt-2">
+				<button type="button" class="btn btn-warning btn-sm" id="search_icon"><i class="fas fa-search"></i></button>
+				<button type="button" class="btn btn-danger btn-sm" id="search_icon"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+			</div>
+		</div>
+	</div>	
 </div>
-
- 	
+<!-- 검색 e -->
+<div class="container-fluid">
+	<div class="table-responsive">
+		<table class="table table-hover">
+			<tr>
+				<th class="table-active" width="20%">이름</th>
+				<td colspan="3" width="80%">윤수빈</td>
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">생년월일</th>
+				<td colspan="3" width="80%">1111-11-11</td>
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">아이디</th>
+				<td width="30%">asdasd</td>
+				<th class="table-active" width="20%">비밀번호</th>
+				<td width="30%">1111</td>
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">성별</th>
+				<td width="30%">여</td>
+				<th class="table-active" width="20%">국적</th>
+				<td width="30%">한국</td>
+	
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">주소</th>
+				<td colspan="3" width="80%">서울특별시 어쩌구 저쩌구</td>
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">모바일</th>
+				<td width="30%">010-1231-1231
+					<span class="badge bg-warning text-dark" data-bs-toggle="modal" data-bs-target="#mobileModal" role="button">mobile</span>
+					<div class="modal fade" id="mobileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <form>
+					          <div class="mb-3">
+					            <label for="recipient-name" class="col-form-label">Recipient:</label>
+					            <input type="text" class="form-control" id="recipient-name" value="010-1231-1231" disabled>
+					          </div>
+					          <div class="mb-3">
+					            <label for="message-text" class="col-form-label">Message:</label>
+					            <textarea class="form-control" id="message-text"></textarea>
+					          </div>
+					        </form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sendModal">Send message</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- send button -->
+					<div class="modal fade" id="sendModal" tabindex="-1" aria-hidden="true" >
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">! 전송</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        전송되었습니다
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+	
+				</td>
+				<th class="table-active" width="20%">모바일 마케팅 수신 동의</th>
+				<td width="30%">동의 (2022.01.01 12:12:12)</td>
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">전화번호</th>
+				<td width="30%">02-123-1231</td>
+				<th class="table-active" width="20%">팩스번호</th>
+				<td width="30%">111-222-333</td>
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">이메일</th>
+				<td width="30%">qweqwe@asd.com
+					<span class="badge bg-info text-dark" data-bs-toggle="modal" data-bs-target="#emailModal" role="button">email</span>
+						<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="#emailModal" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						        <form>
+						          <div class="mb-3">
+						            <label for="recipient-name" class="col-form-label">Recipient:</label>
+						            <input type="text" class="form-control" id="recipient-name" value="qweqwe@asd.com" disabled>
+						          </div>
+						          <div class="mb-3">
+						            <label for="message-text" class="col-form-label">Message:</label>
+						            <textarea class="form-control" id="message-text"></textarea>
+						          </div>
+						        </form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-primary" data-bs-target="#sendModal" data-bs-toggle="modal">Send email</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>						
+				</td>
+				<th class="table-active" width="20%">이메일 마케팅 수신 동의</th>
+				<td width="30%">동의 (2022.01.01 12:12:12)</td>
+			</tr>
+			<tr>
+				<th class="table-active" width="20%">개인정보유효기간</th>
+				<td colspan="3" width="80%">1년(&nbsp;&nbsp;) 3년(&nbsp;&nbsp;)
+					5년(&nbsp;&nbsp;) 10년(O)</td>
+			</tr>
+		</table>
+	</div>	
+</div> 	
 
 
 
