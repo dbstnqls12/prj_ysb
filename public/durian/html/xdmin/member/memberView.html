@@ -15,6 +15,17 @@
 <link href="../../../css/footers.css" rel="stylesheet" type="text/css">
 <title>Hello, world!</title>
 <style type="text/css">
+
+	#inputZipcode
+	,#inputAddress1
+	,#inputTelecom{
+		margin-bottom: 5px;
+		
+	}
+	#add{
+		float: right;
+	}
+
 </style>
 </head>
 <body>
@@ -48,7 +59,7 @@
 		<a href="#" class="d-flex align-items-center text-decoration-none offcanvas-title d-sm-block"><h3>Menu</h3></a>
 		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	</div>
-	<div class="offcanvas-body px-0">
+		<div class="offcanvas-body px-0">
 		<ul class="list-unstyled ps-0">
 			<li class="mb-1">
 				<button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">Home</button>
@@ -100,7 +111,7 @@
 <!-- offcanvas e -->
 
 <!-- navbar1 s -->
-<nav class="navbar navbar-expand-md navbar-light bg-light d-none d-md-block mb-3">
+<nav class="navbar navbar-expand-md navbar-light bg-light d-none d-md-block mb-4">
 	<div class="container-fluid">
 		<a class="navbar-brand d-block d-sm-none" href="#">Navbar</a>
 		<a class="navbar-brand d-none d-sm-block" href="#">Home</a>
@@ -134,84 +145,238 @@
 	</div>
 </nav>
 <!-- navbar1 e -->
-	
-
-<!-- 검색 s -->
+<!-- 본문 s-->
 <div class="container-fluid">
-	<div class="border p-3 mb-3">
-		<div class="row">
-			<div><h5>회원관리</h5></div>
-			<div class="col-6 col-md-3 mt-2 mb-2">	 	
-				<select class="form-select form-select-sm">
-					<option selected>삭제여부</option>
-					<option value="1">N</option>
-					<option value="2">Y</option>
-				</select>				
-			</div>
-			<div class="col-6 col-md-3 mt-2 mb-2">	
-				<select class="form-select form-select-sm col-sm-6">
-					<option selected>날짜</option>
-					<option value="1">one</option>
-					<option value="2">Two</option>
-				</select>
-			</div>
-			<div class="col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_sdate" placeholder="시작일"></div>
-			<div class="col-6 col-md-3 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_edate" placeholder="종료일"></div>
-			<div class="col-6 col-md-3 mt-2 mb-2">	
-				<select class="form-select form-select-sm">
-					<option selected>검색구분</option>
-					<option value="1">관리</option>
-					<option value="2">회원</option>
-				</select>
-			</div>
-			<div class="col-6 col-md-3 mt-2 "><input type="text" class="form-control form-control-sm " id="input_search" placeholder="검색어"></div>
-			<div class="col-6 col-md-3 mt-2">
-				<button type="button" class="btn btn-warning btn-sm" id="search_icon"><i class="fas fa-search"></i></button>
-				<button type="button" class="btn btn-danger btn-sm" id="search_icon"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+	<div class="row">
+		<!-- 3단길이의 첫번째 열 -->
+		<div class="col-md-2 d-none d-md-block">
+			<div class="px-0 ">
+				<ul class="list-unstyled ps-0">
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">Home</button>
+						<div class="collapse" id="home-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" class="rounded">Overview</a></li>
+								<li><a href="#" class="rounded">Updates</a></li>
+								<li><a href="#" class="rounded">Reports</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</button>
+						<div class="collapse" id="dashboard-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" class="rounded">Overview</a></li>
+								<li><a href="#" class="rounded">Weekly</a></li>
+								<li><a href="#" class="rounded">Monthly</a></li>
+								<li><a href="#" class="rounded">Annually</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">Orders</button>
+						<div class="collapse" id="orders-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" class="rounded">New</a></li>
+								<li><a href="#" class="rounded">Processed</a></li>
+								<li><a href="#" class="rounded">Shipped</a></li>
+								<li><a href="#" class="rounded">Returned</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+					<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">Account</button>
+						<div class="collapse" id="account-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" class="rounded">New...</a></li>
+								<li><a href="#" class="rounded">Profile</a></li>
+								<li><a href="#" class="rounded">Settings</a></li>
+								<li><a href="#" class="rounded">Sign out</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</div>	
-</div>
-<!-- 검색 e -->	
-
-<!-- table s -->
-<div class="container-fluid">
-	<div class="table-responsive">
-		<table class="table table-hover">
-			<tr>
-				<th class="table-active" width="30%">아이디</th>
-				<td width="70%">asd123</td>
-			</tr>
-			<tr>
-				<th class="table-active" width="30%">이름</th>
-				<td width="70%">윤수빈</td>
-			</tr>
-			<tr>
-
-			</tr>
-			<tr>
-
-			</tr>
-			<tr>
-
-			</tr>
-			<tr>
-
-			</tr>
-		</table> 
-	</div>
-
-<!-- table e -->
-
-	
-	<div class="clearfix mb-3">	
-		<div class="float-start"><button type="button" class="btn btn-danger btn-sm float-start"><i class="fas fa-trash"></i></button></div>
-		<div class="float-end">
-			<button type="button" class="btn btn-success btn-sm" id="search_icon"><i class="bi bi-file-earmark-x"></i></button>
-			<button type="button" class="btn btn-primary btn-sm" id="search_icon"><i class="fas fa-plus"></i></button>
+		
+		<!-- 9단길이의 첫번째 열 -->
+		<hr class="d-block d-sm-none">
+		<div class="col-md-10">
+		<div class="mb-3"><h4>회원정보</h4></div>
+			<div class="container ">
+			<form action="" method="post" id="memberForm" name="memberForm" enctype="multipart/form-data" class="row g-3">
+				<div class="col-md-6">
+					<label for="inputId" class="form-label">아이디</label>
+					<input type="text" class="form-control form-control-sm" id="inputId" placeholder="asdasd123"> 
+				</div>
+				<div class="col-6 d-none d-sm-block"></div><!-- 줄바꿈 -->
+				<div class="col-md-6">
+					<label for="inputPwd" class="form-label">비밀번호</label>
+					<input type="password" class="form-control form-control-sm" id="inputPwd" placeholder="asdasd123!">
+				</div>
+				<div class="col-md-6 ">
+					<label for="inputPwdChk" class="form-label">비밀번호 확인</label>
+					<input type="password" class="form-control form-control-sm" id="inputPwdChk">
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">이름</label>
+					<input type="text" class="form-control form-control-sm" id="inputName" placeholder="윤수빈" disabled>
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">이름(영문)</label>
+					<input type="text" class="form-control form-control-sm" id="inputnameEng" placeholder="Youn Subin">
+				</div>
+				<!-- <div class="col-md-6">
+					<label class="form-label">생년월일</label>
+					<input type="date" id="inputDob" name="inputDob" max="2022-01-08" class="form-control form-control-sm" placeholder="2020-12-12">
+				</div> -->
+				<div class="col-md-6">
+					<label class="form-label">생년월일</label>
+					<input type="text" id="inputDob" name="inputDob" max="2022-01-08" class="form-control form-control-sm" placeholder="2020-12-12">
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">성별</label>
+					<select class="form-select form-select-sm" id="inputGender">
+						<option selected>::선택::</option>
+						<option value="1">남성</option>
+						<option value="2" selected>여성</option>
+						<option value="3">기타</option>
+					</select>
+				</div>	
+				<div class="col-md-6">
+					<label class="col-form-label pt-0">이메일</label>
+					<input type="text" class="form-control form-control-sm" id="inputEmail" placeholder="asd123@naver.com">
+				</div>
+				<div class="col-md-6">
+					<label class="col-form-label pt-0">이메일 마케팅 수신여부</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="emailMarketingConsentNy" id="emailMarketingConsentNy1" value="emailMarketingConsentNy1">
+							<label class="form-check-label" for="emailMarketingConsentNy1">동의</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="emailMarketingConsentNy" id="emailMarketingConsentNy2" value="emailMarketingConsentNy2" checked>
+							<label class="form-check-label" for="emailMarketingConsentNy2">비동의</label>
+						</div>
+		 			</div>
+		 		</div>	
+				<div class="col-md-6">
+					<label class="form-label">핸드폰번호</label>
+					<select class="form-select form-select-sm" id="inputTelecom">
+						<option selected>::통신사::</option>
+						<option value="1">SKT</option>
+						<option value="2">KT</option>
+						<option value="3" selected>LGU</option>
+						<option value="3">기타</option>
+					</select>
+					<input type="text" class="form-control form-control-sm" id="inputMobile" placeholder="010-1231-1231">
+				</div>
+				<div class="col-md-6">
+					<label class="col-form-label">모바일 마케팅 수신여부</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="mobileMarketingConsentNy" id="mobileMarketingConsentNy1" value="mobileMarketingConsentNy1" checked>
+							<label class="form-check-label" for="mobileMarketingConsentNy1">동의</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="mobileMarketingConsentNy" id="mobileMarketingConsentNy2" value="mobileMarketingConsentNy2">
+							<label class="form-check-label" for="mobileMarketingConsentNy2">비동의</label>
+						</div>
+		 			</div>
+		 		</div>
+				<div class="col-md-6">
+					<label class="form-label">전화번호</label>
+					<input type="text" class="form-control form-control-sm" id="inputTel" placeholder="02-386-123">
+				</div>
+				<div class="col-6 d-none d-sm-block"></div><!-- 줄바꿈 -->
+				<div class="col-md-6">
+					<label class="form-label">팩스번호</label>
+					<input type="text" class="form-control form-control-sm" id="inputFax" placeholder="123123"	>
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">국적</label>
+					<select class="form-select form-select-sm" id="inputNationality">
+						<option selected>::선택::</option>
+						<option value="1" selected>대한민국</option>
+						<option value="2"></option>
+						<option value="3"></option>
+						<option value="3"></option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">주소 (한국전용)</label>
+					<input type="text" class="form-control form-control-sm" id="inputZipcode" placeholder="02221">
+					<input type="text" class="form-control form-control-sm" id="inputAddress1" placeholder="서울특별시 무슨동">
+					<input type="text" class="form-control form-control-sm" id="inputAddress2" placeholder="어느구">
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">주소 (국외전용)</label>
+					<input type="text" class="form-control form-control-sm" id="inputZipcode" placeholder="우편번호">
+					<input type="text" class="form-control form-control-sm" id="inputAddress1" placeholder="주소">
+					<input type="text" class="form-control form-control-sm" id="inputAddress2" placeholder="상세주소">
+				</div>
+				<div class="col-md-6">
+					<label class="col-form-label">개인정보 유효기간</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod1" value="personalinfoPeriod1" >
+							<label class="form-check-label" for="personalinfoPeriod1">1년</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod2" value="personalinfoPeriod2">
+							<label class="form-check-label" for="personalinfoPeriod2">3년</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod3" value="personalinfoPeriod3">
+							<label class="form-check-label" for="personalinfoPeriod3">5년</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod4" value="personalinfoPeriod4" checked>
+							<label class="form-check-label" for="personalinfoPeriod4">탈퇴시</label>
+						</div>
+		 			</div>
+		 		</div>
+				<div class="col-md-6">
+					<label class="col-form-label">성인 인증</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="adultCertification" id="adultCertification1" value="adultCertification1" checked>
+							<label class="form-check-label" for="adultCertification1">1회 1년간 인증</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="adultCertification" id="adultCertification2" value="adultCertification2">
+							<label class="form-check-label" for="adultCertification2">매회 인증</label>
+						</div>
+		 			</div>
+		 		</div>
+				<div class="col-md-3">
+					<label class="form-label">최종수정자</label>
+					<input type="text" class="form-control form-control-sm" id="inputEditP" placeholder="윤수빈" disabled>
+				</div>
+				<div class="col-md-3">
+					<label class="form-label">최종수정일</label>
+					<input type="text" class="form-control form-control-sm" id="inputEditDate" placeholder="2022-12-12 12:12:12" disabled>
+				</div>
+				<div class="col-md-3">
+					<label class="form-label">최초등록자</label>
+					<input type="text" class="form-control form-control-sm" id="inputRegP" placeholder="윤수빈" disabled>
+				</div>
+				<div class="col-md-3">
+					<label class="form-label">최초등록일</label>
+					<input type="text" class="form-control form-control-sm" id="inputRegDate" placeholder="2020-12-12 12:12:12" disabled>
+				</div>
+			</form>
+			<button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+			<button type="button" class="btn btn-primary btn-sm" id="add"><i class="fas fa-plus"></i></button>
+		</div>
 		</div>
 	</div>
 </div>
+
+
+
+
 	
 	
 
