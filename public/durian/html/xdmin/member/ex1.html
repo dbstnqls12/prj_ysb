@@ -104,6 +104,8 @@
 		padding-bottom: 3px;
 	}
 
+
+	
 </style>
 </head>
 <body>
@@ -124,36 +126,27 @@
 <hr class="w-100" style="color: #DDDDDD">
 	<div class="container my-wrap">
 		<div class="mt-5 mb-4">
-			<h6 class="text-center">교보북클럽 회원가입을 환영합니다</h6>
+			<h5 class="text-center">교보북클럽 <strong style="color: #6eb327; font-weight: normal;">회원가입</strong>을 환영합니다</h5s>
 		</div>
 	
-		<input class="form-control" type="text" id="inputusername" placeholder="username" aria-label="input id">	
-		<input class="form-control" type="password" id="inputpwd" placeholder="password" aria-label="input pwd">
-		
-		<div class="form-check col-xs-8">
-			<input class="form-check-input" type="checkbox" name="autologin" value="autologin" id="autologin">
-			<span class="form-check-label" for="autologin" id="autologin" >자동 로그인</span>
+		<div class="d-grid gap-2 col-xs-8 mx-auto">
+			<button class="btn btn-primary" type="button" onclick="location.href=''" id="loginbtn">개인회원</button>	
+			<button class="btn btn-secondary" type="button" onclick="location.href=''">법인회원</button>
+			<button class="btn btn-secondary" type="button" onclick="location.href=''">기존매장/제휴회원</button>
 		</div>
-	</div>	
-	
-	<div class="d-grid gap-2 col-xs-8 mx-auto">
-		<button class="btn btn-primary" type="button" onclick="location.href=''" id="loginbtn">로그인</button>	
-		<button class="btn btn-secondary" type="button" onclick="location.href=''">회원가입</button>
-	</div>
 		
-	<hr class="col-xs-8 mx-auto">
-	
-	<div class="col-xs-8 mx-auto text-secondary" id="searchpwd">
-	  <small><a href=""> 아이디/비밀번호 찾기 > </a></small>
+
+	<div class="mt-5 mb-4">
+		<p class="text-center" style="font-size: 14px;">매장 및 제휴 기가입한 회원의 아이디를 생성 하세요</p>
 	</div>
-	
+
 	<div class="d-grid gap-2 col-xs-8 mx-auto">
 		<!-- <button class="btn btn-outline-secondary" type="button"><img src="../../../images/emailicon.png"> 번호로 로그인</button> -->
 		<button class="btn btn-naver" type="button"><img src="../../../images/xdmin_img/navericon.png" id="icon"><b> 네이버</b> 로그인</button>
 		<button class="btn btn-kakao" type="button"><img src="../../../images/xdmin_img/kakaoicon.png" id="icon"><b> 카카오</b> 로그인</button>
 		<button class="btn btn-facebook" type="button"><img src="../../../images/xdmin_img/fbicon.png" id="icon"><b> 페이스북</b> 로그인</button>
 	</div>
-	
+		
 </div>
 
 
