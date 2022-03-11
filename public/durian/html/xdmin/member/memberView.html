@@ -13,18 +13,16 @@
 
 <link href="../../../css/sidebars.css" rel="stylesheet" type="text/css">
 <link href="../../../css/footers.css" rel="stylesheet" type="text/css">
-<title>Hello, world!</title>
+<title>Kyobo_memberView</title>
 <style type="text/css">
 
-	#inputZipcode
+ 	#inputZipcode
 	,#inputAddress1
 	,#inputTelecom{
-		margin-bottom: 5px;
+		margin-bottom: 5px; 
 		
 	}
-	#add{
-		float: right;
-	}
+
 
 </style>
 </head>
@@ -207,19 +205,6 @@
 			<div class="container ">
 			<form action="" method="post" id="memberForm" name="memberView" enctype="multipart/form-data" class="row g-3">
 				<div class="col-md-6">
-					<label for="inputId" class="form-label">아이디</label>
-					<input type="text" class="form-control form-control-sm" id="inputId" placeholder="asdasd123"> 
-				</div>
-				<div class="col-6 d-none d-sm-block"></div><!-- 줄바꿈 -->
-				<div class="col-md-6">
-					<label for="inputPwd" class="form-label">비밀번호</label>
-					<input type="password" class="form-control form-control-sm" id="inputPwd" placeholder="asdasd123!">
-				</div>
-				<div class="col-md-6 ">
-					<label for="inputPwdChk" class="form-label">비밀번호 확인</label>
-					<input type="password" class="form-control form-control-sm" id="inputPwdChk">
-				</div>
-				<div class="col-md-6">
 					<label class="form-label">이름</label>
 					<input type="text" class="form-control form-control-sm" id="inputName" placeholder="윤수빈" disabled>
 				</div>
@@ -227,10 +212,15 @@
 					<label class="form-label">이름(영문)</label>
 					<input type="text" class="form-control form-control-sm" id="inputnameEng" placeholder="Youn Subin">
 				</div>
-				<!-- <div class="col-md-6">
-					<label class="form-label">생년월일</label>
-					<input type="date" id="inputDob" name="inputDob" max="2022-01-08" class="form-control form-control-sm" placeholder="2020-12-12">
-				</div> -->
+				<div class="col-md-6">
+					<label for="inputId" class="form-label">아이디</label>
+					<input type="text" class="form-control form-control-sm" id="inputId" placeholder="asdasd123"> 
+				</div>
+				<div class="col-md-6">
+					<label for="inputPwd" class="form-label">비밀번호</label>
+					<input type="password" class="form-control form-control-sm" id="inputPwd" placeholder="asdasd123!">
+				</div>
+
 				<div class="col-md-6">
 					<label class="form-label">생년월일</label>
 					<input type="text" id="inputDob" name="inputDob" max="2022-01-08" class="form-control form-control-sm" placeholder="2020-12-12">
@@ -245,23 +235,6 @@
 					</select>
 				</div>	
 				<div class="col-md-6">
-					<label class="col-form-label pt-0">이메일</label>
-					<input type="text" class="form-control form-control-sm" id="inputEmail" placeholder="asd123@naver.com">
-				</div>
-				<div class="col-md-6">
-					<label class="col-form-label pt-0">이메일 마케팅 수신여부</label>
-					<div class="col-md-6">
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="emailMarketingConsentNy" id="emailMarketingConsentNy1" value="emailMarketingConsentNy1">
-							<label class="form-check-label" for="emailMarketingConsentNy1">동의</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="emailMarketingConsentNy" id="emailMarketingConsentNy2" value="emailMarketingConsentNy2" checked>
-							<label class="form-check-label" for="emailMarketingConsentNy2">비동의</label>
-						</div>
-		 			</div>
-		 		</div>	
-				<div class="col-md-6">
 					<label class="form-label">핸드폰번호</label>
 					<select class="form-select form-select-sm" id="inputTelecom">
 						<option selected>::통신사::</option>
@@ -273,23 +246,13 @@
 					<input type="text" class="form-control form-control-sm" id="inputMobile" placeholder="010-1231-1231">
 				</div>
 				<div class="col-md-6">
-					<label class="col-form-label">모바일 마케팅 수신여부</label>
-					<div class="col-md-6">
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="mobileMarketingConsentNy" id="mobileMarketingConsentNy1" value="mobileMarketingConsentNy1" checked>
-							<label class="form-check-label" for="mobileMarketingConsentNy1">동의</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="mobileMarketingConsentNy" id="mobileMarketingConsentNy2" value="mobileMarketingConsentNy2">
-							<label class="form-check-label" for="mobileMarketingConsentNy2">비동의</label>
-						</div>
-		 			</div>
-		 		</div>
+					<label class="col-form-label pt-0">이메일</label>
+					<input type="text" class="form-control form-control-sm" id="inputEmail" placeholder="asd123@naver.com">
+				</div>
 				<div class="col-md-6">
 					<label class="form-label">전화번호</label>
 					<input type="text" class="form-control form-control-sm" id="inputTel" placeholder="02-386-123">
 				</div>
-				<div class="col-6 d-none d-sm-block"></div><!-- 줄바꿈 -->
 				<div class="col-md-6">
 					<label class="form-label">팩스번호</label>
 					<input type="text" class="form-control form-control-sm" id="inputFax" placeholder="123123"	>
@@ -304,6 +267,7 @@
 						<option value="3"></option>
 					</select>
 				</div>
+				<div class="col-6 d-none d-sm-block"></div><!-- 줄바꿈 -->
 				<div class="col-md-6">
 					<label class="form-label">주소 (한국전용)</label>
 					<input type="text" class="form-control form-control-sm" id="inputZipcode" placeholder="02221">
@@ -316,6 +280,19 @@
 					<input type="text" class="form-control form-control-sm" id="inputAddress1" placeholder="주소">
 					<input type="text" class="form-control form-control-sm" id="inputAddress2" placeholder="상세주소">
 				</div>
+				<div class="col-md-6">
+					<label class="col-form-label">개인정보 수집 및 이용안내(선택)</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="personalinfoConsentNy_s" id="personalinfoConsentNy_sy" value="1" checked>
+							<label class="form-check-label" for="personalinfoConsentNy_sy">동의</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="personalinfoConsentNy_s" id="personalinfoConsentNy_sn" value="0" >
+							<label class="form-check-label" for="personalinfoConsentNy_sn">비동의</label>
+						</div>
+		 			</div>
+		 		</div>			
 				<div class="col-md-6">
 					<label class="col-form-label">개인정보 유효기간</label>
 					<div class="col-md-6">
@@ -338,6 +315,59 @@
 		 			</div>
 		 		</div>
 				<div class="col-md-6">
+					<label class="col-form-label">제3자 정보제공 동의 교보 핫트랙스, 꾸밍(선택)</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="offerinfo1ConsentNy" id="offerinfo1ConsentY" value="1">
+							<label class="form-check-label" for="offerinfo1ConsentY">동의</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="offerinfo1ConsentNy" id="offerinfo1ConsentN" value="0" checked>
+							<label class="form-check-label" for="offerinfo1ConsentN">비동의</label>
+						</div>
+		 			</div>
+		 		</div>	
+				<div class="col-md-6">
+					<label class="col-form-label">제3자 정보제공 동의 교보라이프플래닛 생명보험(선택)</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="offerinfo2ConsentNy" id="offerinfo2ConsentY" value="1" checked>
+							<label class="form-check-label" for="offerinfo2ConsentY">동의</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="offerinfo2ConsentNy" id="offerinfo2ConsentN" value="0">
+							<label class="form-check-label" for="offerinfo2ConsentN">비동의</label>
+						</div>
+		 			</div>
+		 		</div>	
+				<div class="col-md-6">
+					<label class="col-form-label">이메일 마케팅 수신여부</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="emailMarketingConsentNy" id="emailMarketingConsentY" value="1">
+							<label class="form-check-label" for="emailMarketingConsentY">동의</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="emailMarketingConsentNy" id="emailMarketingConsentN" value="0">
+							<label class="form-check-label" for="emailMarketingConsentN">비동의</label>
+						</div>
+		 			</div>
+		 		</div>	
+
+				<div class="col-md-6">
+					<label class="col-form-label">모바일 마케팅 수신여부</label>
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="mobileMarketingConsentNy" id="mobileMarketingConsentY" value="1">
+							<label class="form-check-label" for="mobileMarketingConsentY">동의</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="mobileMarketingConsentNy" id="mobileMarketingConsentN" value="0" checked>
+							<label class="form-check-label" for="mobileMarketingConsentN">비동의</label>
+						</div>
+		 			</div>
+		 		</div>
+				<div class="col-md-6">
 					<label class="col-form-label">성인 인증</label>
 					<div class="col-md-6">
 						<div class="form-check form-check-inline">
@@ -350,6 +380,8 @@
 						</div>
 		 			</div>
 		 		</div>
+		 		
+				<div class="col-6 d-none d-sm-block"></div>
 				<div class="col-md-3">
 					<label class="form-label">최종수정자</label>
 					<input type="text" class="form-control form-control-sm" id="inputEditP" placeholder="윤수빈" disabled>
@@ -367,8 +399,12 @@
 					<input type="text" class="form-control form-control-sm" id="inputRegDate" placeholder="2020-12-12 12:12:12" disabled>
 				</div>
 			</form>
-			<button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-			<button type="button" class="btn btn-primary btn-sm" id="add"><i class="fas fa-plus"></i></button>
+			<div class="col-mb-3 mt-3">	
+				<div class="float-start"><button type="button" class="btn btn-danger btn-sm float-start"><i class="fas fa-trash"></i></button></div>
+				<div class="float-end">
+					<button type="button" class="btn btn-primary btn-sm" id="search_icon"><i class="fas fa-plus"></i></button>
+				</div>
+			</div>
 		</div>
 		</div>
 	</div>
