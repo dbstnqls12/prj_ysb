@@ -198,7 +198,7 @@
 			</div>
 		</div>
 		
-		<!-- 9단길이의 첫번째 열 -->
+			<!-- 9단길이의 첫번째 열 -->
 		<hr class="d-block d-sm-none">
 		<div class="col-md-10">
 		<div class="mb-3"><h4>도서정보</h4></div>
@@ -219,13 +219,58 @@
 				</div>
 				<div class="col-md-6">
 					<label for="inputId" class="form-label">저자명</label>
-					<input type="text" class="form-control form-control-sm" id="inputAuthorCd"name="tditAuthorCd" placeholder="저자명을 검색하세요"> 
-					<span class="badge bg-light text-dark">저자 찾기</span>
+					<input type="text" class="form-control form-control-sm" id="inputAuthorCd" name="tdatAuthorCd" placeholder="저자명을 검색하세요"> 
+					<span class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#authorModal" role="button">저자 찾기</span>
+						<!--저자찾기 s -->
+						<div class="modal fade" id="authorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">저자 검색</h5>
+										<button type="button" class="btn-close"data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h3 style="text-align: center">저자 검색</h3>
+											<br> <br><div class="input-group mb-3"> <input class="form-control form-control-lg" type="text" placeholder="저자명 입력"> <br>
+											<a href="" class="btn btn-outline-secondary" role="button" id="authorSearch">검색</a>
+										</div>
+										<p>저자명을 한글로 검색하세요</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+										<button type="button" data-bs-toggle="modal" class="btn btn-primary">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 저자찾기 e -->
 				</div>
 				<div class="col-md-6">
 					<label for="inputPwd" class="form-label">출판사</label>
 					<input type="password" class="form-control form-control-sm" id="inputPublisherCd" name="tditPublisherCd" placeholder="출판사를 검색하세요">
-					<span class="badge bg-light text-dark">출판사 찾기</span>
+					<span class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#publisherModal" role="button">출판사 찾기</span>
+						<!--출판사찾기 s -->
+						<div class="modal fade" id="publisherModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">출판사 검색</h5>
+										<button type="button" class="btn-close"data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h3 style="text-align: center">출판사 검색</h3>
+											<br> <br><div class="input-group mb-3"> <input class="form-control form-control-lg" type="text" placeholder="출판사 입력"> <br>
+											<a href="" class="btn btn-outline-secondary" role="button" id="authorSearch">검색</a>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+										<button type="button" data-bs-toggle="modal" class="btn btn-primary">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 출판사찾기 e -->
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">정가</label>
@@ -237,19 +282,19 @@
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">ISBN</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
+					<input type="text" class="form-control form-control-sm" id="inputIsbn" name="tditIsbn">
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">쪽수</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
+					<input type="text" class="form-control form-control-sm" id="inputPage" name="tditPage">
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">크기</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
+					<input type="text" class="form-control form-control-sm" id="inputSize" name="tditSize">
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">판매상태</label>
-					<select class="form-select form-select-sm" id="inputGender">
+					<select class="form-select form-select-sm" id="inputState" name="tditStateCd">
 						<option value="">::판매상태::</option>
 						<option value="1">판매중</option>
 						<option value="2">예약판매중</option>
@@ -260,36 +305,75 @@
 				</div>	
 				<div class="col-md-6">
 					<label class="form-label">키워드</label>
-					<input type="text" class="form-control form-control-sm" id="inputTel">
+					<input type="text" class="form-control form-control-sm" id="inputKeyword" name="tdkwKeyWord">
+					<input type="text" class="form-control form-control-sm" id="inputKeyword" name="tdkwKeyWord">
+					<input type="text" class="form-control form-control-sm" id="inputKeyword" name="tdkwKeyWord">
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">시리즈</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax" placeholder="시리즈를 검색하세요">
-					<span class="badge bg-light text-dark">시리즈 검색</span>
+					<input type="text" class="form-control form-control-sm" id="inputSeries" placeholder="시리즈를 검색하세요" name="tdsiBookCd">
+					<span class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#seriesModal" role="button">시리즈 검색</span>
+						<!--시리즈찾기 s -->
+						<div class="modal fade" id="seriesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">시리즈 검색</h5>
+										<button type="button" class="btn-close"data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h3 style="text-align: center">시리즈 검색</h3>
+											<br> <br><div class="input-group mb-3"> <input class="form-control form-control-lg" type="text" placeholder="시리즈 입력"> <br>
+											<a href="" class="btn btn-outline-secondary" role="button" id="authorSearch">검색</a>
+										</div>
+										<p>시리즈 제목을 입력하세요</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+										<button type="button" data-bs-toggle="modal" class="btn btn-primary">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 출판사찾기 e -->
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">책설명(image)</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
-				</div>
-				<div class="col-md-6">
-					<label class="form-label">책설명(text)</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
-				</div>
-				<div class="col-md-6">
-					<label class="form-label">목차</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
-				</div>
-				<div class="col-md-6">
-					<label class="form-label">책속으로</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
+					  <input type="file" class="form-control form-control-sm" id="inputBookDescImage">
 				</div>
 				<div class="col-md-6">
 					<label class="form-label">이벤트</label>
-					<input type="text" class="form-control form-control-sm" id="inputFax">
+					<div class="col-md-6">
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="tdpeTypeCd" value="1">
+						  <label class="form-check-label" for="1">사은품</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="tdpeTypeCd" value="2">
+						  <label class="form-check-label" for="2">경품응모</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="tdpeTypeCd" value="3">
+						  <label class="form-check-label" for="3">다운로드 url</label>
+						</div>
+					</div>
 				</div>
+				<div class="col-md-12">
+					<label class="form-label">책설명(text)</label>
+				 	<textarea class="form-control" id="inputBookDesc" name="tditBookDesc"></textarea>
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">목차</label>
+					<textarea class="form-control" id="inputTableOfContents" name="tditTableOfContents"></textarea>
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">책속으로</label>
+					<textarea class="form-control" id="inputBookDesc2" name="tditBookDesc2"></textarea>
+				</div>
+		
 
 				<div class="col-6 d-none d-sm-block"></div>
-<!-- 				<div class="col-6 d-none d-sm-block"></div>줄바꿈
+	<!-- 			<div class="col-6 d-none d-sm-block"></div>줄바꿈 -->
 
 				<div class="col-md-6">
 					<label class="col-form-label">개인정보 수집 및 이용안내(선택)</label>
@@ -302,11 +386,15 @@
 							<input class="form-check-input" type="radio" name="personalinfoConsentNy_s" id="personalinfoConsentNy_sn" value="0" >
 							<label class="form-check-label" for="personalinfoConsentNy_sn">비동의</label>
 						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="personalinfoConsentNy_s" id="personalinfoConsentNy_sn" value="0" >
+							<label class="form-check-label" for="personalinfoConsentNy_sn">비동의</label>
+						</div>
 		 			</div>
-		 		</div>	 -->		
+		 		</div>			
 
 		 		
-				<div class="col-md-3">
+<!-- 				<div class="col-md-3">
 					<label class="form-label">최종수정자</label>
 					<input type="text" class="form-control form-control-sm" id="inputEditP" placeholder="윤수빈" disabled>
 				</div>
@@ -321,7 +409,7 @@
 				<div class="col-md-3">
 					<label class="form-label">최초등록일</label>
 					<input type="text" class="form-control form-control-sm" id="inputRegDate" placeholder="2020-12-12 12:12:12" disabled>
-				</div>
+				</div> -->
 			</form>
 			<div class="col-mb-3 mt-3">	
 				<div class="float-start"><button type="button" class="btn btn-danger btn-sm float-start"><i class="fas fa-trash"></i></button></div>
