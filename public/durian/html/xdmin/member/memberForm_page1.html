@@ -88,6 +88,7 @@
 <hr class="w-100" style="color: #DDDDDD">
 	<div class="container my-wrap">
 		<form action="" method="post" id="memberForm" name="memberForm" enctype="multipart/form-data" class="row">
+			
 			<div class="mt-4 mb-4">
 				<h3 class="text-center"><strong style="color: #41B327; font-weight: normal;">정보입력</strong></h3>
 			</div>
@@ -130,9 +131,119 @@
 				<button type="button" class="btn btn-certification">인증번호 요청</button>
 			</div>
 	
-			<div class="d-grid gap-2 col-xs-8 mx-auto">
+<!-- 			<div class="d-grid gap-2 col-xs-8 mx-auto">
 				<button class="btn btn-naver" type="button" onclick="location.href='./memberForm_page2.html'">동의 및 인증 확인</button>
+			</div> -->
+			
+			<div class="mt-4 mb-4">
+				<h3 class="text-center"><strong style="color: #41B327; font-weight: normal;">약관동의</strong></h3>
 			</div>
+	
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault"><strong>전체동의</strong></label>
+				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
+			</div>	
+			<hr class="w-100" style="color: #A2969C">
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">교보문고 이용약관<span style="color: red;">(필수)</span></label>
+				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
+			</div>	
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">개인정보 수집 및 이용안내<span style="color: red;">(필수)</span></label>
+				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
+			</div>	
+			<hr class="w-100" style="color: #A2969C">
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">개인정보 수집 및 이용안내(선택)</label>
+				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
+			</div>	
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">제3자 정보제공 동의<br>
+				 교보핫트랙스. 꾸밍(선택)</label>
+				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
+			</div>	
+			<div class="form-check mb-3">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">제3자 정보제공 동의<br>
+					교보라이프플래닛 생명보험(선택)
+				</label>
+				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
+			</div>	
+			<hr class="w-100" style="color: #A2969C">
+			<div class="form-check mb-2">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">마케팅(광고) 수신여부 동의(선택)</label>
+			</div>		
+			<div class="form-check">
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					<label class="form-check-label" for="inlineCheckbox1">SMS</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+					<label class="form-check-label" for="inlineCheckbox2">이메일</label>
+				</div>
+				<div class="mb-2">
+					<p class="" style="font-size: 11px; color: #A2969C;">
+						*회원가입,주문배송,약관안내,회사 주요정책 관련 내용은 수신동의여부와 관계없이 발송됩니다.
+					</p>
+				</div>
+			</div>
+			<hr class="w-100" style="color: #A2969C">
+			<div class="mb-3">
+			<label class="form-check-label d-block mb-2">개인정보 유효기간제</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod1" value="personalinfoPeriod1" >
+					<label class="form-check-label" for="personalinfoPeriod1">1년</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod2" value="personalinfoPeriod2">
+					<label class="form-check-label" for="personalinfoPeriod2">3년</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod3" value="personalinfoPeriod3">
+					<label class="form-check-label" for="personalinfoPeriod3">5년</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="personalinfoPeriod" id="personalinfoPeriod4" value="personalinfoPeriod4">
+					<label class="form-check-label" for="personalinfoPeriod4">탈퇴시까지</label>
+				</div>
+	 		</div>
+	 		<hr class="w-100" style="color: #A2969C">	
+
+			<div class="mb-3">
+				<label>개인정보 위탁안내(고지)</label>
+				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
+			</div>	
+
+			<hr>			
+			<div class="mt-4 mb-4">
+				<h3 class="text-center"><strong style="color: #41B327; font-weight: normal;">정보입력</strong></h3>
+			</div>
+	
+			<div class="col-12 mx-auto mb-4">
+				<label for="inputId" class="form-label"><b>아이디</b></label>
+				<input type="text" class="form-control" id="inputId" placeholder="영소문자/숫자 5~10자리"> 
+			</div>
+			<div class="col-12 mb-4">
+				<label for="inputId" class="form-label"><b>비밀번호</b></label>
+				<input type="text" class="form-control mb-2" id="inputId" placeholder="영문/숫자/특수문자 조합 8~15자리(대소문자 구분)"> 
+				<input type="text" class="form-control" id="inputId" placeholder="비밀번호 확인"> 
+			</div>
+			<div class="col-12 mb-4">
+				<label for="inputId" class="form-label"><b>이메일</b></label>
+				<input type="text" class="form-control" id="inputId" placeholder="이메일주소 입력"> 
+			</div>
+	
+			<div class="d-grid gap-2 col-xs-8 mx-auto">
+				<button class="btn btn-naver" type="button" onclick="location.href=''">가입완료</button>
+			</div>
+			
 		</form>	
 	</div>
 
