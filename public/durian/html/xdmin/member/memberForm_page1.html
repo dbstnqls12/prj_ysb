@@ -14,64 +14,8 @@
 <link href="../../../css/sidebars.css" rel="stylesheet" type="text/css">
 <link href="../../../css/footers.css" rel="stylesheet" type="text/css">
 <title>Kyobo_memberForm_1</title>
-<style type="text/css">
-	body{
-		background-color: #F5F6F8;
-	}
-	.my-wrap{
-		width: 380px;
-		
-	}
-	.btn-certification{
-		border: 1px solid #BCBCBC;
-		background-color: white;
-		height: 50px; 
-		font-size: 14px;
-	}
-	.btn-naver{
-		font-size: 20px;
-		border: 1px solid #56a900;
-		height: 60px;
-		color: #56A900;
-		background-color: white;
-		margin-top: 2px;
-	}
 
-	.btn-naver:hover,
-	.btn-naver:active,
-	.btn-naver:visited,
-	.btn-naver:focus{
-		
-		background-color :#56A900;
-		color: #ffffff;
-		
-	}
-	
-	a:Link,
-	a:hover,
-	a:active,
-	a:visited,
-	a:focus{
-		color: gray;
-		text-decoration: underline;
-	}
-	.form-control,
-	.form-select,
-	.btn-certification{
-		font-size: 13px;
-		height: 50px;
-	}
- 	footer{
-		margin-top: 100px;
-	} 
-	input::placeholder {
-		  color: #A2969C;
-		  font-size: 13px;
-
-	}
-	
-
-</style>
+<link href="../../../css/memberForm.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- 헤더 s -->
@@ -88,7 +32,7 @@
 <hr class="w-100" style="color: #DDDDDD">
 	<div class="container my-wrap">
 		<form action="" method="post" id="memberForm" name="memberForm" enctype="multipart/form-data" class="row">
-			
+			<!-- 정보입력 s -->
 			<div class="mt-4 mb-4">
 				<h3 class="text-center"><strong style="color: #41B327; font-weight: normal;">정보입력</strong></h3>
 			</div>
@@ -133,7 +77,11 @@
 				<input type="text" class="form-control" id="inputNum" name="" placeholder="인증번호 입력"> 
 			</div>
 
-			
+			<div class="d-grid gap-2 col-12 mx-auto mt-3">
+				<button class="btn btn-naver" type="button" onclick="location.href='./memberForm_page3.html'"><strong>동의 및 인증 확인</strong></button>
+			</div>
+			<!-- 정보입력 e -->
+			<!-- 약관동의 s -->
 			<div class="mt-4 mb-4">
 				<h3 class="text-center"><strong style="color: #41B327; font-weight: normal;">약관동의</strong></h3>
 			</div>
@@ -213,13 +161,18 @@
 					<label class="form-check-label" for="4">탈퇴시까지</label>
 				</div>
 	 		</div>
-
+			
 			<div class="mb-3">
 				<label>개인정보 위탁안내(고지)</label>
 				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
 			</div>	
-
 	 		<hr class="w-100" style="color: #A2969C">	
+			<div class="d-grid gap-2 col-xs-8 mx-auto">
+				<button class="btn btn-naver" type="button" onclick="location.href=''">동의하기</button>
+			</div>
+	 		<!-- 약관동의 e -->
+	 		
+	 		<!-- 정보입력 s -->
 			<div class="mt-4 mb-4">
 				<h3 class="text-center"><strong style="color: #41B327; font-weight: normal;">정보입력</strong></h3>
 			</div>
@@ -241,7 +194,7 @@
 			<div class="d-grid gap-2 col-xs-8 mx-auto">
 				<button class="btn btn-naver" type="button" onclick="location.href=''">가입완료</button>
 			</div>
-			
+			<!-- 정보입력 e-->
 		</form>	
 	</div>
 
