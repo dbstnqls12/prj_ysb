@@ -31,7 +31,7 @@
 <!-- 본문 s -->		
 <hr class="w-100" style="color: #DDDDDD">
 	<div class="container my-wrap">
-		<form action="" method="post" id="memberForm" name="memberForm" enctype="multipart/form-data" class="row">
+		<form action="" method="get" id="memberForm" name="memberForm" enctype="multipart/form-data" class="row">
 			<!-- 정보입력 s -->
 			<div class="mt-4 mb-4">
 				<h3 class="text-center"><strong style="color: #41B327; font-weight: normal;">정보입력</strong></h3>
@@ -54,17 +54,27 @@
 					<option value="3">기타</option>
 				</select>
 			</div>
-			<div class="col-8 mb-1">
-				<label for="inputId" class="form-label"><b>휴대폰번호</b></label>
-				<input type="text" class="form-control" id="inputId" name="" placeholder="숫자만 입력(예.01012341231)"> 
-			</div>
-			<div class="col-4 mb-1">
-				<label for="inputId" class="form-label">&nbsp;</label>
-				<button type="button" class="btn btn-certification">인증번호 요청</button>
-			</div>
-			<div class="col-12 mx-auto mb-4">
-				<input type="text" class="form-control" id="inputNum" name="" placeholder="인증번호 입력"> 
-			</div>
+				<div class="col-4 mb-1">
+					<label for="inputId" class="form-label"><b>휴대폰번호</b></label>
+						<select class="form-select" id="kbmpTelecomCd" name="kbmpTelecomCd">
+						<option selected value="">::통신사::</option>
+						<option value="1">SKT</option>
+						<option value="2">KT</option>
+						<option value="3">LGU</option>
+						<option value="4">기타</option>
+					</select>
+				</div>
+				<div class="col-8 mb-1">
+					<label for="kbmpTelecomCd" class="form-label">&nbsp;</label>
+					<input type="text" class="form-control" id="kbmpNumberFull" name="kbmpNumberFull" placeholder="숫자만 입력(예.01012341231)"> 
+				
+				</div>
+				<div class="col-4 mb-1">
+					<button type="button" class="btn btn-certification p-2">인증번호 요청</button>
+				</div>
+				<div class="col-8 mb-4">
+					<input type="text" class="form-control" id="inputNum" name="" placeholder="인증번호 입력"> 
+				</div>
 
 			<div class="d-grid gap-2 col-12 mx-auto mt-3">
 				<button class="btn btn-naver" type="button" onclick="location.href='./memberForm_page3.html'"><strong>동의 및 인증 확인</strong></button>
@@ -93,7 +103,7 @@
 			</div>	
 			<hr class="w-100" style="color: #A2969C">
 			<div class="form-check mb-3">
-				<input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="kbmmPersonalinfoConsentNy_s">
+				<input class="form-check-input" type="checkbox" value="1" id="kbmmPersonalinfoConsentNy_s" name="kbmmPersonalinfoConsentNy_s">
 				<label class="form-check-label" for="flexCheckDefault">개인정보 수집 및 이용안내(선택)</label>
 				<i class="fa-solid fa-angle-right float-end pt-1" style="color: gray;"></i>
 			</div>	
@@ -181,7 +191,7 @@
 			</div>
 	
 			<div class="d-grid gap-2 col-xs-8 mx-auto">
-				<button class="btn btn-naver" type="button" onclick="location.href=''">가입완료</button>
+				<button class="btn btn-naver" type="button" onclick="location.href='memberForm_page2.html'">가입완료</button>
 			</div>
 			<!-- 정보입력 e-->
 		</form>	
