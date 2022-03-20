@@ -75,36 +75,12 @@ body{
 	    border-color: #ea4335;
 	    color: white;
 	}
-	a:link,
-	a:visited
-	{
-		color: gray;
-		text-decoration: none;
-	}
-	a:hover{
-		color: gray;
-		text-decoration: underline;
-	}
-	a:active{
-		color: gray;
-		text-decoration: none;
-	}
-	
-	#searchpwd{
-		text-align: center;
-		padding: 15px;
-		padding-bottom: 30px;
-		
-	}
-	#inputusername, #inputpwd{
-		margin-bottom: 15px; 
-	}
-	#loginbtn{
-		margin-top: 15px;
-	}
-	#icon{
-		width: 25px;
-		padding-bottom: 3px;
+
+
+
+	.btn-chk{
+		background-color: #5E6B9F;
+		color: white;
 	}
 
 </style>
@@ -117,40 +93,43 @@ body{
 		<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item">홈</li>
-				<li class="breadcrumb-item active" aria-current="page">로그인</li>
+				<li class="breadcrumb-item" aria-current="page">로그인</li>
+				<li class="breadcrumb-item active" aria-current="page">아이디 찾기</li>
 			</ol>
 		</nav>
 	</div>
 	<hr>
-	<form action="" method="get" id="login" name="login" enctype="multipart/form-data">
-	<div class="col-xs-8 mx-auto">
-		<input class="form-control" type="text" id="inputusername" placeholder="username" aria-label="input id">	
-		<input class="form-control" type="password" id="inputpwd" placeholder="password" aria-label="input pwd">
-		
-		<div class="form-check col-xs-8">
-			<input class="form-check-input" type="checkbox" name="autologin" value="autologin" id="autologin">
-			<span class="form-check-label" for="autologin" id="autologin" >자동 로그인</span>
-		</div>
+	<div class="col-xs-8 mx-auto mb-5">
+		<input class="form-control mb-2" type="text" id="kbmmName" name="kbmmName" placeholder="이름">
+		<input class="form-control mb-2" type="text" id="kbmmDob" name="kbmmDob" placeholder="생년월일 (8자리로 입력 ex.20200202)">
+		<input class="form-control mb-2" type="text" id="kbmpNumberFull" name="kbmpNumberFull" placeholder="전회번호 (숫자만 입력)">
 	</div>	
 	
 	<div class="d-grid gap-2 col-xs-8 mx-auto">
-		<button class="btn btn-primary" type="button" onclick="location.href=''" id="loginbtn">로그인</button>	
-		<button class="btn btn-secondary" type="button" onclick="location.href=''">회원가입</button>
+		<button class="btn btn-chk" type="button" id="idChk" name="idChk" data-bs-toggle="modal" data-bs-target="#idModal">확인</button>	
+			<div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5>아이디 확인</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						고객님의 아이디는 ______________입니다.<br><br><br><br>
+						<button class="btn btn-primary" type="button" id="login" name="login" onclick="location.href='./login.html'">로그인</button>	
+						<button class="btn btn-chk" type="button" id="passwordChk" name="passwordChk" onclick="location.href='./findPassword.html'">비밀번호 찾기</button>	
+					</div>
+					</div>
+				</div>
+			</div>
 	</div>
-		
-	<hr class="col-xs-8 mx-auto">
 	
-	<div class="col-xs-8 mx-auto text-secondary" id="searchpwd">
-	  <small><a href="./findId.html">아이디</a> | <a href="./findPassword.html">비밀번호 찾기</a></small>
-	</div>
+	<hr>
 	
-	<div class="d-grid gap-2 col-xs-8 mx-auto">
-		<!-- <button class="btn btn-outline-secondary" type="button"><img src="../../../images/emailicon.png"> 번호로 로그인</button> -->
-		<button class="btn btn-naver" type="button"><img src="../../../images/xdmin_img/navericon.png" id="icon"><b> 네이버</b> 로그인</button>
-		<button class="btn btn-kakao" type="button"><img src="../../../images/xdmin_img/kakaoicon.png" id="icon"><b> 카카오</b> 로그인</button>
-		<button class="btn btn-facebook" type="button"><img src="../../../images/xdmin_img/fbicon.png" id="icon"><b> 페이스북</b> 로그인</button>
-	</div>
-	</form>
+	
+	
+
+	
 </div>
 
 
