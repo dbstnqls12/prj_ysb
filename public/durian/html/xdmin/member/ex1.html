@@ -144,9 +144,9 @@
 </nav>
 <!-- navbar1 e -->
 <!-- 본문 s-->
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 	<div class="row">
-		<!-- 3단길이의 첫번째 열 -->
+		3단길이의 첫번째 열
 		<div class="col-md-2 d-none d-md-block">
 			<div class="px-0 ">
 				<ul class="list-unstyled ps-0">
@@ -198,7 +198,7 @@
 			</div>
 		</div>
 		
-		<!-- 9단길이의 첫번째 열 -->
+		9단길이의 첫번째 열
 		<hr class="d-block d-sm-none">
 		<div class="col-md-10">
 		<div class="mb-3"><h4>도서정보</h4></div>
@@ -299,7 +299,7 @@
 						<option value="3"></option>
 					</select>
 				</div>
-				<div class="col-6 d-none d-sm-block"></div><!-- 줄바꿈 -->
+				<div class="col-6 d-none d-sm-block"></div>줄바꿈
 				<div class="col-md-6">
 					<label class="form-label">주소 (국외전용)</label>
 					<input type="text" class="form-control form-control-sm" id="inputZipcode" placeholder="우편번호">
@@ -355,10 +355,15 @@
 
 	
 	
-
-
+ -->
+<input type="text" id="sample2_postcode" placeholder="우편번호">
+<input type="button" onclick="sample2_execDaumPostcode()" value="우편번호 찾기"><br>
+<input type="text" id="sample2_address" placeholder="주소"><br>
+<input type="text" id="sample2_detailAddress" placeholder="상세주소">
+<input type="text" id="sample2_extraAddress" placeholder="참고항목">
+</div>
 <!-- <div class="container">align-items-center justify-content-center -->
-<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+<!-- <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
 	<p class="col-md-5 mb-0 text-muted">
 		<a href="#" class="col-md-4 d-flex mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
 			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid" style="width: 100px; height: 40px;">
@@ -371,14 +376,17 @@
 			COPYRIGHT(C) KYOBO BOOK CENTRE ALL RIGHTS RESERVED.
 			2021 Company, Inc</p></small> 
 
-</footer>
+</footer> -->
 
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"> --></script>
 <script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>  
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
 
+</script>
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
