@@ -242,7 +242,7 @@
 					<tr>
 						<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
 						<td>1</td>
-						<td><a href="">윤수빈</a></td>
+						<td><a href="./memberView.html">윤수빈</a></td>
 						<td>asdasd</td>
 						<td>asdasd@asd.com</td>
 						<td>010-1231-1231</td>
@@ -303,11 +303,57 @@
 				</ul>
 			</nav>
 			<div class="clearfix mb-3">	
-				<div class="float-start"><button type="button" class="btn btn-danger btn-sm float-start"><i class="fas fa-trash"></i></button></div>
+				<div class="float-start"><button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal" ><i class="fas fa-trash" ></i></button></div>
+					<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel"><img src="../image/exclamation.png" width="30">삭제</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        삭제하시겠습니까?
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+					       <!--  <button type ="button" class="btn btn-primary">삭제</button> -->
+					        <a class="btn btn-danger" data-bs-toggle="modal" href="./memberList.html" role="button" data-bs-target="#formdeleteModal">삭제</a>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					
+		
+					
 				<div class="float-end">
-					<button type="button" class="btn btn-success btn-sm" id="search_icon"><i class="bi bi-file-earmark-x"></i></button>
 					<button type="button" class="btn btn-primary btn-sm" id="search_icon"><i class="fas fa-plus"></i></button>
 				</div>
+				
+				
+										<!-- Button trigger modal -->
+	<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+	  삭제
+	</button>
+	<!-- Modal -->
+	<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel"><img src="../image/exclamation.png" width="30">삭제</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        삭제하시겠습니까?
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+	       <!--  <button type ="button" class="btn btn-primary">삭제</button> -->
+	        <a class="btn btn-danger" data-bs-toggle="modal" href="./memberList.html" role="button" data-bs-target="#formdeleteModal">삭제</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+			
 			</div>
 		</div>
 	</div>

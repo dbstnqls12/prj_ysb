@@ -370,28 +370,48 @@
 					<label class="form-label">책속으로</label>
 					<textarea class="form-control" id="inputBookDesc2" name="tditBookDesc2"></textarea>
 				</div>
-				<div class="col-md-6">
-					<label class="col-form-label">개인정보 수집 및 이용안내(선택)</label>
-					<div class="col-md-6">
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="personalinfoConsentNy_s" id="personalinfoConsentNy_sy" value="1" checked>
-							<label class="form-check-label" for="personalinfoConsentNy_sy">동의</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="personalinfoConsentNy_s" id="personalinfoConsentNy_sn" value="0" >
-							<label class="form-check-label" for="personalinfoConsentNy_sn">비동의</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="personalinfoConsentNy_s" id="personalinfoConsentNy_sn" value="0" >
-							<label class="form-check-label" for="personalinfoConsentNy_sn">비동의</label>
-						</div>
-		 			</div>
-		 		</div>			
+			
 
 				<div class="col-mb-3 mt-3">	
-					<div class="float-start"><button type="button" class="btn btn-danger btn-sm float-start"><i class="fas fa-trash"></i></button></div>
+					<div class="float-start"><button type="button" class="btn btn-danger btn-sm float-start" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash"></i></button></div>
+					<!-- Modal -->
+					<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel"><img src="../../../images/xdmin_img/exclamation.png" width="30">삭제</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        정말로 삭제하시겠습니까? (삭제시 복구가 불가능합니다.)
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+					       <!--  <button type ="button" class="btn btn-primary">삭제</button> -->
+					        <a class="btn btn-danger" data-bs-toggle="modal" href="./memberList.html" role="button" data-bs-target="#formdeleteModal">삭제</a>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 					<div class="float-end">
-						<button type="button" class="btn btn-primary btn-sm" id="search_icon"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-primary btn-sm" id="search_icon" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fas fa-plus"></i></button>
+						<div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel"><img src="../../../images/xdmin_img/exclamation.png" width="30">수정</h5>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						        도서정보를 수정하시겠습니까?
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+						        <a class="btn btn-success" href="./bookEditForm.html" role="button" data-bs-target="#formdeleteModal">수정</a>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 					</div>
 				</div>
 			</form>

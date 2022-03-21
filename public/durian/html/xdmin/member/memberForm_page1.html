@@ -191,7 +191,26 @@
 			</div>
 	
 			<div class="d-grid gap-2 col-xs-8 mx-auto">
-				<button class="btn btn-naver" type="button" onclick="location.href='memberForm_page2.html'">가입완료</button>
+				<button class="btn btn-naver" type="button" data-bs-toggle="modal" data-bs-target="#signUp">가입완료</button>
+				
+				<!-- Modal -->
+				<div class="modal fade" id="signUp" tabindex="-1" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><img src="../../../images/xdmin_img/exclamation.png" width="30">회원가입 완료</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="modal-body">
+				        회원가입이 완료되었습니다!
+				      </div>
+				      <div class="modal-footer">
+				        <a class="btn btn-primary" data-bs-toggle="modal" href="../loginout/login.html" role="button" >로그인</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				
 			</div>
 			<!-- 정보입력 e-->
 		</form>	
