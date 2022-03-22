@@ -15,28 +15,38 @@
 <link href="../../css/footers.css" rel="stylesheet" type="text/css">
 <title>Kyobo_main</title>
 <style type="text/css">
-
+	body{
+		font-size: 0.9em;
+	}
+	.dropdown-menu{
+		font-size: 13px;
+	}
+	.navbar{
+		background-color: #5E6B9E;
+	}
+	
 </style>
 </head>
 <body>
 <!-- 헤더 s-->			
 <div class="container-fluid"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
-	<div class="row ">	
-		<div class="col-5 col-md-2 col-lg-2">
-			<img src="../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto" style="width: 500px;">
+	<div class="row">	
+		<div class="col-6 col-md-2 col-lg-2">
+			<img src="../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto">
 		</div>				
-		<div class="col-7 text-end">
+		<div class="col-6 d-block d-md-none mt-2 text-end">
 			<a class="d-block d-md-none mt-3 ml-1" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
 				<i class="fa-solid fa-bars"></i>
 			</a>
 		</div>		
-		<form class="col-5 col-md-2 col-lg-2">
-			<input type="text" class="form-control form-control-sm" placeholder="검색어" style="width: 100px;">
+		<form class="d-flex col-lg-5 mx-auto mt-4"  style="height: 40px;">
+			<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 		</form>
 		<div class="col-lg-2 my-auto d-none d-md-block">	
 	        <div class="dropdown">
-	          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-	            <span>윤수빈 회원님 (프렌즈)</span>
+	          <a href="#" class="d-inline link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+	            <span>윤수빈 회원님 <u>(프렌즈)</u></span>
 	          </a>
 	          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
 	            <li><a class="dropdown-item" href="#">내 정보</a></li>
@@ -44,7 +54,8 @@
 	            <li><a class="dropdown-item" href="#">쿠폰함</a></li>
 	            <li><a class="dropdown-item" href="#">최근 본 상품</a></li>
 	          </ul>
-	          <button type="button" role="" name="" id="" >로그아웃</button>
+	         <!--  <span class="badge bg-light text-dark">로그아웃</span> -->
+	          <!-- <button type="button" role="" name="" id="" >로그아웃</button> -->
 	        </div>
 		</div>
 	</div>
@@ -109,7 +120,7 @@
 <!-- offcanvas e -->
 
 <!-- navbar1 s -->
-<nav class="navbar navbar-expand-md navbar-light bg-light d-none d-md-block mb-4">
+<nav class="navbar navbar-expand-md navbar-dark d-none d-md-block mb-4">
 	<div class="container-fluid">
 		<a class="navbar-brand d-block d-sm-none" href="#">Navbar</a>
 		<a class="navbar-brand d-none d-sm-block" href="#"><i class="fa-solid fa-bars"></i></a>
@@ -165,10 +176,6 @@
 					<a class="nav-link " href="#">중고장터 </a>
 				</li>
 			</ul>
-			<form class="d-flex col-3">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
-			</form>
 		</div>
 	</div>
 </nav>
