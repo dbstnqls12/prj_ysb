@@ -24,7 +24,32 @@
 	.navbar{
 		background-color: #5E6B9E;
 	}
-	
+	.btn-book:hover,
+	.btn-book:active,
+	.btn-book:visited,
+	.btn-book:focus{
+		
+		color:white;
+		background-color: #7B8ED1;
+	}
+	.btn-book{
+		border: 5px;
+		margin-bottom: 3px;
+	}
+	.welcome_first{
+		background-color: olive;
+		height: 400px;
+	}
+	h6{
+		font-weight: bold;	
+		margin-right: 20px;
+	}	
+	.col-new{
+		margin-top: 50px;
+		border-left: 10px;
+		border-right: 10px;
+	}
+		
 </style>
 </head>
 <body>
@@ -40,8 +65,8 @@
 			</a>
 		</div>		
 		<form class="d-flex col-lg-5 mx-auto mt-4"  style="height: 40px;">
-			<input class="form-control" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+			<input class="form-control form-control-sm rounded-pill" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn rounded-pill" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 		</form>
 		<div class="col-lg-2 my-auto d-none d-md-block">	
 	        <div class="dropdown">
@@ -193,59 +218,150 @@
 
 <!-- 본문 s-->
 <div class="container">
-	<div class="row">
-		<!-- 9단길이의 첫번째 열 -->
-		<div class="col-md-9">
-					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			  <div class="carousel-indicators">
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-			  </div>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img src="../../images/xdmin_img/ad1.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="../../images/xdmin_img/ad2.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="../../images/xdmin_img/ad3.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="../../images/xdmin_img/ad4.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="../../images/xdmin_img/ad5.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="../../images/xdmin_img/ad6.jpg" class="d-block w-100" alt="...">
-			    </div>
-			  </div>
-			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Previous</span>
-			  </button>
-			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Next</span>
-			  </button>
-			</div>
-		</div>
+	<div class="row welcome_first">
+		<!-- 9단길이의 첫번째 열 -->	
+	 	<div class="col-md-9">
+		<!-- 	<div class="mx-auto">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-indicators">
+				    <button type="button" data-bs-target="#adIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#adIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				    <button type="button" data-bs-target="#adIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				    <button type="button" data-bs-target="#adIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				    <button type="button" data-bs-target="#adIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				    <button type="button" data-bs-target="#adIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+				  </div>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="../../images/xdmin_img/ad1-1.png" class="d-block" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../../images/xdmin_img/ad2.jpg" class="d-block" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../../images/xdmin_img/ad3.jpg" class="d-block" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../../images/xdmin_img/ad4.jpg" class="d-block" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../../images/xdmin_img/ad5.jpg" class="d-block" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../../images/xdmin_img/ad6.jpg" class="d-block" alt="...">
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#adIndicators" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#adIndicators" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>	-->
+		</div>  
+	
 		<!-- 3단길이의 첫번째 열 -->
 		<div class="col-md-3 d-none d-md-block">
-
-		</div>
-
+			<div>
+				<h6>실시간 인기 검색어</h6>
+			</div> 
+		</div> 
 	</div>
-</div>
+	
+	<div>	
+		<div class="col-md-10">
+			<div class="col-new">
+				<h6 class="d-inline">화제의 신간</h6>
+				<button type="button" class="btn btn-book btn-sm">국내도서</button>
+				<button type="button" class="btn btn-book btn-sm">외국도서</button>
+				<button type="button" class="btn btn-book btn-sm">ebook</button>
+				<button type="button" class="btn btn-book btn-sm">sam</button> 
+				<div class="row row-cols-1">
+					<div class="card" style="width: 10rem;">
+						<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text"></p>
+						</div>
+					</div>
+					<div class="card" style="width: 10rem;">
+						<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text"></p>
+						</div>
+					</div>
+					<div class="card" style="width: 10rem;">
+						<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text"></p>
+						</div>
+					</div>
+					<div class="card" style="width: 10rem;">
+						<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text"></p>
+						</div>
+					</div>
+					<div class="card" style="width: 10rem;">
+						<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text"></p>
+						</div>
+					</div>
+					<div class="card" style="width: 10rem;">
+						<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	<div class="mt-5">
+		<h6 class="d-inline">베스트셀러</h6>
+		<button type="button" class="btn btn-book btn-sm">교보문고종합</button>
+		<button type="button" class="btn btn-book btn-sm">외국도서</button>
+		<button type="button" class="btn btn-book btn-sm">ebook</button>
+		<button type="button" class="btn btn-book btn-sm">오디오북</button>
+		<button type="button" class="btn btn-book btn-sm">sam</button>
+		<button type="button" class="btn btn-book btn-sm">기프트</button> 
+		<div class="row row-cols-1">
+			<div class="card" style="width: 10rem;">
+				<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text"></p>
+				</div>
+			</div>
+			<div class="card" style="width: 10rem;">
+				<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text"></p>
+				</div>
+			</div>
+			<div class="card" style="width: 10rem;">
+				<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text"></p>
+				</div>
+			</div>
+			<div class="card" style="width: 10rem;">
+				<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<p class="card-text"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+
 
 
 	
-	
+</div>	
 
 
 <!-- <div class="container">align-items-center justify-content-center -->
