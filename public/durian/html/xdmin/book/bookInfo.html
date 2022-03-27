@@ -87,22 +87,33 @@ table{
 <body>
 <!-- 헤더 s-->			
 <div class="container-fluid"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
-	<div class="row ">	
-		<div class="col-5 col-md-2 col-lg-2 my-auto">
-			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid rounded mx-auto d-block">
+	<div class="row">	
+		<div class="col-6 col-md-2 col-lg-2">
+			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto">
 		</div>				
-		<div class="col-7 col-md-5 col-lg-6 my-auto text-end">
-			<a class="d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
-				<i class="bi bi-list"></i>
+		<div class="col-6 d-block d-md-none mt-2 text-end">
+			<a class="d-block d-md-none mt-3 ml-1" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
+				<i class="fa-solid fa-bars"></i>
 			</a>
 		</div>		
-		<div class="col-md-5 col-lg-4 my-auto d-none d-md-block mt-4">	
-<!-- 			<div class="row">
-				<div class="col my-auto"><img src="../../../images/xdmin_img/2.jpg" class="image rounded-circle img-thumbnail float-end" style="width: 50px; height: 50px;"></div>
-				<div class="col my-auto">
-					<p class="profile2 mb-0">윤수빈 회원님</p>
-				</div>
-			</div> -->
+		<form class="d-flex col-lg-5 mx-auto mt-4"  style="height: 40px;">
+			<input class="form-control form-control-sm rounded-pill" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn rounded-pill" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+		</form>
+		<div class="col-lg-2 my-auto d-none d-md-block">	
+	        <div class="dropdown">
+	          <a href="#" class="d-inline link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+	            <span>윤수빈 회원님 <u>(프렌즈)</u></span>
+	          </a>
+	          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+	            <li><a class="dropdown-item" href="#">내 정보</a></li>
+	            <li><a class="dropdown-item" href="#">구매목록</a></li>
+	            <li><a class="dropdown-item" href="#">쿠폰함</a></li>
+	            <li><a class="dropdown-item" href="#">최근 본 상품</a></li>
+	          </ul>
+	          <span class="badge bg-light text-dark" role="button">로그아웃</span>
+	        <!--   <button type="button" class="btn btn-sm btn-outline-secondary" role="" name="" id="" >로그아웃</button> -->
+	        </div>
 		</div>
 	</div>
 </div>			
@@ -222,10 +233,6 @@ table{
 					<a class="nav-link " href="#">중고장터 </a>
 				</li>
 			</ul>
-			<form class="d-flex col-3">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
-			</form>
 		</div>
 	</div>
 </nav>
@@ -233,6 +240,7 @@ table{
 
 <!-- 본문 s-->
 <div class="container">
+
 	<div class="row">
 		<!-- 3단길이의 첫번째 열 -->
 		<div class="col-md-3 d-none d-md-block">
@@ -269,7 +277,7 @@ table{
 			</div>
 		</div>
 		<!-- 9단길이의 첫번째 열 -->
-		<div class="col-md-9">
+		<div class="col-md-8">
 			<div class="px-0 mt-4">
 				<img class="mx-auto mb-2 d-block d-md-none"alt="" src="../../../images/xdmin_img/bookEx.jpg" style="width: 250px; height: 330px;">
 				<img class="mx-auto"alt="" src="../../../images/xdmin_img/btn_freedelivery.gif">
@@ -295,7 +303,7 @@ table{
 				<hr>
 				<p>주문수량 <input type="text" id="" name="" style="width: 50px;"> <i class="bi bi-plus-square"></i> <i class="bi bi-dash-square"></i></p>
 				<button type="button" class="btn btn-cart">장바구니 담기</button>
-				<button type="button" class="btn btn-purchaseNow">바로구매</button>
+				<button type="button" class="btn btn-purchaseNow" onclick="location.href='./bookPurchase.html'">바로구매</button>
 				<button type="button" class="btn btn-purchase">바로드림 주문</button>
 				<button type="button" class="btn btn-purchase">선물하기</button>
 				<button type="button" class="btn btn-purchase">보관함 담기</button>
