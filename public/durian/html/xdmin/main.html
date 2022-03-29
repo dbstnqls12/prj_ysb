@@ -49,7 +49,17 @@
 		border-left: 10px;
 		border-right: 10px;
 	}
+	.card-img-top{
+		height: 250px;
+		object-fit: cover;
 		
+		
+	}	
+	#best{
+		width: 200px; 
+		height: 300px;
+		object-fit: cover;
+	}
 </style>
 </head>
 <body>
@@ -75,9 +85,7 @@
 	          </a>
 	          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
 	            <li><a class="dropdown-item" href="#">내 정보</a></li>
-	            <li><a class="dropdown-item" href="#">구매목록</a></li>
 	            <li><a class="dropdown-item" href="#">쿠폰함</a></li>
-	            <li><a class="dropdown-item" href="#">최근 본 상품</a></li>
 	          </ul>
 	          <span class="badge bg-light text-dark" role="button">로그아웃</span>
 	        <!--   <button type="button" class="btn btn-sm btn-outline-secondary" role="" name="" id="" >로그아웃</button> -->
@@ -336,13 +344,16 @@
 			</div>
 			<div class="carousel-inner">
 			<div class="carousel-item active">
-			<img src="../../images/xdmin_img/ad2.jpg" class="d-block w-100" alt="...">
+				<img src="../../images/xdmin_img/ad2.jpg" class="d-block w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-			<img src="../../images/xdmin_img/ad3.jpg" class="d-block w-100" alt="...">
+				<img src="../../images/xdmin_img/ad3.jpg" class="d-block w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-			<img src="../../images/xdmin_img/ad4.jpg" class="d-block w-100" alt="...">
+				<img src="../../images/xdmin_img/ad4.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="../../images/xdmin_img/ad6.jpg" class="d-block w-100" alt="...">
 			</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -363,12 +374,12 @@
 					<button type="button" class="btn btn-book btn-sm">ebook</button>
 					<button type="button" class="btn btn-book btn-sm">sam</button> 
 					<div class="row row-cols-1 row-cols-md-3 g-4">
-					<div class="col-lg-3">
+					<div class="col-lg-3 ">
 						<div class="card h-100">
-						<img src="../../images/xdmin_img/book1.jpg" class="card-img-top" alt="...">
+						<img src="../../images/xdmin_img/bookEx12.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h6 class="card-title mx-auto">불편한 편의점</h6>
-						 		<p class="card-text mx-auto">40만부 기념 특별 에디션!<br><br>힘겨운 시대를 살아가는 우리들에게 다가온 조금 특별한 편의점 이야기</p>
+								<h6 class="card-title mx-auto h-25">나의 아저씨 세트</h6>
+						 		<p class="card-text mx-auto h-50">첫 독자들을 위한 한정판!<br><br>수많은 사람의 인생드라마가 또다시 인생책이 되다</p>
 							</div>
 						</div>
 					</div>
@@ -420,10 +431,10 @@
 							<td class="w-20"><i class="fa-regular fa-4"></i></td>
 						</tr>
 						<tr>
-							<td><img src="../../images/xdmin_img/book1.jpg" style="width: 200px; height: 300px;"></td>
-							<td><img src="../../images/xdmin_img/bookEx2.jpg" style="width: 200px; height: 300px;"></td>
-							<td><img src="../../images/xdmin_img/bookEx3.jpg" style="width: 200px; height: 300px;"></td>
-							<td><img src="../../images/xdmin_img/bookEx4.jpg" style="width: 200px; height: 300px;"></td>
+							<td><img src="../../images/xdmin_img/book1.jpg"  id="best" name="best"></td>
+							<td><img src="../../images/xdmin_img/bookEx2.jpg" id="best" name="best"></td>
+							<td><img src="../../images/xdmin_img/bookEx3.jpg" id="best" name="best"></td>
+							<td><img src="../../images/xdmin_img/bookEx4.jpg" id="best" name="best"></td>
 						</tr>
 						<tr>
 							<td><h6>불편한 편의점</h6><p>김호연</p></td>
@@ -438,10 +449,10 @@
 							<td><i class="fa-regular fa-8"></i></td>
 						</tr>
 						<tr>
-							<td><img src="../../images/xdmin_img/bookEx5.jpg" style="width: 200px; height: 300px;"></td>
-							<td><img src="../../images/xdmin_img/bookEx6.jpg" style="width: 200px; height: 300px;"></td>
-							<td><img src="../../images/xdmin_img/bookEx7.jpg" style="width: 200px; height: 300px;"></td>
-							<td><img src="../../images/xdmin_img/bookEx8.jpg" style="width: 200px; height: 300px;"></td>
+							<td><img src="../../images/xdmin_img/bookEx5.jpg" id="best" name="best"></td>
+							<td><img src="../../images/xdmin_img/bookEx6.jpg" id="best" name="best"></td>
+							<td><img src="../../images/xdmin_img/bookEx7.jpg" id="best" name="best"></td>
+							<td><img src="../../images/xdmin_img/bookEx8.jpg" id="best" name="best"></td>
 						</tr>
 						<tr>
 							<td><h6>나에게 고맙다</h6><p>전승환</p></td>
