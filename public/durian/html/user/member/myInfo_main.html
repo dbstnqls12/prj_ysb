@@ -177,13 +177,16 @@
 			<div class="px-0 mt-2">
 				<ul class="list-unstyled ps-0">
 					<li class="mb-1">
-					<button class="btn btn-toggle align-items-center rounded" aria-expanded="true">회원정보관리</button><!-- data-bs-toggle="collapse" data-bs-target="#home-collapse"  -->
-						<ul class=" list-unstyled fw-normal pb-1 small">
-							<li><a href="myInfo_View.html" class="rounded">내 정보 보기</a></li>
-							<li><a href="myInfo_EditForm.html" class="rounded">내 정보 수정</a></li>
-							<li><a href="myInfo_main.html" class="rounded">내 주문 내역</a></li>
-							<li><a href="myInfo_coupon.html" class="rounded">내 쿠폰</a></li>
-						</ul>
+						<button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">회원정보관리</button>
+						<div class="collapse" id="home-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="myInfo_View.html" class="rounded">내 정보 보기</a></li>
+								<li><a href="myInfo_EditForm.html" class="rounded">내 정보 수정</a></li>
+								<li><a href="myInfo_main.html" class="rounded">내 주문 내역</a></li>
+								<li><a href="myInfo_coupon.html" class="rounded">내 쿠폰</a></li>
+							</ul>
+						</div>
+					</li>
 					<li class="border-top my-3"></li>
 				</ul>
 			</div>
@@ -193,8 +196,33 @@
 	 		<div class="px-0 mt-4">
 		 		<h5 style="font-weight: bold;" class="mb-4">윤수빈 님의 마이 페이지</h5>
 				<div style="width: 90%" class="mx-auto  mt-5">	
+				
 				<h6 class="mb-2" style="font-weight: bold;">최근 구매 목록</h6>
-					<table class="table mb-4">
+				<div class="border p-3 ">
+				<div class="row">
+					<div class="col-6 col-md-4 mt-2 mb-2">	
+						<select class="form-select form-select-sm col-sm-6">
+							<option selected>날짜</option>
+							<option value="1">one</option>
+							<option value="2">Two</option>
+						</select>
+					</div>
+					<div class="col-6 col-md-4 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_sdate" placeholder="시작일"></div>
+					<div class="col-6 col-md-4 mt-2 mb-2"><input type="text" class="form-control form-control-sm " id="input_edate" placeholder="종료일"></div>
+					<div class="col-6 col-md-4 mt-2 mb-2">	
+						<select class="form-select form-select-sm">
+							<option selected>검색구분</option>
+							<option value="1">책 이름</option>
+						</select>
+					</div>
+					<div class="col-6 col-md-4 mt-2 "><input type="text" class="form-control form-control-sm " id="input_search" placeholder="검색어"></div>
+					<div class="col-6 col-md-3 mt-2">
+						<button type="button" class="btn btn-warning btn-sm" id="search_icon"><i class="fas fa-search"></i></button>
+						<button type="button" class="btn btn-danger btn-sm" id="search_icon"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+					</div>
+				</div>
+			</div>	
+					<table class="table mt-3 mb-4">
 						<tr>
 							<th style="width: 5px;">번호</th>
 							<th style="width: 50px;">상품정보</th>
