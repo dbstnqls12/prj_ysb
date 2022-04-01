@@ -52,7 +52,8 @@
 		border-right: 10px;
 	}
 	.card-img-top{
-		height: 250px;
+		height: 290px;
+		width: 194px;
 		object-fit: cover;
 		
 		
@@ -66,10 +67,10 @@
 </head>
 <body>
 <!-- 헤더 s-->			
-<div class="container-fluid"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
+<div class="container"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
 	<div class="row">	
 		<div class="col-6 col-md-2 col-lg-2">
-			<img src="../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto">
+			<img src="../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto" onclick="location.href='../main.html'">
 		</div>				
 		<div class="col-6 d-block d-md-none mt-2 text-end">
 			<a class="d-block d-md-none mt-3 ml-1" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
@@ -86,8 +87,8 @@
 	            <span>윤수빈 회원님 <u>(프렌즈)</u></span>
 	          </a>
 	          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-	            <li><a class="dropdown-item" href="#">내 정보</a></li>
-	            <li><a class="dropdown-item" href="#">쿠폰함</a></li>
+	            <li><a class="dropdown-item" href="../user/member/myInfo_main.html">내 정보</a></li>
+	            <li><a class="dropdown-item" href="../user/member/myInfo_coupon.html">쿠폰함</a></li>
 	          </ul>
 	          <span class="badge bg-light text-dark" role="button">로그아웃</span>
 	        <!--   <button type="button" class="btn btn-sm btn-outline-secondary" role="" name="" id="" >로그아웃</button> -->
@@ -97,68 +98,11 @@
 </div>			
 <!-- 헤더 e-->
 
-<!-- offcanvas s -->
-<nav class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" data-bs-keyboard="false" data-bs-backdrop="true" data-bs-scroll="true">
-	<div class="offcanvas-header border-bottom">
-		<a href="#" class="d-flex align-items-center text-decoration-none offcanvas-title d-sm-block"><h3>Menu</h3></a>
-		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-	</div>
-		<div class="offcanvas-body px-0">
-		<ul class="list-unstyled ps-0">
-			<li class="mb-1">
-				<button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">Home</button>
-				<div class="collapse show" id="home-collapse" >
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">Overview</a></li>
-						<li><a href="#" class="rounded">Updates</a></li>
-						<li><a href="#" class="rounded">Reports</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="mb-1">
-				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</button>
-				<div class="collapse" id="dashboard-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">Overview</a></li>
-						<li><a href="#" class="rounded">Weekly</a></li>
-						<li><a href="#" class="rounded">Monthly</a></li>
-						<li><a href="#" class="rounded">Annually</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="mb-1">
-				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">Orders</button>
-				<div class="collapse" id="orders-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">New</a></li>
-						<li><a href="#" class="rounded">Processed</a></li>
-						<li><a href="#" class="rounded">Shipped</a></li>
-						<li><a href="#" class="rounded">Returned</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="border-top my-3"></li>
-			<li class="mb-1">
-			<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">Account</button>
-				<div class="collapse" id="account-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">New...</a></li>
-						<li><a href="#" class="rounded">Profile</a></li>
-						<li><a href="#" class="rounded">Settings</a></li>
-						<li><a href="#" class="rounded">Sign out</a></li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-	</div>
-</nav>
-<!-- offcanvas e -->
-
 <!-- navbar1 s -->
 <nav class="navbar navbar-expand-md navbar-dark d-none d-md-block mb-4">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="dropdown">
-			<a class="navbar-brand navbar-toggle d-none d-sm-block" type="button" data-bs-toggle="dropdown" id="menu" name="menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
+			<a class="navbar-brand navbar-toggle d-none d-sm-block" type="button" data-bs-toggle="dropdown" id="menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
 				<ul class="dropdown-menu" aria-labelledby="menu1">
 					<li><a class="dropdown-item" href="#">국내도서</a></li>
 					<li><a class="dropdown-item" href="#">외국도서</a></li>
@@ -172,7 +116,7 @@
 				</ul>	
 		</div>
 	
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="menuListY">
 			<ul class="navbar-nav me-auto mb-2 mb-md-0">
 				<li class="nav-item">
 					<a class="nav-link" aria-current="page" href="#">국내도서</a>
@@ -229,7 +173,7 @@
 <!-- 본문 s-->
 <div class="container">
 	<div class="row">
-		<!-- 3단길이의 첫번째 열 -->
+		 <!-- 3단길이의 첫번째 열 -->
 		<div class="col-md-2 d-none d-md-block">
 			<div class="px-0 mt-2">
 				<ul class="list-unstyled ps-0">
@@ -336,7 +280,7 @@
 			</div>
 		</div>
 	<!-- 9단길이의 첫번째 열 -->	
-	 	<div class="col-md-7">
+	 	<div class="col-md-8">
 			<div class="col">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
@@ -374,7 +318,6 @@
 					<button type="button" class="btn btn-book btn-sm">국내도서</button>
 					<button type="button" class="btn btn-book btn-sm">외국도서</button>
 					<button type="button" class="btn btn-book btn-sm">ebook</button>
-					<button type="button" class="btn btn-book btn-sm">sam</button> 
 					<div class="row row-cols-1 row-cols-md-3 g-4">
 					<div class="col-lg-3 ">
 						<div class="card h-100">
@@ -420,11 +363,9 @@
 				<div class="best">
 					<h6 class="d-inline">베스트셀러</h6>
 					<button type="button" class="btn btn-book btn-sm">교보문고종합</button>
+					<button type="button" class="btn btn-book btn-sm">국내도서</button>
 					<button type="button" class="btn btn-book btn-sm">외국도서</button>
 					<button type="button" class="btn btn-book btn-sm">ebook</button>
-					<button type="button" class="btn btn-book btn-sm">오디오북</button>
-					<button type="button" class="btn btn-book btn-sm">sam</button>
-					<button type="button" class="btn btn-book btn-sm">기프트</button> 
 					<table class="table">
 						<tr>
 							<td class="w-20"><h4><i class="fa-regular fa-1" style="color: red;"></i></h4></td>
@@ -504,7 +445,19 @@
 <script src="/resources/common/jquery/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
 
 <script type="text/javascript">
-	
+	 $(document).ready(function(){
+
+			$('#top_menu .sub_1').hide();
+
+			$('.menu_1').mouseover(function(){
+				$('.sub_1').slideDown();
+
+			});
+			$('.menu_1').mouseleave(function(){
+				$('.sub_1').hide();
+			});
+
+
 
 </script>
 
@@ -521,4 +474,3 @@
 -->
 </body>
 </html>
-							

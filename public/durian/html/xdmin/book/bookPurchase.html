@@ -86,10 +86,10 @@ table{
 </head>
 <body>
 <!-- 헤더 s-->			
-<div class="container-fluid"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
+<div class="container"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
 	<div class="row">	
 		<div class="col-6 col-md-2 col-lg-2">
-			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto">
+			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto"  onclick="location.href='../main.html'">
 		</div>				
 		<div class="col-6 d-block d-md-none mt-2 text-end">
 			<a class="d-block d-md-none mt-3 ml-1" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
@@ -107,9 +107,7 @@ table{
 	          </a>
 	          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
 	            <li><a class="dropdown-item" href="#">내 정보</a></li>
-	            <li><a class="dropdown-item" href="#">구매목록</a></li>
 	            <li><a class="dropdown-item" href="#">쿠폰함</a></li>
-	            <li><a class="dropdown-item" href="#">최근 본 상품</a></li>
 	          </ul>
 	          <span class="badge bg-light text-dark" role="button">로그아웃</span>
 	        <!--   <button type="button" class="btn btn-sm btn-outline-secondary" role="" name="" id="" >로그아웃</button> -->
@@ -119,66 +117,10 @@ table{
 </div>			
 <!-- 헤더 e-->
 
-<!-- offcanvas s -->
-<nav class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" data-bs-keyboard="false" data-bs-backdrop="true" data-bs-scroll="true">
-	<div class="offcanvas-header border-bottom">
-		<a href="#" class="d-flex align-items-center text-decoration-none offcanvas-title d-sm-block"><h3>Menu</h3></a>
-		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-	</div>
-		<div class="offcanvas-body px-0">
-		<ul class="list-unstyled ps-0">
-			<li class="mb-1">
-				<button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">Home</button>
-				<div class="collapse show" id="home-collapse" style="">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">Overview</a></li>
-						<li><a href="#" class="rounded">Updates</a></li>
-						<li><a href="#" class="rounded">Reports</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="mb-1">
-				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</button>
-				<div class="collapse" id="dashboard-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">Overview</a></li>
-						<li><a href="#" class="rounded">Weekly</a></li>
-						<li><a href="#" class="rounded">Monthly</a></li>
-						<li><a href="#" class="rounded">Annually</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="mb-1">
-				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">Orders</button>
-				<div class="collapse" id="orders-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">New</a></li>
-						<li><a href="#" class="rounded">Processed</a></li>
-						<li><a href="#" class="rounded">Shipped</a></li>
-						<li><a href="#" class="rounded">Returned</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="border-top my-3"></li>
-			<li class="mb-1">
-			<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">Account</button>
-				<div class="collapse" id="account-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="rounded">New...</a></li>
-						<li><a href="#" class="rounded">Profile</a></li>
-						<li><a href="#" class="rounded">Settings</a></li>
-						<li><a href="#" class="rounded">Sign out</a></li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-	</div>
-</nav>
-<!-- offcanvas e -->
 
 <!-- navbar1 s -->
 <nav class="navbar navbar-expand-md navbar-dark d-none d-md-block mb-4">
-	<div class="container-fluid">
+	<div class="container">
 		<a class="navbar-brand d-block d-sm-none" href="#">Navbar</a>
 		<a class="navbar-brand d-none d-sm-block" href="#"><i class="fa-solid fa-bars"></i></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -249,8 +191,8 @@ table{
 					<table class="table mb-4">
 						<tr>
 							<td>윤수빈</td>
-							<td>010-8384-2108</td>
-							<td>binson1123@naver.com</td>
+							<td>010-0000-0000</td>
+							<td>qwe123@naver.com</td>
 						</tr>
 					</table>
 				</div>
@@ -369,19 +311,18 @@ table{
 		<!-- 3단길이의 첫번째 열 -->
 		<div class="col-md-3 d-none d-md-block" id="purchaseInfo">
 			<div class="px-0 mt-4" style="border: 1px solid black; padding-top: 10px; padding-bottom: 20px;">
-					<p style="font-size: 20px; font-weight: bold; ">총 결제 정보</p>
-					<hr style="margin: 5px;">
-					<p style="font-size: 15px;"><br>상품금액   :    14,220원<br>배송비   :    0원<br>선물포장   :    0원<br>할인금액   :    0원</p>
-					<hr style="margin: 5px;">
-					<p style="font-size: 15px;">최종 결제금액 : <span style="font-size: 20px; font-weight: bold; color: red;">14,420원</span></p>
-					<hr style="margin: 5px;">
-					<p>적립예정 포인트 : 790p</p>
-					<p style="font-size: 13px;">쿠폰,통합포인트,교환권 사용시 주문완료 후 적립예정포인트가 변동 될 수 있습니다.</p>
-					<button type="button" class="btn btn-purchaseNow" onclick="location.href='./bookPurchase.html'">바로구매</button>
-				</div>
+				<p style="font-size: 20px; font-weight: bold; ">총 결제 정보</p>
+				<hr style="margin: 5px;">
+				<p style="font-size: 15px;"><br>상품금액   :    14,220원<br>배송비   :    0원<br>선물포장   :    0원<br>할인금액   :    0원</p>
+				<hr style="margin: 5px;">
+				<p style="font-size: 15px;">최종 결제금액 : <span style="font-size: 20px; font-weight: bold; color: red;">14,420원</span></p>
+				<hr style="margin: 5px;">
+				<p>적립예정 포인트 : 790p</p>
+				<p style="font-size: 13px;">쿠폰,통합포인트,교환권 사용시 주문완료 후 적립예정포인트가 변동 될 수 있습니다.</p>
+				<button type="button" class="btn btn-purchaseNow" name="btn-purchase" id="btn-purchase" onclick="location.href='../../user/member/myInfo_main.html'">바로구매</button>
 			</div>
 		</div>
-		<h1><a href="#" id="goUp"><i class="bi bi-arrow-up-circle"></i></a></h1>
+	</div>
 </div>
 
 
@@ -405,9 +346,9 @@ table{
 
 </footer>
 
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="/resources/common/js/validation.js"></script>
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<!-- <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> -->
 
 <script type="text/javascript">
 
@@ -420,56 +361,14 @@ $("#btnClear").on("click",function(){
 	$("#address1").val("");
 	
 });
+$("#btn-purchase").on("click",function(){
+	
+	alert("구매가 완료되었습니다.")
+});
 
 
-function sample6_execDaumPostcode() {
-    new daum.Postcode({
-        oncomplete: function(data) {
-            // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
 
-            // 각 주소의 노출 규칙에 따라 주소를 조합한다.
-            // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-            var addr = ''; // 주소 변수
-            var extraAddr = ''; // 참고항목 변수
-
-            //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
-            if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
-                addr = data.roadAddress;
-            } else { // 사용자가 지번 주소를 선택했을 경우(J)
-                addr = data.jibunAddress;
-            }
-
-            // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
-            if(data.userSelectedType === 'R'){
-                // 법정동명이 있을 경우 추가한다. (법정리는 제외)
-                // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
-                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-                    extraAddr += data.bname;
-                }
-                // 건물명이 있고, 공동주택일 경우 추가한다.
-                if(data.buildingName !== '' && data.apartment === 'Y'){
-                    extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-                }
-                // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-                if(extraAddr !== ''){
-                    extraAddr = ' (' + extraAddr + ')';
-                }
-                // 조합된 참고항목을 해당 필드에 넣는다.
-                /* document.getElementById("kbmaAddress2").value = extraAddr; */
-            
-            } else {
-                /* document.getElementById("kbmaAddress2").value = ''; */
-            }
-
-            // 우편번호와 주소 정보를 해당 필드에 넣는다.
-            document.getElementById('kbmaZipcode').value = data.zonecode;
-            document.getElementById("kbmaAddress1").value = addr;
-            // 커서를 상세주소 필드로 이동한다.
-            document.getElementById("kbmaAddress2").focus();
-        }
-    }).open();
-}
-</script> -->
+</script>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->

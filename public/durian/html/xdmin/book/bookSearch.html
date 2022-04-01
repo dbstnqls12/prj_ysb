@@ -86,10 +86,10 @@ table{
 </head>
 <body>
 <!-- 헤더 s-->			
-<div class="container-fluid"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
+<div class="container"> <!--d-none d-sm-block : sm사이즈에서는 보이지 않음 --><!-- d-block d-sm-none : sm에서만 보임 -->
 	<div class="row">	
-		<div class="col-6 col-md-2 col-lg-2">
-			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto">
+		<div class="col-6 col-md-2 col-lg-2" style="cursor: pointer;">
+			<img src="../../../images/xdmin_img/kyobo2_removebg.png"  class="img-fluid mx-auto" onclick="location.href='../main.html'">
 		</div>				
 		<div class="col-6 d-block d-md-none mt-2 text-end">
 			<a class="d-block d-md-none mt-3 ml-1" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">
@@ -97,8 +97,8 @@ table{
 			</a>
 		</div>		
 		<form class="d-flex col-lg-5 mx-auto mt-4"  style="height: 40px;">
-			<input class="form-control form-control-sm rounded-pill" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn rounded-pill" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+			<input class="form-control form-control-sm rounded-pill" type="search"" placeholder="Search" aria-label="Search">
+			<button class="btn rounded-pill" type="button" onclick="location.href='book/bookSearch.html'"><i class="fa-solid fa-magnifying-glass"></i></button>
 		</form>
 		<div class="col-lg-2 my-auto d-none d-md-block">	
 	        <div class="dropdown">
@@ -176,7 +176,7 @@ table{
 
 <!-- navbar1 s -->
 <nav class="navbar navbar-expand-md navbar-dark d-none d-md-block mb-4">
-	<div class="container-fluid">
+	<div class="container">
 		<a class="navbar-brand d-block d-sm-none" href="#">Navbar</a>
 		<a class="navbar-brand d-none d-sm-block" href="#"><i class="fa-solid fa-bars"></i></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -241,27 +241,27 @@ table{
 	<div class="row">
 			<hr>
 			<div class="col-md-2 mt-2">
-				<img class="mx-auto mb-2"alt="" src="../../../images/xdmin_img/bookEx.jpg" style="width: 180px; height: 230px;">
+				<img class="mx-auto mb-2"alt="" src="../../../images/xdmin_img/bookEx.jpg" style="width: 160px; height: 200px;">
 			</div>
-			<div class="col-md-10 mt-2">
-			<h5 class="mt-2" style="color: #3A60DF;"><b>명상살인</b></h5>
-			<p><strong>내 안의 살인 파트너</strong></p>
-			<p>카르스텐 두세</p>
-			<p>세계사 | 2021-07-05</p>
-			<p>정가 : 15,800원</p>
-			<p>판매가 : <span style="color: #F84450;">14,220원 </span>[10% 1,580원 인하]</p>
+			<div class="col-md-10">
+				<h5 class="mt-2"><b style="color: #3A60DF;">명상살인</b></h5><strong>내 안의 살인 파트너</strong>
+				<p></p>
+				<p>카르스텐 두세</p>
+				<p>세계사 | 2021-07-05</p>
+				<p>정가 : 15,800원</p>
+				<p>판매가 : <span style="color: #F84450;">14,220원 </span>[10% 1,580원 인하]</p>
 			</div>
 			<hr>
 			<div class="col-md-2 mt-2">
-				<img class="mx-auto mb-2"alt="" src="../../../images/xdmin_img/bookEx2.jpg" style="width: 180px; height: 230px;">
+				<img class="mx-auto mb-2"alt="" src="../../../images/xdmin_img/bookEx2.jpg" style="width: 160px; height: 200px;">
 			</div>
-			<div class="col-md-10 mt-2">
-			<h5 class="mt-2" style="color: #3A60DF;"><b>aaa</b></h5>
-			<p><strong>bbbb</strong></p>
-			<p>ccc</p>
-			<p>dddd</p>
-			<p>fff</p>
-			<p>판매가 : <span style="color: #F84450;">14,220원 </span>[10% 1,580원 인하]</p>
+			<div class="col-md-10">
+			<h5 class="mt-2" style="color: #3A60DF;"><b>책제목</b></h5>
+			<p><strong>소제목</strong></p>
+			<p>저자명</p>
+			<p>출판사/출간일</p>
+			<p>정가</p>
+			<p>판매가 : <span style="color: #F84450;">판매가 </span>[10% 1,580원 인하]</p>
 			</div>
 			<!-- page s -->
 			<nav aria-label="Page navigation">
